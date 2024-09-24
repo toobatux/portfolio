@@ -9,7 +9,7 @@ const About = () => {
             <span className="whitespace-nowrap">˶ᵔ ᵕ ᵔ˶</span>
           </p>
           <p className="block">
-            I'm always looking for opportunities to showcase and improve my
+            I&apos;m always looking for opportunities to showcase and improve my
             skills!
           </p>
         </div>
