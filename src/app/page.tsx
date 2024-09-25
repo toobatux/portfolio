@@ -40,12 +40,12 @@ export default function Home() {
               </div>
               <div className="animate-slidein [--slidein-delay:1400ms] opacity-0">
                 <Song setBackground={setBackground} />
-                <div className="md:hidden">
-                  <div className="flex items-center justify-center py-8">
-                    <ScrollTop />
-                  </div>
-                </div>
               </div>
+            </div>
+          </div>
+          <div className="lg:hidden">
+            <div className="flex items-center justify-center py-8">
+              <ScrollTop />
             </div>
           </div>
           <div className="w-full max-w-7xl px-4">
