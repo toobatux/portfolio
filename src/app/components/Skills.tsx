@@ -6,7 +6,7 @@ import Link from "next/link";
 const Skills = () => {
   return (
     <>
-      <div className="mb-8 md:mb-12">
+      <div className="mb-8 lg:mb-12">
         <p className="text-2xl font-semibold text-gray-200">Skills</p>
         <hr className="my-4 border-white/10" />
 
