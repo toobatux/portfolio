@@ -17,6 +17,9 @@ export default function ProjectsSidebar({
         <div className="text-2xl font-semibold text-gray-200 mb-4">
           Projects
         </div>
+        <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 px-3 text-gray-200 font-semibold z-10">
+          This section is in development
+        </div>
         {/* <hr className="my-4 border-white/10" /> */}
 
         <Link href="/backblog">
