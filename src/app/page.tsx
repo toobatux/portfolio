@@ -2,12 +2,12 @@
 import { useState } from "react";
 import Image from "next/image";
 import ProfileSidebar from "./components/home/ProfileSidebar";
-import ProjectsSidebar from "./components/home/ProjectsSidebar";
+import ProjectsSidebar from "./components/home/ProjectsSection";
 import Contact from "./components/home/Contact";
 import Alert from "./components/home/Alert";
 import About from "./components/home/About";
 import Skills from "./components/home/Skills";
-import Song from "./components/home/Song";
+import SongSection from "./components/home/SongSection";
 import ScrollTop from "./components/home/ScrollTop";
 import Link from "next/link";
 
@@ -39,7 +39,7 @@ export default function Home() {
                 <ProjectsSidebar setBackground={setBackground} />
               </div>
               <div className="animate-slidein [--slidein-delay:1400ms] opacity-0">
-                <Song setBackground={setBackground} />
+                <SongSection setBackground={setBackground} />
               </div>
             </div>
           </div>
