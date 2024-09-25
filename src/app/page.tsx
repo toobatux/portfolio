@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <div
-        className={`absolute inset-0 ${background} bg-[size:20px_20px] opacity-20 blur-[100px] transition-colors duration-500`}
+        className={`absolute inset-0 ${background} bg-[size:20px_20px] opacity-20 blur-[50px] transition-colors duration-500`}
       ></div>
       <div className="relative h-full w-full">
         <main className="flex min-h-screen flex-col items-center justify-between md:px-8 md:pt-8">
@@ -55,6 +55,7 @@ export default function Home() {
                 href="https://github.com/toobatux/portfolio"
                 target="_blank"
                 className="inline-block"
+                prefetch={false}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

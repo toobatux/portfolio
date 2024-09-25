@@ -8,7 +8,11 @@ const Contact = () => {
       <div className="mb-12">
         {/* <p className="text-2xl font-semibold text-gray-200 mb-4">Contact</p> */}
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
-          <Link href="https://github.com/toobatux" target="_blank">
+          <Link
+            href="https://github.com/toobatux"
+            target="_blank"
+            prefetch={false}
+          >
             <div className="bg-white/5 backdrop-blur-lg rounded-lg shadow-lg p-2 hover:bg-white/10">
               <div className="flex items-center p-2">
                 <div className="p-1 me-2">
@@ -33,6 +37,7 @@ const Contact = () => {
           <Link
             href="https://www.linkedin.com/in/thomas-krusinski-14748522a/"
             target="_blank"
+            prefetch={false}
           >
             <div className="bg-white/5 backdrop-blur-lg rounded-lg shadow-lg p-2 hover:bg-white/10">
               <div className="flex items-center p-2">
@@ -55,7 +60,7 @@ const Contact = () => {
             </div>
           </Link>
 
-          <Link href="mailto:krusinskithomas@gmail.com">
+          <Link href="mailto:krusinskithomas@gmail.com" prefetch={false}>
             <div className="bg-white/5 backdrop-blur-lg rounded-lg shadow-lg p-2 hover:bg-white/10">
               <div className="flex items-center p-2">
                 <div className="p-1 me-2">

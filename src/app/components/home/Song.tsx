@@ -16,7 +16,11 @@ const Song = ({ setBackground }: SongProps) => {
       <p className="text-2xl font-semibold text-gray-200 mb-4">
         Songs for 3 AM
       </p>
-      <Link href="https://www.youtube.com/watch?v=dFr4NU9C0HE" target="_blank">
+      <Link
+        href="https://www.youtube.com/watch?v=dFr4NU9C0HE"
+        target="_blank"
+        prefetch={false}
+      >
         <div
           className="flex items-center max-h-[9rem] bg-white/5 hover:bg-white/10 shadow-lg transition-colors duration-100 backdrop-blur-lg rounded-lg p-5 mb-4"
           onMouseEnter={() => setBackground("bg-[#9b6b42]")}
@@ -43,7 +47,11 @@ const Song = ({ setBackground }: SongProps) => {
           </div>
         </div>
       </Link>
-      <Link href="https://www.youtube.com/watch?v=p03BfZWGKDw" target="_blank">
+      <Link
+        href="https://www.youtube.com/watch?v=p03BfZWGKDw"
+        target="_blank"
+        prefetch={false}
+      >
         <div
           className="flex items-center max-h-[9rem] bg-white/5 hover:bg-white/10 shadow-lg transition-colors duration-100 backdrop-blur-lg rounded-lg p-5 mb-4"
           onMouseEnter={() => setBackground("bg-[#6b5f3e]")}
@@ -73,7 +81,11 @@ const Song = ({ setBackground }: SongProps) => {
           </div>
         </div>
       </Link>
-      <Link href="https://www.youtube.com/watch?v=kIEWJ1ljEro" target="_blank">
+      <Link
+        href="https://www.youtube.com/watch?v=kIEWJ1ljEro"
+        target="_blank"
+        prefetch={false}
+      >
         <div
           className="flex items-center max-h-[9rem] bg-white/5 hover:bg-white/10 shadow-lg transition-colors duration-100 backdrop-blur-lg rounded-lg p-5 mb-4"
           onMouseEnter={() => setBackground("bg-[#3999bf]")}

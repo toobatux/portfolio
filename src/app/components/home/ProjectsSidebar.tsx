@@ -28,7 +28,7 @@ export default function ProjectsSidebar({
         </div>
         {/* <hr className="my-4 border-white/10" /> */}
 
-        <Link href="/backblog">
+        <Link href="/backblog" prefetch={false}>
           <div
             className="flex items-center max-h-[9rem] bg-white/5 hover:bg-white/10 shadow-lg transition-colors duration-100 backdrop-blur-lg rounded-lg p-5 mb-4"
             onMouseEnter={() => setBackground("bg-blue-800")}
@@ -81,7 +81,7 @@ export default function ProjectsSidebar({
           </div>
         </Link>
 
-        <Link href="">
+        <Link href="" prefetch={false}>
           <div
             className="flex items-center max-h-[9rem] bg-white/5 hover:bg-white/10 shadow-lg transition-colors duration-100 backdrop-blur-lg rounded-lg p-5 mb-4"
             onMouseEnter={() => setBackground("bg-gray-600")}
@@ -134,7 +134,7 @@ export default function ProjectsSidebar({
             </div> */}
           </div>
         </Link>
-        <Link href="">
+        <Link href="" prefetch={false}>
           <div
             className="flex items-center max-h-[9rem] bg-white/5 hover:bg-white/10 shadow-lg transition-colors duration-100 backdrop-blur-lg rounded-lg p-5 mb-4"
             onMouseEnter={() => setBackground("bg-blue-600")}
