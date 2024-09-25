@@ -1,6 +1,9 @@
 import Image from "next/image";
 import ArrowOutward from "@mui/icons-material/ArrowOutward";
 import Explicit from "@mui/icons-material/Explicit";
+import TFT from "/public/TFT.jpg";
+import TFT2 from "/public/TFT2.jpg";
+import Joji from "/public/joji.jpg";
 import Link from "next/link";
 
 interface SongProps {
@@ -22,7 +25,7 @@ const Song = ({ setBackground }: SongProps) => {
           <div className="flex items-center w-full">
             <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
               <Image
-                src="/TFT.jpg"
+                src={TFT}
                 alt="THE FIRST TIME"
                 fill
                 className="object-cover"
@@ -49,7 +52,7 @@ const Song = ({ setBackground }: SongProps) => {
           <div className="flex items-center w-full">
             <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
               <Image
-                src="/TFT2.jpg"
+                src={TFT2}
                 alt="THE FIRST TIME (Deluxe)"
                 fill
                 className="object-cover"
@@ -78,7 +81,7 @@ const Song = ({ setBackground }: SongProps) => {
         >
           <div className="flex items-center w-full">
             <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
-              <Image src="/joji.jpg" alt="brat" fill className="object-cover" />
+              <Image src={Joji} alt="Joji" fill className="object-cover" />
             </div>
             <div className="flex flex-col w-full">
               <p className="block text-gray-100 font-semibold">Die For You</p>

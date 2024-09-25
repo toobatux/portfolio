@@ -1,9 +1,14 @@
 import Image from "next/image";
 import "../../globals.css";
 import ProjectListing from "./ProjectListing";
+import BackBlog from "/public/backblog.png";
+import Goyangi from "/public/goyangi.jpg";
+import WatchTower from "/public/watchtower.jpg";
+
 import Link from "next/link";
 import ArrowOutward from "@mui/icons-material/ArrowOutward";
 import Info from "@mui/icons-material/Info";
+import { Watch } from "@mui/icons-material";
 
 interface ProjectsSidebarProps {
   setBackground: (color: string) => void;
@@ -34,7 +39,7 @@ export default function ProjectsSidebar({
                 {/* Project Image */}
                 <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
                   <Image
-                    src="/backblog.png"
+                    src={BackBlog}
                     alt="Profile"
                     fill
                     className="object-cover"
@@ -87,7 +92,7 @@ export default function ProjectsSidebar({
                 {/* Project Image */}
                 <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
                   <Image
-                    src="/goyangi.jpg"
+                    src={Goyangi}
                     alt="Profile"
                     fill
                     className="object-cover"
@@ -140,7 +145,7 @@ export default function ProjectsSidebar({
                 {/* Project Image */}
                 <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
                   <Image
-                    src="/watchtower.jpg"
+                    src={WatchTower}
                     alt="Profile"
                     fill
                     className="object-cover"

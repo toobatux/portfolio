@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Place from "@mui/icons-material/Place";
+import Batman from "/public/batman.jpg";
 
 const ProfileSidebar = () => {
   return (
@@ -8,10 +9,11 @@ const ProfileSidebar = () => {
         <div className="flex items-center">
           <div className="relative w-[8vw] h-[8vw] max-w-24 max-h-24 min-w-16 min-h-16 rounded-full overflow-hidden me-4">
             <Image
-              src="/batman.jpg"
-              alt="Profile"
+              src={Batman}
+              alt="Profile Image"
               fill
               className="object-cover"
+              priority
             />
           </div>
           <div>
