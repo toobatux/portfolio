@@ -22,7 +22,7 @@ const Song = ({ setBackground }: SongProps) => {
           <div className="flex items-center w-full">
             <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
               <Image
-                src="/TFT.png"
+                src="/TFT.jpg"
                 alt="THE FIRST TIME"
                 fill
                 className="object-cover"
@@ -78,7 +78,7 @@ const Song = ({ setBackground }: SongProps) => {
         >
           <div className="flex items-center w-full">
             <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
-              <Image src="/joji.png" alt="brat" fill className="object-cover" />
+              <Image src="/joji.jpg" alt="brat" fill className="object-cover" />
             </div>
             <div className="flex flex-col w-full">
               <p className="block text-gray-100 font-semibold">Die For You</p>

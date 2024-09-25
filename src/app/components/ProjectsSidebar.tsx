@@ -87,7 +87,7 @@ export default function ProjectsSidebar({
                 {/* Project Image */}
                 <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
                   <Image
-                    src="/goyangi.png"
+                    src="/goyangi.jpg"
                     alt="Profile"
                     fill
                     className="object-cover"
@@ -140,7 +140,7 @@ export default function ProjectsSidebar({
                 {/* Project Image */}
                 <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
                   <Image
-                    src="/watchtower.png"
+                    src="/watchtower.jpg"
                     alt="Profile"
                     fill
                     className="object-cover"
