@@ -1,14 +1,14 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import ProfileSidebar from "./components/ProfileSidebar";
-import ProjectsSidebar from "./components/ProjectsSidebar";
-import Contact from "./components/Contact";
-import Alert from "./components/Alert";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Song from "./components/Song";
-import ScrollTop from "./components/ScrollTop";
+import ProfileSidebar from "./components/home/ProfileSidebar";
+import ProjectsSidebar from "./components/home/ProjectsSidebar";
+import Contact from "./components/home/Contact";
+import Alert from "./components/home/Alert";
+import About from "./components/home/About";
+import Skills from "./components/home/Skills";
+import Song from "./components/home/Song";
+import ScrollTop from "./components/home/ScrollTop";
 import Link from "next/link";
 
 export default function Home() {

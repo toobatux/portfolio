@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "../globals.css";
+import "../../globals.css";
 import ProjectListing from "./ProjectListing";
 import Link from "next/link";
 import ArrowOutward from "@mui/icons-material/ArrowOutward";

@@ -7,7 +7,6 @@ import { Poppins } from "next/font/google";
 import { Open_Sans } from "next/font/google";
 import { Cabin } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 
 // const inter = Cabin({ weight: ["400", "700"], subsets: ["latin"] });
 const inter = Inter({ weight: ["400", "700"], subsets: ["latin"] });
