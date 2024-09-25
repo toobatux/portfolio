@@ -3,6 +3,7 @@ import "../globals.css";
 import ProjectListing from "./ProjectListing";
 import Link from "next/link";
 import ArrowOutward from "@mui/icons-material/ArrowOutward";
+import Info from "@mui/icons-material/Info";
 
 interface ProjectsSidebarProps {
   setBackground: (color: string) => void;
@@ -17,8 +18,8 @@ export default function ProjectsSidebar({
         <div className="text-2xl font-semibold text-gray-200 mb-4">
           Projects
         </div>
-        <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 px-3 text-gray-200 font-semibold z-10">
-          This section is in development
+        <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 px-3 text-gray-200 font-semibold flex items-center">
+          <Info className="me-2" /> This section is in development
         </div>
         {/* <hr className="my-4 border-white/10" /> */}
 
