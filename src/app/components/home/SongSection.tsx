@@ -6,11 +6,11 @@ import TFT2 from "/public/TFT2.jpg";
 import Joji from "/public/joji.jpg";
 import Link from "next/link";
 
-interface SongProps {
+interface SongSectionProps {
   setBackground: (color: string) => void;
 }
 
-const SongSection = ({ setBackground }: SongProps) => {
+const SongSection = ({ setBackground }: SongSectionProps) => {
   return (
     <>
       <p className="text-2xl font-semibold text-gray-200 mb-4">

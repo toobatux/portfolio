@@ -2,14 +2,14 @@
 import { useState } from "react";
 import Image from "next/image";
 import ProfileSidebar from "./components/home/ProfileSidebar";
-import ProjectsSidebar from "./components/home/ProjectsSection";
 import Contact from "./components/home/Contact";
 import Alert from "./components/home/Alert";
 import About from "./components/home/About";
 import Skills from "./components/home/Skills";
-import SongSection from "./components/home/SongSection";
 import ScrollTop from "./components/home/ScrollTop";
 import Link from "next/link";
+import ProjectsSection from "./components/home/ProjectsSection";
+import SongSection from "./components/home/SongSection";
 
 export default function Home() {
   const [background, setBackground] = useState("bg-slate-800");
@@ -36,7 +36,7 @@ export default function Home() {
             {/* Right Column */}
             <div className="flex flex-col md:w-1/2 h-full m-4">
               <div className="animate-slidein [--slidein-delay:1100ms] opacity-0">
-                <ProjectsSidebar setBackground={setBackground} />
+                <ProjectsSection setBackground={setBackground} />
               </div>
               <div className="animate-slidein [--slidein-delay:1400ms] opacity-0">
                 <SongSection setBackground={setBackground} />
