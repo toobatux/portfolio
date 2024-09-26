@@ -19,7 +19,7 @@ export default function Home() {
         className={`absolute inset-0 ${background} bg-[size:20px_20px] opacity-20 transition-colors duration-500`}
       ></div>
       <div className="relative h-full w-full">
-        <main className="flex min-h-screen flex-col items-center justify-between md:px-8 md:pt-8">
+        <main className="flex min-h-screen flex-col items-center justify-between lg:px-8 lg:pt-8">
           <div className="z-10 w-full max-w-7xl justify-between text-sm md:flex h-full">
             {/* Left Column */}
             <div className="flex flex-col md:w-1/2 h-full m-4">
