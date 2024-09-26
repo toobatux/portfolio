@@ -2,7 +2,12 @@ import Image from "next/image";
 import Place from "@mui/icons-material/Place";
 import Batman from "/public/batman.jpg";
 
-const ProfileSidebar = () => {
+interface ProfileProps {
+  isOpenToWork: boolean;
+  location: string;
+}
+
+const ProfileSidebar = ({ isOpenToWork, location }: ProfileProps) => {
   return (
     <>
       <div className="w-full bg-white/5 backdrop-blur-lg rounded-xl mb-4 py-6 px-4">
@@ -35,19 +40,21 @@ const ProfileSidebar = () => {
         <div className="flex items-center mt-4 flex-wrap">
           <div className="flex items-center rounded-full bg-white/10 bg-opacity-40 p-1.5 ps-2 pe-4 text-gray-300 me-3 mt-2">
             <Place fontSize="small" className="me-1" />
-            Pittsburgh, PA
+            {location}
           </div>
 
           {/* <div className="relative rounded-full bg-green-600 bg-opacity-60 p-1.5 px-3 text-gray-200 font-semibold mt-2 animate-pulse">
             Open for work!
           </div> */}
-          <div className="relative flex items-center mt-2">
-            <span className="absolute w-[4.6rem] h-6 rounded-full bg-green-600 opacity-75 animate-ping ms-[1.5rem] z-0"></span>
+          {isOpenToWork && (
+            <div className="relative flex items-center mt-2">
+              <span className="absolute w-[4.6rem] h-6 rounded-full bg-green-600 opacity-75 animate-ping ms-[1.5rem] z-0"></span>
 
-            <div className="relative rounded-full bg-green-600 bg-opacity-40 p-1.5 px-3 text-gray-200 font-semibold z-10">
-              Open to work!
+              <div className="relative rounded-full bg-green-600 bg-opacity-40 p-1.5 px-3 text-gray-200 font-semibold z-10">
+                Open to work!
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </>

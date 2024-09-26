@@ -24,7 +24,7 @@ export default function Home() {
             {/* Left Column */}
             <div className="flex flex-col md:w-1/2 h-full m-4">
               <div className="animate-slidein [--slidein-delay:500ms] opacity-0">
-                <ProfileSidebar />
+                <ProfileSidebar isOpenToWork={true} location="Pittsburgh, PA" />
                 <About />
                 <Contact />
               </div>
@@ -48,6 +48,8 @@ export default function Home() {
               <ScrollTop />
             </div>
           </div>
+
+          {/* Footer */}
           <div className="w-full max-w-7xl px-4">
             <hr className="border-white/10" />
             <div className="flex justify-between items-center m-4 p-1 ">
