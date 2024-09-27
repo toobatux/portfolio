@@ -29,7 +29,7 @@ export default function ProjectsSection({
         {/* <hr className="my-4 border-white/10" /> */}
         <Project
           setBackground={setBackground}
-          link="/backblog"
+          link="/projects/backblog"
           bgColor="bg-blue-800"
           src={BackBlog}
           alt="BackBlog"

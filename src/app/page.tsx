@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import ProfileSidebar from "./components/home/ProfileSidebar";
+import ProfileCard from "./components/home/ProfileCard";
 import Contact from "./components/home/Contact";
 import Alert from "./components/home/Alert";
 import About from "./components/home/About";
@@ -24,7 +24,7 @@ export default function Home() {
             {/* Left Column */}
             <div className="flex flex-col md:w-1/2 h-full m-4">
               <div className="animate-slidein [--slidein-delay:500ms] opacity-0">
-                <ProfileSidebar isOpenToWork={true} location="Pittsburgh, PA" />
+                <ProfileCard isOpenToWork={true} location="Pittsburgh, PA" />
                 <About />
                 <Contact />
               </div>

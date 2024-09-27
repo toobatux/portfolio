@@ -7,7 +7,7 @@ interface ProfileProps {
   location: string;
 }
 
-const ProfileSidebar = ({ isOpenToWork, location }: ProfileProps) => {
+const ProfileCard = ({ isOpenToWork, location }: ProfileProps) => {
   return (
     <>
       <div className="w-full bg-white/5 backdrop-blur-lg rounded-xl mb-4 py-6 px-4">
@@ -61,4 +61,4 @@ const ProfileSidebar = ({ isOpenToWork, location }: ProfileProps) => {
   );
 };
 
-export default ProfileSidebar;
+export default ProfileCard;
