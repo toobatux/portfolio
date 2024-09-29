@@ -3,6 +3,7 @@ import { ArrowOutward } from "@mui/icons-material";
 import Image from "next/image";
 import Link from "next/link";
 import BackBlogPic from "/public/backblog.png";
+import SysDiagram from "/public/backblog.drawio.png";
 
 export default function BackBlog() {
   const tools = ["Kotlin", "Compose", "Swift", "Swift UI"];
@@ -206,6 +207,17 @@ export default function BackBlog() {
               <p className="block mb-4">
                 The app operates seamlessly between iOS and Android devices.
               </p>
+              <div className="flex w-full justify-center bg-[#111111] rounded py-2">
+                <Image
+                  src={SysDiagram}
+                  alt="System Diagram"
+                  width={500}
+                  className="object-cover rounded"
+                />
+              </div>
+              <div className="flex w-full justify-center text-xs pt-2">
+                System Diagram
+              </div>
             </div>
           </div>
         </div>
