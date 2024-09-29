@@ -177,13 +177,30 @@ export default function BackBlog() {
                     SwiftUI
                   </Link>
                 </span>
+                .
               </p>
               <p className="block mb-2">
-                <span className="text-blue-500">Firebase</span> stores users,
-                logs, and friendships.
+                <span className="text-blue-500 hover:text-blue-400 underline">
+                  <Link
+                    href="https://firebase.google.com/"
+                    target="_blank"
+                    prefetch={false}
+                  >
+                    Firebase
+                  </Link>
+                </span>{" "}
+                stores users, logs, and friendships.
               </p>
               <p className="block mb-2">
-                <span className="text-blue-500">The Movie Database (TMDB)</span>{" "}
+                <span className="text-blue-500 hover:text-blue-400 underline">
+                  <Link
+                    href="https://www.themoviedb.org/?language=en-US"
+                    target="_blank"
+                    prefetch={false}
+                  >
+                    The Movie Database (TMDB)
+                  </Link>
+                </span>{" "}
                 provides data for thousands of movies.
               </p>
               <p className="block mb-4">

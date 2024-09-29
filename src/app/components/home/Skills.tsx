@@ -8,10 +8,10 @@ const Skills = () => {
   return (
     <>
       <div className="mb-8 lg:mb-12">
-        <p className="text-2xl font-semibold text-gray-200">Skills</p>
+        <p className="text-2xl font-semibold text-gray-100">Skills</p>
         <hr className="my-4 border-white/10" />
 
-        <p className="text-lg text-gray-400 mb-2">Frontend</p>
+        <p className="text-lg text-gray-300 mb-2">Frontend</p>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
           <Skill
             icon={
@@ -108,7 +108,7 @@ const Skills = () => {
           />
         </div>
 
-        <p className="text-lg text-gray-400 mt-4 mb-2">Backend</p>
+        <p className="text-lg text-gray-300 mt-4 mb-2">Backend</p>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
           <Skill
             icon={
@@ -171,7 +171,7 @@ const Skills = () => {
           />
         </div>
 
-        <p className="text-lg text-gray-400 mt-4 mb-2">Tools</p>
+        <p className="text-lg text-gray-300 mt-4 mb-2">Tools</p>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
           <Skill
             icon={

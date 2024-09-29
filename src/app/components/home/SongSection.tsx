@@ -13,7 +13,7 @@ interface SongSectionProps {
 const SongSection = ({ setBackground }: SongSectionProps) => {
   return (
     <>
-      <p className="text-2xl font-semibold text-gray-200 mb-4">
+      <p className="text-2xl font-semibold text-gray-100 mb-4">
         Songs for 3 AM
       </p>
       <Song
@@ -85,12 +85,12 @@ const Song = ({
             <Image src={src} alt={alt} fill className="object-cover" />
           </div>
           <div className="flex flex-col w-full">
-            <p className="block text-gray-100 font-semibold">{title}</p>
+            <p className="block text-gray-200 font-semibold">{title}</p>
             <div className="flex items-center">
               {isExplicit && (
-                <Explicit fontSize="small" className="text-gray-400 me-1" />
+                <Explicit fontSize="small" className="text-gray-300 me-1" />
               )}
-              <p className="text-gray-400">{artist}</p>
+              <p className="text-gray-300">{artist}</p>
             </div>
           </div>
           <div className="text-gray-200 ml-auto">

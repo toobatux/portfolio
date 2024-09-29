@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import "../../globals.css";
-import ProjectListing from "./ProjectListing";
 import BackBlog from "/public/backblog.png";
 import Goyangi from "/public/goyangi.jpg";
 import WatchTower from "/public/watchtower.jpg";
@@ -20,7 +19,7 @@ export default function ProjectsSection({
   return (
     <>
       <div className="w-full rounded-xl mb-12">
-        <div className="text-2xl font-semibold text-gray-200 mb-4">
+        <div className="text-2xl font-semibold text-gray-100 mb-4">
           Projects
         </div>
         <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 px-3 text-gray-200 font-semibold flex items-center">
@@ -100,7 +99,7 @@ const Project = ({
             {/* Title and Subtitle */}
             <div className="flex flex-col w-full">
               <p className="block text-gray-200 text-lg font-bold">{title}</p>
-              <p className=" block text-gray-300">{description}</p>
+              <p className="block text-gray-300">{description}</p>
             </div>
           </div>
 
