@@ -9,7 +9,8 @@ interface TitleCardProps {
 
 const TitleCard = ({ src, title, date, tools }: TitleCardProps) => {
   return (
-    <div className="h-full bg-white/5 p-5 rounded-xl mb-4 py-6 px-4">
+    // <div className="h-full bg-white/5 p-5 rounded-xl mb-4 py-6 px-4">
+    <>
       <div className="flex items-center w-full mb-2">
         {/* Project Image */}
         <div className="relative max-w-24 max-h-24 min-w-16 min-h-16 rounded-full overflow-hidden me-4">
@@ -18,7 +19,7 @@ const TitleCard = ({ src, title, date, tools }: TitleCardProps) => {
 
         {/* Title */}
         <div className="flex flex-col w-full">
-          <p className="block text-gray-200 text-3xl font-bold">{title}</p>
+          <p className="block text-gray-200 text-4xl font-bold">{title}</p>
           <p className="text-gray-400">{date}</p>
         </div>
       </div>
@@ -32,7 +33,8 @@ const TitleCard = ({ src, title, date, tools }: TitleCardProps) => {
           </div>
         ))}
       </div>
-    </div>
+    </>
+    // </div>
   );
 };
 
