@@ -14,7 +14,9 @@ export default function BackBlog() {
   const tools = ["Kotlin", "Compose", "Swift", "Swift UI"];
   return (
     <>
-      <Header tools={tools} />
+      <div className="animate-slidein [--slidein-delay:500ms] opacity-0">
+        <Header tools={tools} />
+      </div>
       <div className="animate-slidein [--slidein-delay:800ms] opacity-0">
         <Overview />
       </div>
