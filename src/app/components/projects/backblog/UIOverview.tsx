@@ -11,8 +11,8 @@ const UIOverview = () => {
         User Interface
       </div>
       <p className="block">
-        Here are a few core pages showcasing the app's user interface. I will
-        further discuss the reasoning behind this user interface in a later
+        Here are a few core pages showcasing the app&apos;s user interface. I
+        will further discuss the reasoning behind this user interface in a later
         section.
       </p>
       <div className="flex justify-center my-4">
