@@ -31,7 +31,7 @@ export default function ProjectsSection({
             <div className="font-semibold text-gray-100 mb-4">See more</div>
           </Link>
         </div>
-        <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 px-3 text-gray-200 font-semibold flex items-center">
+        <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 text-gray-200 font-semibold flex items-center">
           <Info className="me-2" /> This section is in development
         </div>
         {/* <hr className="my-4 border-white/10" /> */}
