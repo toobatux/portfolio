@@ -1,11 +1,11 @@
 const Overview = () => {
   return (
-    <div className="mb-6 lg:mb-8 text-gray-200">
+    <div className="text-gray-200">
       <div className="h-full bg-white/5 p-5 rounded-xl text-gray-300">
-        <div className="text-2xl font-semibold text-gray-200 mb-4">
+        <div className="text-2xl font-semibold text-gray-200 mb-2">
           Overview
         </div>
-        <p className="block mb-4">
+        <p className="block mb-2">
           BackBlog is a{" "}
           <span className="text-blue-500 font-semibold">
             {" "}
@@ -13,7 +13,7 @@ const Overview = () => {
           </span>{" "}
           independently developed for both iOS and Android devices.
         </p>
-        <p className="block mb-4">
+        <p className="block mb-2">
           The app aims to make organizing movie watchlists easy and fun!
         </p>
         <p className="block mb-2 text-lg font-semibold">Users can:</p>

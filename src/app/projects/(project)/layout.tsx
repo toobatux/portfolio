@@ -1,8 +1,10 @@
+"use client";
 import Image from "next/image";
 import Goyangi from "/public/goyangi.jpg";
 import WatchTower from "/public/watchtower.jpg";
-import Navbar from "../components/projects/Navbar";
+import Navbar from "../../components/projects/Navbar";
 import Link from "next/link";
+import ScrollTop from "../../components/home/ScrollTop";
 
 export default function ProjectLayout({
   children,
@@ -13,7 +15,7 @@ export default function ProjectLayout({
     <>
       <Navbar />
       <div
-        className={`absolute inset-0 bg-neutral-900 transition-colors duration-500`}
+        className={`absolute inset-0 bg-slate-800 bg-[size:20px_20px] opacity-20 transition-colors duration-500`}
       ></div>
       <div className="relative h-full w-full">
         <main className="flex items-center justify-center lg:pt-8">

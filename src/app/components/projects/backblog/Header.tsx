@@ -41,7 +41,7 @@ const Header = ({ tools }: HeaderProps) => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 my-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-6">
           <Link
             href="https://github.com/toobatux/backblog"
             target="_blank"
