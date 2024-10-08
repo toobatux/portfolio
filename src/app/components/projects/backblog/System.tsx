@@ -13,7 +13,7 @@ const System = () => {
         <ul className="list-disc ps-5 mt-1 mb-4">
           <li>
             The Android version was developed using{" "}
-            <span className="text-blue-500 hover:text-blue-400 underline">
+            <span className="text-blue-500 hover:underline">
               <Link
                 href="https://kotlinlang.org/"
                 target="_blank"
@@ -23,7 +23,7 @@ const System = () => {
               </Link>
             </span>{" "}
             and{" "}
-            <span className="text-blue-500 hover:text-blue-400 underline">
+            <span className="text-blue-500 hover:underline">
               <Link
                 href="https://developer.android.com/compose"
                 target="_blank"
@@ -36,7 +36,7 @@ const System = () => {
           </li>
           <li>
             The iOS version was developed using{" "}
-            <span className="text-blue-500 hover:text-blue-400 underline">
+            <span className="text-blue-500 hover:underline">
               <Link
                 href="https://www.swift.org/"
                 target="_blank"
@@ -46,7 +46,7 @@ const System = () => {
               </Link>
             </span>{" "}
             and{" "}
-            <span className="text-blue-500 hover:text-blue-400 underline">
+            <span className="text-blue-500 hover:underline">
               <Link
                 href="https://developer.apple.com/xcode/swiftui/"
                 target="_blank"
@@ -58,7 +58,7 @@ const System = () => {
             .
           </li>
           <li>
-            <span className="text-blue-500 hover:text-blue-400 underline">
+            <span className="text-blue-500 hover:underline">
               <Link
                 href="https://firebase.google.com/"
                 target="_blank"
@@ -67,10 +67,11 @@ const System = () => {
                 Firebase
               </Link>
             </span>{" "}
-            stores users, logs, and friendships.
+            stores users, logs, and friendships (users who are not logged in may
+            store logs locally and sync them upon login).
           </li>
           <li>
-            <span className="text-blue-500 hover:text-blue-400 underline">
+            <span className="text-blue-500 hover:underline">
               <Link
                 href="https://www.themoviedb.org/?language=en-US"
                 target="_blank"

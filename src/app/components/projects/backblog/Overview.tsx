@@ -6,11 +6,7 @@ const Overview = () => {
           Overview
         </div>
         <p className="block my-4">
-          BackBlog is a{" "}
-          <span className="text-blue-500 font-semibold">
-            {" "}
-            collaborative movie playlisting app
-          </span>{" "}
+          BackBlog is a <b> collaborative movie playlisting app</b>{" "}
           independently developed for both iOS and Android devices.
         </p>
         <p className="block my-4">

@@ -3,6 +3,7 @@ import LandingPage from "/public/LandPage.png";
 import LogPage from "/public/LogPage.png";
 import MoviePage from "/public/MovieInfo.png";
 import ResultsPage from "/public/ResultsPage.png";
+import Link from "next/link";
 
 const UIOverview = () => {
   return (
@@ -47,6 +48,19 @@ const UIOverview = () => {
           </div>
         </div>
       </div>
+      <p className="block mt-4">
+        The full set of Figma prototypes can be found{" "}
+        <Link
+          href="https://www.figma.com/design/zuyfQoJfjZdQgTT1U7z4JF/BackBlog1?node-id=2380-2018&t=rWccTdd83zasEWg3-1"
+          target="_blank"
+          prefetch={false}
+          className="text-blue-500 hover:underline"
+        >
+          here
+        </Link>
+        . Please be sure to check out the third and final iteration under{" "}
+        <em>Pages</em> on the left.
+      </p>
     </div>
   );
 };

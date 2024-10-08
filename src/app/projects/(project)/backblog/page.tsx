@@ -11,6 +11,7 @@ import Header from "@/app/components/projects/backblog/Header";
 import ScrollTop from "@/app/components/home/ScrollTop";
 import Responsibilities from "@/app/components/projects/backblog/Responsibilities";
 import UIOverview from "@/app/components/projects/backblog/UIOverview";
+import UICont from "@/app/components/projects/backblog/UICont";
 
 export default function BackBlog() {
   const tools = ["Kotlin", "Compose", "Swift", "Swift UI"];
@@ -34,8 +35,12 @@ export default function BackBlog() {
         <Background />
       </div>
 
-      <div className="animate-slidein [--slidein-delay:1600ms] opacity-0">
+      <div className="animate-slidein [--slidein-delay:1600ms] opacity-0 mb-6">
         <Responsibilities />
+      </div>
+
+      <div className="animate-slidein [--slidein-delay:1600ms] opacity-0">
+        <UICont />
       </div>
 
       <div className="flex items-center justify-center my-12">
