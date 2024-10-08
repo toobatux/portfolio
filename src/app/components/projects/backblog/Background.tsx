@@ -4,18 +4,18 @@ const Background = () => {
       <div className="text-2xl font-semibold text-gray-200 mb-2">
         Background
       </div>
-      <p className="block">
+      <p className="block my-4">
         This project was created by a group of five students over the course of
         an academic year as a senior capstone project.
       </p>
-      <p className="block mt-2">
+      <p className="block my-4">
         The first semester was dedicated to design. We spent this time planning
         the core functions of our app, prototyping the entire user interface
         with Figma, and making improvements based on feedback from user testing.
         I led my team through this design phase and created three iterations of
         UI prototypes.
       </p>
-      <p className="block mt-2">
+      <p className="block mt-4">
         The second semester was spent developing the apps. As both apps were to
         be developed independently on their native platforms, we decided to
         split our group into three teams: two on Android, two on iOS, and one

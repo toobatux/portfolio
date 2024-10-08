@@ -7,10 +7,10 @@ const System = () => {
     <div className="">
       <div className="h-full rounded-xl bg-white/5 p-5 text-gray-300">
         <div className="text-2xl font-semibold text-gray-200 mb-2">System</div>
-        <p className="block mb-2">
+        <p className="block mt-4">
           Both apps were developed independently on their native platforms.
         </p>
-        <ul className="list-disc ps-5">
+        <ul className="list-disc ps-5 mt-1 mb-4">
           <li>
             The Android version was developed using{" "}
             <span className="text-blue-500 hover:text-blue-400 underline">
@@ -82,18 +82,20 @@ const System = () => {
             provides data for thousands of movies.
           </li>
         </ul>
-        <div className="flex w-full justify-center bg-[#111111] rounded py-2 mt-6">
-          <Image
-            src={SysDiagram}
-            alt="System Diagram"
-            width={500}
-            className="object-cover rounded"
-          />
+        <div className="block">
+          <div className="flex w-full justify-center bg-[#111111] rounded py-2">
+            <Image
+              src={SysDiagram}
+              alt="System Diagram"
+              width={500}
+              className="object-cover rounded"
+            />
+          </div>
+          <div className="flex w-full justify-center pt-2">
+            <em>System Diagram</em>
+          </div>
         </div>
-        <div className="flex w-full justify-center pt-2">
-          <em>System Diagram</em>
-        </div>
-        <p className="block mt-6">
+        <p className="block mt-4">
           The app operates seamlessly between iOS and Android devices. For
           example, if two users are viewing the same log on separate devices,
           any updates to the log will appear instantly on both devices.

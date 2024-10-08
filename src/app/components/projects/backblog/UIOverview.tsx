@@ -10,12 +10,12 @@ const UIOverview = () => {
       <div className="text-2xl font-semibold text-gray-200 mb-2">
         User Interface
       </div>
-      <p className="block">
+      <p className="block my-4">
         Here are a few core pages showcasing the app&apos;s user interface. I
         will further discuss the reasoning behind this user interface in a later
         section.
       </p>
-      <div className="flex justify-center my-4">
+      <div className="flex justify-center">
         <div className="flex flex-wrap p-1">
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
@@ -31,13 +31,13 @@ const UIOverview = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mb-4">
+      <div className="flex justify-center">
         <div className="flex flex-wrap p-1">
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
               <Image src={ResultsPage} alt="Results Page" />
             </div>
-            <p className="flex justify-center mt-2">Results Page</p>
+            <p className="flex justify-center mt-2">Search Results Page</p>
           </div>
           <div className="flex-1 p-2">
             <div className="flex max-w-64">

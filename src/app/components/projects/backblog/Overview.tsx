@@ -5,7 +5,7 @@ const Overview = () => {
         <div className="text-2xl font-semibold text-gray-200 mb-2">
           Overview
         </div>
-        <p className="block mb-2">
+        <p className="block my-4">
           BackBlog is a{" "}
           <span className="text-blue-500 font-semibold">
             {" "}
@@ -13,10 +13,10 @@ const Overview = () => {
           </span>{" "}
           independently developed for both iOS and Android devices.
         </p>
-        <p className="block mb-2">
+        <p className="block my-4">
           The app aims to make organizing movie watchlists easy and fun!
         </p>
-        <p className="block mb-2 text-lg font-semibold">Users can:</p>
+        <p className="block mb-1 text-lg font-semibold">Users can:</p>
         <ul className="list-disc ps-5">
           <li>Create movie logs solo or with friends</li>
           <li>Search thousands of movies</li>

@@ -34,7 +34,7 @@ export default function BackBlog() {
         <Background />
       </div>
 
-      <div className="animate-slidein [--slidein-delay:1600ms] opacity-0 mb-6">
+      <div className="animate-slidein [--slidein-delay:1600ms] opacity-0">
         <Responsibilities />
       </div>
 
