@@ -27,13 +27,13 @@ const Header = ({ tools }: HeaderProps) => {
         </div>
       </div>
       <div className="relative">
-        <div className="flex w-full mt-2">
+        <div className="flex w-full mt-4">
           <div className="flex flex-col">
-            <div className="flex mt-4 items-center">
+            <div className="flex items-center">
               {tools.map((tool, index) => (
                 <div
                   key={index}
-                  className="bg-white/10 rounded-full px-3 py-1 text-gray-300 me-1.5"
+                  className="bg-white/10 rounded-full px-3 py-1 text-gray-400 me-1.5"
                 >
                   {tool}
                 </div>
@@ -41,7 +41,7 @@ const Header = ({ tools }: HeaderProps) => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
           <Link
             href="https://github.com/toobatux/backblog"
             target="_blank"
