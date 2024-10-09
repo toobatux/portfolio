@@ -92,7 +92,7 @@ const System = () => {
               className="object-cover rounded"
             />
           </div>
-          <div className="flex w-full justify-center pt-2">
+          <div className="flex w-full justify-center pt-2 text-gray-400">
             <em>System Diagram</em>
           </div>
         </div>

@@ -22,13 +22,13 @@ const UIOverview = () => {
             <div className="flex max-w-64">
               <Image src={LandingPage} alt="Landing Page" />
             </div>
-            <p className="flex justify-center mt-2">Home Page</p>
+            <p className="flex justify-center mt-2 text-gray-400">Home Page</p>
           </div>
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
               <Image src={LogPage} alt="Log Page" />
             </div>
-            <p className="flex justify-center mt-2">Log Page</p>
+            <p className="flex justify-center mt-2 text-gray-400">Log Page</p>
           </div>
         </div>
       </div>
@@ -38,13 +38,15 @@ const UIOverview = () => {
             <div className="flex max-w-64">
               <Image src={ResultsPage} alt="Results Page" />
             </div>
-            <p className="flex justify-center mt-2">Search Results Page</p>
+            <p className="flex justify-center mt-2 text-gray-400">
+              Search Results Page
+            </p>
           </div>
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
               <Image src={MoviePage} alt="Movie Page" />
             </div>
-            <p className="flex justify-center mt-2">Movie Page</p>
+            <p className="flex justify-center mt-2 text-gray-400">Movie Page</p>
           </div>
         </div>
       </div>

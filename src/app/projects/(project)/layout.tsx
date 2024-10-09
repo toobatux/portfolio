@@ -97,7 +97,9 @@ export default function ProjectLayout({
                       href="/projects/"
                       className="flex items-end hover:underline text-gray-400 justify-center"
                     >
-                      <div className="text-gray-400">See more</div>
+                      <div className="text-gray-400 font-semibold">
+                        See more
+                      </div>
                     </Link>
                   </div>
                 </div>
