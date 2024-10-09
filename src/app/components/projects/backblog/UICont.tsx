@@ -91,9 +91,10 @@ const UICont = () => {
             overwhelming. Thus, I opted for simple tiles that redirect to the
             log page where these actions can be performed. These tiles are
             draggable, and whichever tile occupies the top-left position will
-            have its first movie shown in the &quot;What's Next?&quot; section.
-            Indicating this to users was quite difficult, so a small subtitle,
-            &quot;From (Log Name)&quot; was added underneath the heading.
+            have its first movie shown in the &quot;What&apos;s Next?&quot;
+            section. Indicating this to users was quite difficult, so a small
+            subtitle, &quot;From (Log Name)&quot; was added underneath the
+            heading.
           </p>
           <p className="block mt-4">
             All buttons were changed to a bright blue color, which creates
