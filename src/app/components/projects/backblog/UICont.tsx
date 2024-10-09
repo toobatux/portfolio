@@ -47,11 +47,11 @@ const UICont = () => {
             The first iteration consists of only a few pages and allowed our
             group to experiment with how certain features of the app could be
             visualized. This example features two home pages, with the first
-            showing a large "Up Next..." movie image and overlapping text. I
-            later decided to separate these elements, as seen in the second home
-            page, since the movie image was also clickable and redirects to a
-            movie information page. With each part of this section separated, we
-            can minimize accidental clicks.
+            showing a large &quot;Up Next...&quot; movie image and overlapping
+            text. I later decided to separate these elements, as seen in the
+            second home page, since the movie image was also clickable and
+            redirects to a movie information page. With each part of this
+            section separated, we can minimize accidental clicks.
           </p>
           <div className="my-6">
             <Image src={FirstIter} alt="First Iteration" />
@@ -61,8 +61,8 @@ const UICont = () => {
           <div className="text-lg font-semibold">Second Iteration</div>
           <p className="block mt-4">
             The second iteration features several improvements over the last.
-            The "Up Next..." section now has larger buttons and a clear
-            separation between title, date, and rating. Each log now also
+            The &quot;Up Next...&quot; section now has larger buttons and a
+            clear separation between title, date, and rating. Each log now also
             includes profile pictures for each user in the log, allowing users
             to easily distinguish logs. These pictures were also added within
             each log, indicating which user added each movie. A movie detail
@@ -91,9 +91,9 @@ const UICont = () => {
             overwhelming. Thus, I opted for simple tiles that redirect to the
             log page where these actions can be performed. These tiles are
             draggable, and whichever tile occupies the top-left position will
-            have its first movie shown in the "What's Next?" section. Indicating
-            this to users was quite difficult, so a small subtitle, "From (Log
-            Name)" was added underneath the heading.
+            have its first movie shown in the &quot;What's Next?&quot; section.
+            Indicating this to users was quite difficult, so a small subtitle,
+            &quot;From (Log Name)&quot; was added underneath the heading.
           </p>
           <p className="block mt-4">
             All buttons were changed to a bright blue color, which creates
@@ -101,7 +101,7 @@ const UICont = () => {
             Additionally, the check buttons were removed from movie entries in a
             log and replaced with a swiping feature. Users can simply swipe left
             on a movie to mark it as complete, moving it to the bottom of the
-            page in a "Watched" section.
+            page in a &quot;Watched&quot; section.
           </p>
           <div className="my-6">
             <Image src={FinalIter} alt="Final Iteration" />
