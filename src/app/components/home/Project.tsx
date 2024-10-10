@@ -38,8 +38,10 @@ export default function Project({
 
             {/* Title and Subtitle */}
             <div className="flex flex-col w-full">
-              <p className="block text-gray-200 text-lg font-bold">{title}</p>
-              <p className="block text-gray-300">{description}</p>
+              <p className="block text-neutral-200 text-lg font-bold">
+                {title}
+              </p>
+              <p className="block text-neutral-300">{description}</p>
             </div>
           </div>
 
@@ -48,7 +50,7 @@ export default function Project({
             {tools.map((tool, index) => (
               <div
                 key={index}
-                className="bg-white/10 rounded-full px-3 py-1 text-gray-300 me-1.5"
+                className="bg-white/10 rounded-full px-3 py-1 text-neutral-400 me-1.5"
               >
                 {tool}
               </div>

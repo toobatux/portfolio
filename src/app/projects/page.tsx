@@ -23,17 +23,17 @@ export default function Projects() {
             {/* Left Column */}
             <div className="flex flex-col md:w-1/2 m-4">
               <div className="w-full">
-                <div className="text-2xl font-semibold text-gray-100 mb-4">
+                <div className="text-2xl font-semibold text-neutral-100 mb-4">
                   All Projects
                 </div>
-                <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 text-gray-200 font-semibold flex items-center">
+                <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 text-neutral-200 font-semibold flex items-center">
                   <Info className="me-2" /> This section is in development
                 </div>
                 {/* <hr className="my-4 border-white/10" /> */}
                 <Project
                   setBackground={setBackground}
                   link="/projects/backblog"
-                  bgColor="bg-blue-800"
+                  bgColor="bg-[#1c5bbe]"
                   src={BackBlog}
                   alt="BackBlog"
                   title="BackBlog"
@@ -42,7 +42,7 @@ export default function Projects() {
                 />
                 <Project
                   setBackground={setBackground}
-                  link=""
+                  link="/projects/goyangi"
                   bgColor="bg-gray-600"
                   src={Goyangi}
                   alt="Goyangi"
@@ -53,7 +53,7 @@ export default function Projects() {
                 <Project
                   setBackground={setBackground}
                   link=""
-                  bgColor="bg-blue-600"
+                  bgColor="bg-[#54b5fe]"
                   src={WatchTower}
                   alt="WatchTower"
                   title="WatchTower"

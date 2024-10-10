@@ -22,35 +22,35 @@ const ProfileCard = ({ isOpenToWork, location }: ProfileProps) => {
             />
           </div>
           <div>
-            <h1 className="block text-xl lg:text-4xl text-gray-100 font-bold mb-1">
+            <h1 className="block text-xl lg:text-4xl text-neutral-100 font-bold mb-1">
               Tom Krusinski
             </h1>
             <div className="flex items-center">
-              <p className="lg:text-lg text-gray-300">Front-end Developer</p>
+              <p className="lg:text-lg text-neutral-300">Front-end Developer</p>
             </div>
 
-            {/* <div className="flex items-center text-gray-300 mt-3">
+            {/* <div className="flex items-center text-neutral-300 mt-3">
               <Place /> Pittsburgh, Pennsylvania
             </div> */}
-            {/* <p className="block text-lg text-gray-400">
+            {/* <p className="block text-lg text-neutral-400">
               Pittsburgh, Pennsylvania
             </p> */}
           </div>
         </div>
         <div className="flex items-center mt-4 flex-wrap">
-          <div className="flex items-center rounded-full bg-white/10 bg-opacity-40 p-1.5 ps-2 pe-4 text-gray-300 me-3">
+          <div className="flex items-center rounded-full bg-white/10 bg-opacity-40 p-1.5 ps-2 pe-4 text-neutral-300 me-3">
             <Place fontSize="small" className="me-1" />
             {location}
           </div>
 
-          {/* <div className="relative rounded-full bg-green-600 bg-opacity-60 p-1.5 px-3 text-gray-200 font-semibold mt-2 animate-pulse">
+          {/* <div className="relative rounded-full bg-green-600 bg-opacity-60 p-1.5 px-3 text-neutral-200 font-semibold mt-2 animate-pulse">
             Open for work!
           </div> */}
           {isOpenToWork && (
             <div className="relative flex items-center">
               <span className="absolute w-[4.6rem] h-6 rounded-full bg-green-600 opacity-75 animate-ping ms-[1.5rem] z-0"></span>
 
-              <div className="relative rounded-full bg-green-600 bg-opacity-40 p-1.5 px-3 text-gray-200 font-semibold z-10">
+              <div className="relative rounded-full bg-green-600 bg-opacity-40 p-1.5 px-3 text-neutral-200 font-semibold z-10">
                 Open to work!
               </div>
             </div>

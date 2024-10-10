@@ -9,7 +9,7 @@ const ScrollTop = () => {
     <button type="button" onClick={scrollToTop}>
       <ArrowCircleUp
         fontSize="large"
-        className="text-gray-300 hover:text-gray-200"
+        className="text-neutral-300 hover:text-neutral-200"
       />
     </button>
   );

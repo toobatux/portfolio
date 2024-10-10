@@ -1,7 +1,7 @@
 const Background = () => {
   return (
-    <div className="h-full bg-white/5 p-5 rounded-xl text-gray-300">
-      <div className="text-2xl font-semibold text-gray-200 mb-2">
+    <div className="h-full bg-white/5 p-5 rounded-xl text-neutral-300">
+      <div className="text-2xl font-semibold text-neutral-200 mb-2">
         Background
       </div>
       <p className="block my-4">

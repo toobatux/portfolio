@@ -7,14 +7,14 @@ const OtherProjects = () => {
   return (
     <>
       <div className="flex justify-between">
-        <div className="text-2xl font-semibold text-gray-100 mb-4">
+        <div className="text-2xl font-semibold text-neutral-100 mb-4">
           Other Projects
         </div>
         <Link
           href="/projects/"
           className="flex items-end hover:underline text-white"
         >
-          <div className="font-semibold text-gray-400 mb-4">See more</div>
+          <div className="font-semibold text-neutral-400 mb-4">See more</div>
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:space-x-2">
@@ -34,10 +34,10 @@ const OtherProjects = () => {
 
                 {/* Title and Subtitle */}
                 <div className="flex flex-col w-full">
-                  <p className="block text-gray-200 text-lg font-bold">
+                  <p className="block text-neutral-200 text-lg font-bold">
                     Goyangi
                   </p>
-                  <p className="block text-gray-400">
+                  <p className="block text-neutral-400">
                     A social network for cat photos
                   </p>
                 </div>
@@ -61,10 +61,10 @@ const OtherProjects = () => {
 
                 {/* Title and Subtitle */}
                 <div className="flex flex-col w-full">
-                  <p className="block text-gray-200 text-lg font-bold">
+                  <p className="block text-neutral-200 text-lg font-bold">
                     WatchTower
                   </p>
-                  <p className="block text-gray-400">
+                  <p className="block text-neutral-400">
                     A security camera livestream
                   </p>
                 </div>

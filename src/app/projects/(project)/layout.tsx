@@ -19,9 +19,9 @@ export default function ProjectLayout({
         className={`absolute inset-0 bg-slate-800 bg-[size:20px_20px] opacity-20 transition-colors duration-500`}
       ></div>
       <div className="relative min-h-screen flex flex-col lg:pt-8">
-        <main className="flex flex-grow items-center justify-center">
+        <main className="flex flex-grow justify-center">
           <div className="flex w-full max-w-[80rem] justify-center">
-            <div className="flex justify-between">
+            <div className="flex flex-grow justify-center">
               <aside className="hidden p-4 md:flex md:justify-center md:flex-none w-48">
                 <div className="fixed w-40">
                   <div className="w-full">
@@ -40,7 +40,7 @@ export default function ProjectLayout({
                   </div>
                 </div>
               </aside>
-              <div className="flex flex-col max-w-[50rem] justify-center h-full m-4">
+              <div className="flex flex-col max-w-[50rem] w-full m-4">
                 {children}
               </div>
               <aside className="hidden p-4 lg:flex lg:justify-center lg:flex-none w-48">

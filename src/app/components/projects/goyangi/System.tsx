@@ -5,36 +5,23 @@ import SysDiagram from "/public/backblog.drawio.png";
 const System = () => {
   return (
     <div className="">
-      <div className="h-full rounded-xl bg-white/5 p-5 text-neutral-300">
-        <div className="text-2xl font-semibold text-neutral-200 mb-2">
-          System
-        </div>
+      <div className="h-full rounded-xl bg-white/5 p-5 text-gray-300">
+        <div className="text-2xl font-semibold text-gray-200 mb-2">System</div>
         <p className="block mt-4">
-          Both apps were developed independently on their native platforms.
+          The website was developed using the Django framework.
         </p>
         <ul className="list-disc ps-5 mt-1 mb-4">
           <li>
-            The Android version was developed using{" "}
             <span className="text-blue-500 hover:underline">
               <Link
                 href="https://kotlinlang.org/"
                 target="_blank"
                 prefetch={false}
               >
-                Kotlin
+                Bootstrap
               </Link>
             </span>{" "}
-            and{" "}
-            <span className="text-blue-500 hover:underline">
-              <Link
-                href="https://developer.android.com/compose"
-                target="_blank"
-                prefetch={false}
-              >
-                Jetpack Compose
-              </Link>
-            </span>
-            .
+            was used to make styling easier.
           </li>
           <li>
             The iOS version was developed using{" "}
@@ -85,24 +72,11 @@ const System = () => {
             provides data for thousands of movies.
           </li>
         </ul>
-        <div className="block">
-          <div className="flex w-full justify-center bg-[#111111] rounded py-2">
-            <Image
-              src={SysDiagram}
-              alt="System Diagram"
-              width={500}
-              className="object-cover rounded"
-            />
-          </div>
-          <div className="flex w-full justify-center pt-2 text-neutral-400">
-            <em>System Diagram</em>
-          </div>
-        </div>
-        <p className="block mt-4">
+        {/* <p className="block mt-4">
           The app operates seamlessly between iOS and Android devices. For
           example, if two users are viewing the same log on separate devices,
           any updates to the log will appear instantly on both devices.
-        </p>
+        </p> */}
       </div>
     </div>
   );

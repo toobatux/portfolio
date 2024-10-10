@@ -4,6 +4,7 @@ import Explicit from "@mui/icons-material/Explicit";
 import TFT from "/public/TFT.jpg";
 import TFT2 from "/public/TFT2.jpg";
 import Joji from "/public/joji.jpg";
+import DawnFM from "/public/dawnfm.jpg";
 import Link from "next/link";
 
 interface SongSectionProps {
@@ -13,7 +14,7 @@ interface SongSectionProps {
 const SongSection = ({ setBackground }: SongSectionProps) => {
   return (
     <>
-      <p className="text-2xl font-semibold text-gray-100 mb-4">
+      <p className="text-2xl font-semibold text-neutral-100 mb-4">
         Songs for 3 AM
       </p>
       <Song
@@ -26,7 +27,7 @@ const SongSection = ({ setBackground }: SongSectionProps) => {
         artist="The Kid LAROI"
         isExplicit={false}
       />
-      <Song
+      {/* <Song
         setBackground={setBackground}
         link="https://www.youtube.com/watch?v=p03BfZWGKDw"
         bgColor="bg-[#6b5f3e]"
@@ -35,7 +36,7 @@ const SongSection = ({ setBackground }: SongSectionProps) => {
         title="NIGHTS LIKE THIS PT 2"
         artist="The Kid LAROI"
         isExplicit={true}
-      />
+      /> */}
       <Song
         setBackground={setBackground}
         link="https://www.youtube.com/watch?v=kIEWJ1ljEro"
@@ -44,6 +45,16 @@ const SongSection = ({ setBackground }: SongSectionProps) => {
         alt="SMITHEREENS"
         title="Die For You"
         artist="Joji"
+        isExplicit={false}
+      />
+      <Song
+        setBackground={setBackground}
+        link=""
+        bgColor="bg-[#2c6b83]"
+        src={DawnFM}
+        alt="DAWN FM"
+        title="Less Than Zero"
+        artist="The Weeknd"
         isExplicit={false}
       />
     </>
@@ -85,15 +96,15 @@ const Song = ({
             <Image src={src} alt={alt} fill className="object-cover" />
           </div>
           <div className="flex flex-col w-full">
-            <p className="block text-gray-200 font-semibold">{title}</p>
+            <p className="block text-neutral-200 font-semibold">{title}</p>
             <div className="flex items-center">
               {isExplicit && (
-                <Explicit fontSize="small" className="text-gray-300 me-1" />
+                <Explicit fontSize="small" className="text-neutral-300 me-1" />
               )}
-              <p className="text-gray-300">{artist}</p>
+              <p className="text-neutral-400">{artist}</p>
             </div>
           </div>
-          <div className="text-gray-200 ml-auto">
+          <div className="text-neutral-400 ml-auto">
             <ArrowOutward fontSize="small" />
           </div>
         </div>
