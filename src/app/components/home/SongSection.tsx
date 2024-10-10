@@ -49,7 +49,7 @@ const SongSection = ({ setBackground }: SongSectionProps) => {
       />
       <Song
         setBackground={setBackground}
-        link=""
+        link="https://www.youtube.com/watch?v=LKsgDcckur0"
         bgColor="bg-[#2c6b83]"
         src={DawnFM}
         alt="DAWN FM"
