@@ -33,7 +33,13 @@ export default function Project({
           <div className="flex items-center w-full mb-5">
             {/* Project Image */}
             <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
-              <Image src={src} alt={alt} fill className="object-cover" />
+              <Image
+                src={src}
+                alt={alt}
+                fill
+                sizes="(max-width: 48px)"
+                className="object-cover"
+              />
             </div>
 
             {/* Title and Subtitle */}

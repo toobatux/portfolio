@@ -27,6 +27,7 @@ export default function ProjectsSection({
           <Link
             href="/projects/"
             className="flex items-end hover:underline text-white"
+            prefetch={false}
           >
             <div className="font-semibold text-neutral-200 mb-4">See more</div>
           </Link>

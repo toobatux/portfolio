@@ -93,7 +93,13 @@ const Song = ({
       >
         <div className="flex items-center w-full">
           <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
-            <Image src={src} alt={alt} fill className="object-cover" />
+            <Image
+              src={src}
+              alt={alt}
+              fill
+              sizes="(max-width: 48px)"
+              className="object-cover"
+            />
           </div>
           <div className="flex flex-col w-full">
             <p className="block text-neutral-200 font-semibold">{title}</p>

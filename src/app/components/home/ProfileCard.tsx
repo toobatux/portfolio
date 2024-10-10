@@ -17,6 +17,7 @@ const ProfileCard = ({ isOpenToWork, location }: ProfileProps) => {
               src={Batman}
               alt="Profile Image"
               fill
+              sizes="(max-width: 96px)"
               className="object-cover"
               priority
             />

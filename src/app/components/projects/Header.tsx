@@ -20,7 +20,13 @@ const Header = ({ title, tagLine, background, image, tools }: HeaderProps) => {
             <p className="text-neutral-400 mt-1">{tagLine}</p>
           </div>
           <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-xl overflow-hidden">
-            <Image src={image} alt={title} fill className="object-cover p-2" />
+            <Image
+              src={image}
+              alt={title}
+              fill
+              sizes="(max-width: 128px)"
+              className="object-cover p-2"
+            />
           </div>
         </div>
       </div>

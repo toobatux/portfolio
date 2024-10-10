@@ -14,6 +14,7 @@ export default function ProjectLayout({
 }>) {
   return (
     <>
+      <script>0</script>
       <Navbar />
       <div
         className={`absolute inset-0 bg-slate-800 bg-[size:20px_20px] opacity-20 transition-colors duration-500`}
@@ -57,6 +58,7 @@ export default function ProjectLayout({
                               <Image
                                 src={Goyangi}
                                 alt="goyangi"
+                                sizes="(max-width: 48px)"
                                 fill
                                 className="object-cover"
                               />
@@ -79,6 +81,7 @@ export default function ProjectLayout({
                               <Image
                                 src={WatchTower}
                                 alt="watchtower"
+                                sizes="(max-width: 48px)"
                                 fill
                                 className="object-cover"
                               />

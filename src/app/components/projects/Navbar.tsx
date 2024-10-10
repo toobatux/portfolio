@@ -15,7 +15,12 @@ const Navbar = () => {
             <div className="relative flex items-center">
               <Link href="/" className="flex items-center space-x-2 me-5">
                 <div className="relative min-w-10 h-10 rounded-xl overflow-hidden">
-                  <Image src={Batman} alt="Tom Krusinski" fill />
+                  <Image
+                    src={Batman}
+                    alt="Tom Krusinski"
+                    fill
+                    sizes="(max-width: 48px)"
+                  />
                 </div>
                 <div className="text-gray-200 font-bold">Tom K.</div>
               </Link>
