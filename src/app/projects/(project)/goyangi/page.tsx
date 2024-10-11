@@ -6,6 +6,9 @@ import GoyangiPic from "/public/goyangi.jpg";
 import Overview from "@/app/components/projects/goyangi/Overview";
 import ProjectSidebar from "@/app/components/projects/ProjectSidebar";
 import ScrollTop from "@/app/components/home/ScrollTop";
+import SectionSidebar from "@/app/components/projects/SectionSidebar";
+
+const sections = [{ id: "overview", title: "Overview" }];
 
 const projects = [
   {
@@ -26,7 +29,12 @@ export default function Goyangi() {
   const tools = ["Django", "Python", "Bootstrap", "SQLite"];
   return (
     <>
-      <div className="flex flex-col max-w-[50rem] w-full m-4">
+      <aside className="hidden p-4 md:flex md:justify-center md:flex-none w-48">
+        <div className="fixed w-40">
+          <SectionSidebar sections={sections} />
+        </div>
+      </aside>
+      <div className="flex flex-col max-w-[50rem] w-full m-4 lg:mx-12">
         <div className="mb-6">
           <Header
             title={"Goyangi"}
@@ -36,7 +44,9 @@ export default function Goyangi() {
           />
         </div>
         <div className="mb-6">
-          <Overview />
+          <div id="overview">
+            <Overview />
+          </div>
         </div>
         <div className="lg:hidden">
           <ProjectSidebar projects={projects} />
