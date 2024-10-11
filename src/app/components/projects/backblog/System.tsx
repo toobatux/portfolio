@@ -91,6 +91,7 @@ const System = () => {
               src={SysDiagram}
               alt="System Diagram"
               width={500}
+              placeholder="blur"
               className="object-cover rounded"
             />
           </div>

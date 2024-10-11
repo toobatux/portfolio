@@ -23,7 +23,7 @@ export default function ProjectLayout({
         <main className="flex flex-grow justify-center">
           <div className="flex w-full max-w-[80rem] justify-center">
             <div className="flex flex-grow justify-center">
-              <aside className="hidden p-4 md:flex md:justify-center md:flex-none w-48">
+              {/* <aside className="hidden p-4 md:flex md:justify-center md:flex-none w-48">
                 <div className="fixed w-40">
                   <div className="w-full">
                     <div className="text-gray-100 text-lg font-semibold mb-4 w-full">
@@ -40,11 +40,11 @@ export default function ProjectLayout({
                     </div>
                   </div>
                 </div>
-              </aside>
-              <div className="flex flex-col max-w-[50rem] w-full m-4">
-                {children}
-              </div>
-              <aside className="hidden p-4 lg:flex lg:justify-center lg:flex-none w-48">
+              </aside> */}
+              {/* <div className="flex flex-col max-w-[50rem] w-full m-4"> */}
+              {children}
+              {/* </div> */}
+              {/* <aside className="hidden p-4 lg:flex lg:justify-center lg:flex-none w-48">
                 <div className="fixed w-40">
                   <div className="w-full">
                     <div className="text-gray-100 text-lg font-semibold mb-4">
@@ -60,6 +60,7 @@ export default function ProjectLayout({
                                 alt="goyangi"
                                 sizes="(max-width: 48px)"
                                 fill
+                                placeholder="blur"
                                 className="object-cover"
                               />
                             </div>
@@ -83,6 +84,7 @@ export default function ProjectLayout({
                                 alt="watchtower"
                                 sizes="(max-width: 48px)"
                                 fill
+                                placeholder="blur"
                                 className="object-cover"
                               />
                             </div>
@@ -106,7 +108,7 @@ export default function ProjectLayout({
                     </Link>
                   </div>
                 </div>
-              </aside>
+              </aside> */}
             </div>
           </div>
         </main>

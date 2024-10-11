@@ -20,7 +20,7 @@ const UIOverview = () => {
         <div className="flex flex-wrap p-1">
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
-              <Image src={LandingPage} alt="Landing Page" />
+              <Image src={LandingPage} alt="Landing Page" placeholder="blur" />
             </div>
             <p className="flex justify-center mt-2 text-neutral-400">
               Home Page
@@ -28,7 +28,7 @@ const UIOverview = () => {
           </div>
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
-              <Image src={LogPage} alt="Log Page" />
+              <Image src={LogPage} alt="Log Page" placeholder="blur" />
             </div>
             <p className="flex justify-center mt-2 text-neutral-400">
               Log Page
@@ -40,7 +40,7 @@ const UIOverview = () => {
         <div className="flex flex-wrap p-1">
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
-              <Image src={ResultsPage} alt="Results Page" />
+              <Image src={ResultsPage} alt="Results Page" placeholder="blur" />
             </div>
             <p className="flex justify-center mt-2 text-neutral-400">
               Search Results Page
@@ -48,7 +48,7 @@ const UIOverview = () => {
           </div>
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
-              <Image src={MoviePage} alt="Movie Page" />
+              <Image src={MoviePage} alt="Movie Page" placeholder="blur" />
             </div>
             <p className="flex justify-center mt-2 text-neutral-400">
               Movie Page
