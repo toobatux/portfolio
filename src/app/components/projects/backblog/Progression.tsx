@@ -29,7 +29,12 @@ const Progression = () => {
             section separated, we can minimize accidental clicks.
           </p>
           <div className="my-8">
-            <Image src={FirstIter} alt="First Iteration" placeholder="blur" />
+            <Image
+              src={FirstIter}
+              alt="First Iteration"
+              placeholder="blur"
+              loading="eager"
+            />
           </div>
         </div>
         <div className="text-neutral-200 mt-10">
@@ -45,7 +50,12 @@ const Progression = () => {
             summaries, genres, directors, actors, etc.
           </p>
           <div className="my-8">
-            <Image src={SecondIter} alt="Second Iteration" placeholder="blur" />
+            <Image
+              src={SecondIter}
+              alt="Second Iteration"
+              placeholder="blur"
+              loading="eager"
+            />
           </div>
           <p className="block">
             It is also noteable that the logs in both the first and second
@@ -80,7 +90,12 @@ const Progression = () => {
             page in a &quot;Watched&quot; section.
           </p>
           <div className="my-8">
-            <Image src={FinalIter} alt="Final Iteration" placeholder="blur" />
+            <Image
+              src={FinalIter}
+              alt="Final Iteration"
+              placeholder="blur"
+              loading="eager"
+            />
           </div>
           <p>
             The movie detail page also received an overhaul, now featuring a
@@ -90,8 +105,9 @@ const Progression = () => {
           <p className="block mt-4">
             There are many more pages in this final iteration that I could write
             about indefinitely, but overall I am very proud of the final
-            product! User test results greatly improved with each iteration,
-            which was our ultimate goal.
+            product! I learned so much about UI design and front end development
+            during this project, and user test results greatly improved with
+            each iteration, which was our ultimate goal.
           </p>
         </div>
       </div>

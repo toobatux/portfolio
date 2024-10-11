@@ -92,6 +92,7 @@ const System = () => {
               alt="System Diagram"
               width={500}
               placeholder="blur"
+              loading="eager"
               className="object-cover rounded"
             />
           </div>

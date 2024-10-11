@@ -2,7 +2,7 @@ const Responsibilities = () => {
   return (
     <div className="h-full bg-white/5 p-5 rounded-xl text-neutral-300">
       <div className="text-2xl font-semibold text-neutral-200">
-        My Responsibilities
+        Responsibilities
       </div>
       <p className="block mt-4">
         As the lead UI/UX designer and developer, I was responsible for

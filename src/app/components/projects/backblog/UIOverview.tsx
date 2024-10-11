@@ -20,7 +20,12 @@ const UIOverview = () => {
         <div className="flex flex-wrap p-1">
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
-              <Image src={LandingPage} alt="Landing Page" placeholder="blur" />
+              <Image
+                src={LandingPage}
+                alt="Landing Page"
+                placeholder="blur"
+                loading="eager"
+              />
             </div>
             <p className="flex justify-center mt-2 text-neutral-400">
               Home Page
@@ -28,7 +33,12 @@ const UIOverview = () => {
           </div>
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
-              <Image src={LogPage} alt="Log Page" placeholder="blur" />
+              <Image
+                src={LogPage}
+                alt="Log Page"
+                placeholder="blur"
+                loading="eager"
+              />
             </div>
             <p className="flex justify-center mt-2 text-neutral-400">
               Log Page
@@ -40,7 +50,12 @@ const UIOverview = () => {
         <div className="flex flex-wrap p-1">
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
-              <Image src={ResultsPage} alt="Results Page" placeholder="blur" />
+              <Image
+                src={ResultsPage}
+                alt="Results Page"
+                placeholder="blur"
+                loading="eager"
+              />
             </div>
             <p className="flex justify-center mt-2 text-neutral-400">
               Search Results Page
@@ -48,7 +63,12 @@ const UIOverview = () => {
           </div>
           <div className="flex-1 p-2">
             <div className="flex max-w-64">
-              <Image src={MoviePage} alt="Movie Page" placeholder="blur" />
+              <Image
+                src={MoviePage}
+                alt="Movie Page"
+                placeholder="blur"
+                loading="eager"
+              />
             </div>
             <p className="flex justify-center mt-2 text-neutral-400">
               Movie Page
