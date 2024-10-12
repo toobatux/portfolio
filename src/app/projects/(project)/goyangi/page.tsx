@@ -7,8 +7,12 @@ import Overview from "@/app/components/projects/goyangi/Overview";
 import ProjectSidebar from "@/app/components/projects/ProjectSidebar";
 import ScrollTop from "@/app/components/home/ScrollTop";
 import SectionSidebar from "@/app/components/projects/SectionSidebar";
+import Demo from "@/app/components/projects/goyangi/Demo";
 
-const sections = [{ id: "overview", title: "Overview" }];
+const sections = [
+  { id: "overview", title: "Overview" },
+  { id: "demo", title: "Demo Video" },
+];
 
 const projects = [
   {
@@ -46,6 +50,11 @@ export default function Goyangi() {
         <div className="mb-6">
           <div id="overview">
             <Overview />
+          </div>
+        </div>
+        <div className="mb-6">
+          <div id="demo">
+            <Demo />
           </div>
         </div>
         <div className="lg:hidden">
