@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <div
-        className={`absolute inset-0 ${background} bg-[size:20px_20px] opacity-20 transition-colors duration-500`}
+        className={`absolute inset-0 ${background} bg-[size:20px_20px] bg-opacity-15 transition-colors duration-500`}
       ></div>
       <div className="relative h-full w-full">
         <main className="flex min-h-screen flex-col items-center justify-between lg:px-8 lg:pt-8">

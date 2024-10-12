@@ -59,7 +59,7 @@ export default function ProjectsSection({
         <Project
           setBackground={setBackground}
           link=""
-          bgColor="bg-[#54b5fe]"
+          bgColor="bg-[#348ad1]"
           src={WatchTower}
           alt="WatchTower"
           title="WatchTower"
