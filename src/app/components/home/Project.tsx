@@ -30,7 +30,7 @@ export default function Project({
         onMouseLeave={() => setBackground("bg-slate-800")}
       >
         <div className="flex flex-col w-full">
-          <div className="flex items-center w-full mb-5">
+          <div className="flex items-center w-full mb-3">
             {/* Project Image */}
             <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
               <Image

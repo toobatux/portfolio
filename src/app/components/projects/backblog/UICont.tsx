@@ -24,8 +24,8 @@ const UICont = () => {
           with the background and makes them easy to recognize. It was also
           important that tasks and actions were streamlined so they can be done
           in as few steps as possible. Most tasks require no more than 3 clicks
-          to complete. Users are also given feedback via toast popups for
-          success and error messages.
+          to complete. Users are given feedback via toast popups for success and
+          error messages.
         </p>
       </div>
     </>

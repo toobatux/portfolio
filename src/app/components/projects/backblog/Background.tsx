@@ -6,7 +6,7 @@ const Background = () => {
       </div>
       <p className="block my-4">
         This project was created by a group of five students over the course of
-        an academic year as a senior capstone project.
+        an academic year as a senior project.
       </p>
       <p className="block my-4">
         The first semester was dedicated to design. We spent this time planning
@@ -17,12 +17,13 @@ const Background = () => {
       </p>
       <p className="block mt-4">
         The second semester was spent developing the apps. As both apps were to
-        be developed independently on their native platforms, we decided to
-        split our group into three teams: two on Android, two on iOS, and one
-        working on the APIs. Our group held in-person standup meetings at least
-        four times per week as well as a meeting with our professor once per
-        week. Our tasks were divided and managed through Jira. User testing was
-        also performed routinely throughout the semester to help us make
+        be developed independently on their native platforms (instead of using a
+        cross platform development kit like Flutter), we decided to split our
+        group into three teams: two on Android, two on iOS, and one working on
+        the APIs. Our group held in-person standup meetings at least four times
+        per week as well as a meeting with our professor once per week. Our
+        tasks were divided and managed through Jira. User testing was also
+        performed routinely throughout the semester to help us make
         improvements.
       </p>
     </div>

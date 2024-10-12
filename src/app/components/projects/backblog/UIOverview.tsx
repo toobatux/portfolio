@@ -13,7 +13,7 @@ const UIOverview = () => {
       </div>
       <p className="block my-4">
         Here are a few core pages showcasing the app&apos;s user interface. I
-        will further discuss the reasoning behind this user interface in a later
+        will discuss the reasoning behind this user interface in a later
         section.
       </p>
       <div className="flex justify-center">
@@ -86,8 +86,6 @@ const UIOverview = () => {
         >
           here
         </Link>
-        . Please be sure to check out the third and final iteration under{" "}
-        <em>Pages</em> on the left.
       </p>
     </div>
   );
