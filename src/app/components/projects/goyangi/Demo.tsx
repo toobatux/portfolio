@@ -8,7 +8,7 @@ const Demo = () => {
           </div>
           <div className="flex justify-center bg-black rounded-lg mt-4 h-[15rem] md:h-[20rem] lg:h-[25rem]">
             <iframe
-              src="https://www.youtube.com/embed/e_2vPuBCfZU?si=Ly0CNI_CP9OFsIB8&"
+              src="https://www.youtube.com/embed/e_2vPuBCfZU?si=Ly0CNI_CP9OFsIB8&vq=hd1080"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
