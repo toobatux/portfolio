@@ -110,7 +110,7 @@ const Song = ({
               <p className="text-neutral-400">{artist}</p>
             </div>
           </div>
-          <div className="text-neutral-400 ml-auto">
+          <div className="text-white/50 ml-auto">
             <ArrowOutward fontSize="small" />
           </div>
         </div>
