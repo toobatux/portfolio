@@ -8,6 +8,7 @@ import ProjectSidebar from "@/app/components/projects/ProjectSidebar";
 import ScrollTop from "@/app/components/home/ScrollTop";
 import SectionSidebar from "@/app/components/projects/SectionSidebar";
 import Demo from "@/app/components/projects/goyangi/Demo";
+import Links from "@/app/components/projects/goyangi/Links";
 
 const sections = [
   { id: "overview", title: "Overview" },
@@ -46,6 +47,9 @@ export default function Goyangi() {
             image={GoyangiPic}
             tools={tools}
           />
+        </div>
+        <div className="mb-4">
+          <Links />
         </div>
         <div className="mb-6">
           <div id="overview">

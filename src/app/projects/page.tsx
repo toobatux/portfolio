@@ -18,16 +18,18 @@ export default function Projects() {
       ></div>
       <Navbar />
       <div className="relative w-full">
-        <main className="flex h-[90vh] flex-col items-center justify-between lg:px-8 lg:pt-8">
+        <main className="flex flex-col items-center justify-between lg:px-8 lg:pt-8">
           <div className="z-10 w-full max-w-7xl justify-center text-sm md:flex">
             {/* Left Column */}
-            <div className="flex flex-col md:w-1/2 m-4">
+            <div className="flex min-h-[80vh] flex-col md:w-1/2 m-4">
               <div className="w-full">
-                <div className="text-2xl font-semibold text-neutral-100 mb-4">
-                  All Projects
+                <div className="text-2xl lg:text-4xl text-neutral-100 font-bold mb-4">
+                  Projects
                 </div>
-                <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 text-neutral-200 font-semibold flex items-center">
-                  <Info className="me-2" /> This section is in development
+                <div className="inline-block">
+                  <div className="rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 pe-4 text-neutral-200 font-semibold flex items-center">
+                    <Info className="me-2" /> This section is in development
+                  </div>
                 </div>
                 {/* <hr className="my-4 border-white/10" /> */}
                 <Project
