@@ -10,7 +10,7 @@ const Overview = () => {
       </p>
       <p className="block my-4">
         This website enables property owners to remotely monitor a physical
-        space as well as keep track of when motion occurs.
+        space and keep track of when motion occurs.
       </p>
       <p className="block mb-1 text-lg font-semibold">Users can:</p>
       <ul className="list-disc ps-5">
