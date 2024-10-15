@@ -27,7 +27,7 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="text-neutral-200 ">toobatux</div>
-                <div className="text-neutral-400 ml-auto">
+                <div className="text-white/50 ml-auto">
                   <ArrowOutward fontSize="small" />
                 </div>
               </div>
@@ -53,7 +53,7 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="text-neutral-200 ">Thomas Krusinski</div>
-                <div className="text-neutral-400 ml-auto">
+                <div className="text-white/50 ml-auto">
                   <ArrowOutward fontSize="small" />
                 </div>
               </div>
@@ -69,7 +69,7 @@ const Contact = () => {
                 <div className="text-neutral-200">
                   krusinskithomas@gmail.com
                 </div>
-                <div className="text-neutral-400 ml-auto">
+                <div className="text-white/50 ml-auto">
                   <ArrowOutward fontSize="small" />
                 </div>
               </div>

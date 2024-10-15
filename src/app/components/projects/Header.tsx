@@ -25,7 +25,7 @@ const Header = ({ title, tagLine, background, image, tools }: HeaderProps) => {
               alt={title}
               fill
               sizes="(max-width: 128px)"
-              className="object-cover p-2"
+              className="object-cover p-2 rounded-2xl"
             />
           </div>
         </div>

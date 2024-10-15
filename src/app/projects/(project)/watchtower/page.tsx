@@ -1,36 +1,32 @@
 "use client";
-import Header from "@/app/components/projects/Header";
-import WatchTowerPic from "/public/watchtower.jpg";
 import BackBlogPic from "/public/backblog.png";
 import GoyangiPic from "/public/goyangi.jpg";
-import Overview from "@/app/components/projects/goyangi/Overview";
-import ProjectSidebar from "@/app/components/projects/ProjectSidebar";
+import WatchTowerPic from "/public/watchtower.jpg";
+import Overview from "@/app/components/projects/watchtower/Overview";
+import Header from "@/app/components/projects/Header";
 import ScrollTop from "@/app/components/home/ScrollTop";
+import Links from "@/app/components/projects/watchtower/Links";
+import ProjectSidebar from "@/app/components/projects/ProjectSidebar";
 import SectionSidebar from "@/app/components/projects/SectionSidebar";
-import Demo from "@/app/components/projects/goyangi/Demo";
-import Links from "@/app/components/projects/goyangi/Links";
 
-const sections = [
-  { id: "overview", title: "Overview" },
-  { id: "demo", title: "Demo Video" },
-];
+const sections = [{ id: "overview", title: "Overview" }];
 
 const projects = [
-  {
-    img: WatchTowerPic,
-    title: "WatchTower",
-    tagLine: "A security camera livestream",
-    link: "/projects/watchtower",
-  },
   {
     img: BackBlogPic,
     title: "BackBlog",
     tagLine: "A collaborative movie playlisting app",
     link: "/projects/backblog",
   },
+  {
+    img: GoyangiPic,
+    title: "Goyangi",
+    tagLine: "A social network for cat photos",
+    link: "/projects/goyangi",
+  },
 ];
 
-export default function Goyangi() {
+export default function BackBlog() {
   const tools = ["Django", "Python", "Bootstrap", "SQLite"];
   return (
     <>
@@ -40,15 +36,13 @@ export default function Goyangi() {
         </div>
       </aside>
       <div className="flex flex-col max-w-[50rem] w-full m-4 lg:mx-12">
-        <div className="mb-4">
+        <div className="mb-6">
           <Header
-            title={"Goyangi"}
-            background="bg-neutral-600"
-            image={GoyangiPic}
+            title={"WatchTower"}
+            background="bg-[#348ad1]"
+            image={WatchTowerPic}
             tools={tools}
           />
-        </div>
-        <div className="mb-6">
           <Links />
         </div>
         <div className="mb-6">
@@ -56,15 +50,13 @@ export default function Goyangi() {
             <Overview />
           </div>
         </div>
-        <div className="mb-6">
-          <div id="demo">
-            <Demo />
-          </div>
-        </div>
+
         <div className="lg:hidden">
+          {/* <OtherProjects /> */}
           <ProjectSidebar projects={projects} />
         </div>
-        <div className="flex items-center justify-center my-12">
+
+        <div className="lg:hidden flex items-center justify-center my-12">
           <ScrollTop />
         </div>
       </div>

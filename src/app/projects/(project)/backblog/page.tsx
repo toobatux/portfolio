@@ -37,7 +37,7 @@ const projects = [
     img: WatchTowerPic,
     title: "WatchTower",
     tagLine: "A security camera livestream",
-    link: "",
+    link: "/projects/watchtower",
   },
 ];
 
