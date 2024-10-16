@@ -15,10 +15,8 @@ interface ProjectSidebarProps {
 export default function ProjectSidebar({ projects }: ProjectSidebarProps) {
   return (
     <div className="w-full">
-      <div className="flex justify-between mb-4">
-        <div className="text-gray-100 text-lg font-semibold">
-          Other Projects
-        </div>
+      <div className="flex justify-between mb-2">
+        <div className="text-gray-200 font-semibold">Other Projects</div>
         <div className="flex lg:hidden">
           <Link
             href="/projects/"
@@ -30,7 +28,7 @@ export default function ProjectSidebar({ projects }: ProjectSidebarProps) {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:space-x-2 lg:block lg:space-x-0">
         {projects.map((project, index) => (
-          <div key={index} className="mb-4">
+          <div key={index} className="mb-2">
             <Project
               img={project.img}
               title={project.title}

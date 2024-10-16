@@ -34,7 +34,7 @@ export default function BackBlog() {
   const tools = ["Django", "Python", "Bootstrap", "SQLite"];
   return (
     <>
-      <aside className="hidden p-4 md:flex md:justify-center md:flex-none w-48">
+      <aside className="hidden p-4 py-4 md:flex md:justify-center md:flex-none w-48">
         <div className="fixed w-40">
           <SectionSidebar sections={sections} />
         </div>
