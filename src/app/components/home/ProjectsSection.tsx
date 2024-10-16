@@ -44,7 +44,7 @@ export default function ProjectsSection({
           alt="BackBlog"
           title="BackBlog"
           description="A collaborative movie playlisting app"
-          tools={["Kotlin", "Compose", "Swift", "SwiftUI"]}
+          tools={["Kotlin", "Jetpack Compose", "Swift", "SwiftUI"]}
         />
         <Project
           setBackground={setBackground}

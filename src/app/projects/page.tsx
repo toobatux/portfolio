@@ -4,6 +4,7 @@ import Navbar from "../components/projects/Navbar";
 import BackBlog from "/public/backblog.png";
 import Goyangi from "/public/goyangi.jpg";
 import WatchTower from "/public/watchtower.jpg";
+import Foodbank from "/public/foodbank.png";
 import Link from "next/link";
 import Info from "@mui/icons-material/Info";
 import Project from "../components/home/Project";
@@ -40,7 +41,7 @@ export default function Projects() {
                   alt="BackBlog"
                   title="BackBlog"
                   description="A collaborative movie playlisting app"
-                  tools={["Kotlin", "Compose", "Swift", "SwiftUI"]}
+                  tools={["Kotlin", "Jetpack Compose", "Swift", "SwiftUI"]}
                 />
                 <Project
                   setBackground={setBackground}
@@ -61,6 +62,16 @@ export default function Projects() {
                   title="WatchTower"
                   description="A security camera live-stream"
                   tools={["Django", "Python", "Bootstrap", "SQLite"]}
+                />
+                <Project
+                  setBackground={setBackground}
+                  link=""
+                  bgColor="bg-[#0B5394]"
+                  src={Foodbank}
+                  alt="SVC Foodbank"
+                  title="SVC Foodbank"
+                  description="A foodbank website for hosting events"
+                  tools={["C#", "ASP.NET Core", "Razor Pages", "Bootstrap"]}
                 />
               </div>
             </div>

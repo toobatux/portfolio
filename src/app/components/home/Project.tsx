@@ -25,7 +25,7 @@ export default function Project({
   return (
     <Link href={link} prefetch={false}>
       <div
-        className="flex items-center max-h-[9rem] bg-white/5 hover:bg-white/10 shadow-lg transition-colors duration-100 backdrop-blur-lg rounded-lg p-5 mb-4"
+        className="flex items-center bg-white/5 hover:bg-white/10 shadow-lg transition-colors duration-100 backdrop-blur-lg rounded-lg p-5 mb-4"
         onMouseEnter={() => setBackground(bgColor)}
         onMouseLeave={() => setBackground("bg-slate-800")}
       >
@@ -52,7 +52,7 @@ export default function Project({
           </div>
 
           {/* Tags */}
-          <div className="flex py-1 items-center">
+          <div className="flex py-1 items-center flex-wrap gap-y-2">
             {tools.map((tool, index) => (
               <div
                 key={index}
