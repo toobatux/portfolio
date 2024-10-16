@@ -23,7 +23,7 @@ export default function Home() {
         <main className="flex min-h-screen flex-col items-center justify-between lg:px-8 lg:pt-8">
           <div className="z-10 w-full max-w-7xl justify-between text-sm md:flex h-full">
             {/* Left Column */}
-            <div className="flex flex-col md:w-1/2 h-full m-4 me-2 lg:me-4">
+            <div className="flex flex-col md:w-1/2 h-full m-4 md:me-2 lg:me-4">
               <div className="animate-slidein [--slidein-delay:500ms] opacity-0">
                 <ProfileCard isOpenToWork={true} location="Pittsburgh, PA" />
                 <About />
@@ -35,7 +35,7 @@ export default function Home() {
             </div>
 
             {/* Right Column */}
-            <div className="flex flex-col md:w-1/2 h-full m-4 ms-2 lg:ms-4">
+            <div className="flex flex-col md:w-1/2 h-full m-4 md:ms-2 lg:ms-4">
               <div className="animate-slidein [--slidein-delay:1100ms] opacity-0">
                 <ProjectsSection setBackground={setBackground} />
               </div>
