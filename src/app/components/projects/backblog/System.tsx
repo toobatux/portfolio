@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SysDiagram from "/public/backblog.drawio.png";
+import { memo } from "react";
 
 const System = () => {
   return (
@@ -92,7 +93,6 @@ const System = () => {
               alt="System Diagram"
               width={500}
               placeholder="blur"
-              loading="eager"
               className="object-cover rounded"
             />
           </div>
@@ -110,4 +110,4 @@ const System = () => {
   );
 };
 
-export default System;
+export default memo(System);
