@@ -56,7 +56,7 @@ export default function Project({
             {tools.map((tool, index) => (
               <div
                 key={index}
-                className="bg-white/10 rounded-full px-3 py-1 text-white/50 me-1.5"
+                className="bg-white/10 rounded-full px-3 py-1 text-white/50 text-xs me-1.5"
               >
                 {tool}
               </div>

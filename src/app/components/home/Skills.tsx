@@ -308,7 +308,7 @@ const Skill = ({ icon, color, name }: SkillProps) => {
         <div className={`${color} rounded-lg p-1 me-2 bg-opacity-20`}>
           {icon}
         </div>
-        <div className="text-neutral-200">{name}</div>
+        <div className="text-neutral-200 text-sm font-medium">{name}</div>
       </div>
     </div>
   );
