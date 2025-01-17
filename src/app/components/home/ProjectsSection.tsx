@@ -1,13 +1,10 @@
-import Image, { StaticImageData } from "next/image";
 import "../../globals.css";
-import BackBlog from "/public/backblog.png";
-import Goyangi from "/public/goyangi.jpg";
-import WatchTower from "/public/watchtower.jpg";
+import Chingu from "/public/chingu2.png";
+import BackBlog from "/public/backblogPhone2-2.png";
+import Goyangi from "/public/goyangi3.png";
+import WatchTower from "/public/watchtowerFinal.png";
 
 import Link from "next/link";
-import ArrowOutward from "@mui/icons-material/ArrowOutward";
-import Info from "@mui/icons-material/Info";
-import { Watch } from "@mui/icons-material";
 import Project from "./Project";
 
 interface ProjectsSectionProps {
@@ -20,26 +17,34 @@ export default function ProjectsSection({
   return (
     <>
       <div className="w-full rounded-xl mb-12">
-        <div className="flex justify-between">
-          <div className="text-2xl font-semibold text-neutral-100 mb-4">
+        <div className="flex justify-between mb-8">
+          <div className="text-2xl font-semibold text-neutral-100 flex items-center">
             Projects
           </div>
           <Link
             href="/projects/"
-            className="flex items-end hover:underline text-white"
+            className="flex text-white rounded-full hover:text-black hover:bg-white border-2 border-white/10 px-4 py-2 transition-all duration-300"
             prefetch={false}
           >
-            <div className="font-semibold text-neutral-200 mb-4">See more</div>
+            All projects
           </Link>
         </div>
-        <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 text-neutral-200 font-semibold flex items-center">
+        {/* <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 text-neutral-200 font-semibold flex items-center">
           <Info className="me-2" /> This section is in development
-        </div>
+        </div> */}
         {/* <hr className="my-4 border-white/10" /> */}
         <Project
-          setBackground={setBackground}
+          date="2024"
           link="/projects/backblog"
-          bgColor="bg-[#1c5bbe]"
+          src={Chingu}
+          alt="StudyPal"
+          title="StudyPal"
+          description="An educational web app with flashcards and guides"
+          tools={["React", "TypeScript", "Tailwind", "Next.js"]}
+        />
+        <Project
+          date="2023-2024"
+          link="/projects/backblog"
           src={BackBlog}
           alt="BackBlog"
           title="BackBlog"
@@ -47,9 +52,8 @@ export default function ProjectsSection({
           tools={["Kotlin", "Jetpack Compose", "Swift", "SwiftUI"]}
         />
         <Project
-          setBackground={setBackground}
+          date="2024"
           link="/projects/goyangi"
-          bgColor="bg-gray-600"
           src={Goyangi}
           alt="Goyangi"
           title="Goyangi"
@@ -57,15 +61,23 @@ export default function ProjectsSection({
           tools={["Django", "Python", "Bootstrap", "SQLite"]}
         />
         <Project
-          setBackground={setBackground}
+          date="2023-2024"
           link="/projects/watchtower"
-          bgColor="bg-[#348ad1]"
           src={WatchTower}
           alt="WatchTower"
           title="WatchTower"
           description="A security camera live-stream"
           tools={["Django", "Python", "Bootstrap", "SQLite"]}
         />
+        <div className="flex items-center justify-center mt-10">
+          <Link
+            href="/projects/"
+            className="inline-block text-white rounded-full hover:text-black hover:bg-white border-2 border-white/10 px-4 py-2 transition-all duration-300"
+            prefetch={false}
+          >
+            See more
+          </Link>
+        </div>
       </div>
     </>
   );

@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      darkMode: 'media',
       backgroundImage: {
         // "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         // "gradient-conic":
@@ -21,19 +22,37 @@ const config: Config = {
       },
       animation: {
         slidein: "slidein 1s ease var(--slidein-delay, 0) forwards",
+        // blob: "blob 7s infinite",
       },
       keyframes: {
         slidein: {
           from: {
             opacity: "0",
-            transform: "translateY(-10px)",
+            transform: "translateY(10px)",
           },
           to: {
             opacity: "1",
             transform: "translateY(0)",
           },
         },
+        // blob: {
+        //   "0%": {
+        //     transform: "translate(0px, 0px) scale(1)",
+        //   },
+        //   "33%": {
+        //     transform: "translate(30px, -50px) scale(1.1)",
+        //   },
+        //   "66%": {
+        //     transform: "translate(-20, 20px) scale(0.9)",
+        //   },
+        //   "100%": {
+        //     transform: "translate(0px, 0px) scale(1)",
+        //   },
+        // }
       },
+      screens: {
+        'md': '750px'
+      }
     },
   },
   plugins: [],

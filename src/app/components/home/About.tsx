@@ -1,19 +1,36 @@
+import Skills from "./Skills";
+
 const About = () => {
   return (
     <>
-      <div className="bg-white/5 backdrop-blur-lg rounded-lg p-5 mb-4">
-        <p className="block mb-2 text-lg font-semibold text-neutral-100">
-          About
-        </p>
-        <div className="text-neutral-300">
-          <p className="block mb-2">
-            My name is Tom and I like building pretty interfaces{" "}
-            <span className="whitespace-nowrap">˶ᵔ ᵕ ᵔ˶</span>
-          </p>
-          <p className="block">
-            I&apos;m always looking for opportunities to showcase and improve my
-            skills!
-          </p>
+      {/* bg-gradient-to-tl from-transparent to-white/5 */}
+      <div className="border border-white/10 transition-colors duration-200 rounded-3xl p-4 h-full">
+        <div className="flex h-full w-full flex-col justify-between">
+          <div className="w-full items-center">
+            <p className="inline-block text-neutral-100 py-1.5 px-3 border border-white/20 rounded-xl">
+              Skills
+            </p>
+          </div>
+          <div className="flex py-4 lg:py-0">
+            <div className="relative overflow-hidden">
+              <div className="flex">
+                <div className="anim-group">
+                  <Skills />
+                </div>
+                <div aria-hidden className="anim-group">
+                  <Skills />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="space-y-1">
+            <div className="text-white/90 text-base">
+              Technology I&apos;m working with
+            </div>
+            <div className="text-white/50">
+              I am always excited to learn something new!
+            </div>
+          </div>
         </div>
       </div>
     </>
