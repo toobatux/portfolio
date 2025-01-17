@@ -25,7 +25,7 @@ const About = () => {
           </div>
           <div className="space-y-1">
             <div className="text-white/90 text-base">
-              Technology I'm working with
+              Technology I&apos;m working with
             </div>
             <div className="text-white/50">
               I am always excited to learn something new!
