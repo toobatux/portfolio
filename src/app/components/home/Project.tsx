@@ -1,10 +1,10 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import ChevronRight from "@mui/icons-material/ChevronRight";
 
 interface ProjectProps {
-  setBackground: (color: string) => void;
+  date: string;
   link: string;
-  bgColor: string;
   src: StaticImageData;
   alt: string;
   title: string;
@@ -13,9 +13,8 @@ interface ProjectProps {
 }
 
 export default function Project({
-  setBackground,
+  date,
   link,
-  bgColor,
   src,
   alt,
   title,
@@ -23,47 +22,46 @@ export default function Project({
   tools,
 }: ProjectProps) {
   return (
-    <Link href={link} prefetch={false}>
-      <div
-        className="flex items-center bg-white/5 hover:bg-white/10 shadow-lg transition-colors duration-100 backdrop-blur-lg rounded-lg p-5 mb-4"
-        onMouseEnter={() => setBackground(bgColor)}
-        onMouseLeave={() => setBackground("bg-slate-800")}
-      >
-        <div className="flex flex-col w-full">
-          <div className="flex items-center w-full mb-3">
-            {/* Project Image */}
-            <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
-              <Image
-                src={src}
-                alt={alt}
-                fill
-                sizes="(max-width: 48px)"
-                className="object-cover"
-              />
-            </div>
-
-            {/* Title and Subtitle */}
-            <div className="flex flex-col w-full">
-              <p className="block text-neutral-200 text-lg font-bold">
-                {title}
-              </p>
-              <p className="block text-neutral-300">{description}</p>
-            </div>
+    <>
+      <hr className="w-full border border-white/5" />
+      <Link href={link} prefetch={false}>
+        {/* <div className="flex flex-col md:flex-row md:gap-8 items-center group border-t border-t-white/10 transition-colors duration-200 backdrop-blur-lg py-8 px-0 md:px-0"> */}
+        <div className="flex flex-col md:flex-row md:gap-8 items-center group hover:bg-white/5 my-2 group transition-colors duration-200 rounded-2xl p-5">
+          {/* Project Image */}
+          <div className="relative w-full md:h-[200px] md:max-w-[300px] min-h-[200px] md:max-h-[360px] rounded-3xl overflow-hidden mb-4 md:mb-0 transition-all">
+            <Image
+              src={src}
+              alt={alt}
+              width={900}
+              height={900}
+              // layout="responsive"
+              className="object-cover w-full h-full rounded-xl bg-black transition-transform duration-300" // The image will now scale based on the container's width
+            />
           </div>
 
-          {/* Tags */}
-          <div className="flex py-1 items-center flex-wrap gap-y-2">
-            {tools.map((tool, index) => (
-              <div
-                key={index}
-                className="bg-white/10 rounded-full px-3 py-1 text-white/50 text-xs me-1.5"
-              >
-                {tool}
+          {/* Title and Subtitle */}
+          <div className="flex flex-col h-full w-full space-y-6">
+            <div className="flex flex-col flex-grow">
+              <p className="block text-white font-bold text-lg mb-2">{title}</p>
+              <p className="block text-white/50 mb-4">{description}</p>
+              <div className="flex items-center flex-wrap gap-y-2">
+                {tools.map((tool, index) => (
+                  <div
+                    key={index}
+                    className="bg-white/5 rounded-lg px-3 py-1 text-white/40 text-xs me-1.5"
+                  >
+                    {tool}
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <div className="flex items-center mt-6 md:mt-12 gap-1">
+              <div className="text-blue-400 text-xs learn-more">Learn more</div>
+              {/* <ChevronRight className="text-blue-400 size-4 group-hover:translate-x-0.5 transition-all" /> */}
+            </div>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </>
   );
 }

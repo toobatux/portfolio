@@ -7,54 +7,16 @@ import Joji from "/public/joji.jpg";
 import DawnFM from "/public/dawnfm.jpg";
 import Link from "next/link";
 
-interface SongSectionProps {
-  setBackground: (color: string) => void;
-}
-
-const SongSection = ({ setBackground }: SongSectionProps) => {
+const SongSection = () => {
   return (
     <>
-      <p className="text-2xl font-semibold text-neutral-100 mb-4">
-        Songs for 3 AM
-      </p>
       <Song
-        setBackground={setBackground}
-        link="https://www.youtube.com/watch?v=dFr4NU9C0HE"
+        link="https://open.spotify.com/track/1XBYiRV30ykHw5f4wm6qEn?si=f84b04f97d034830"
         bgColor="bg-[#9b6b42]"
         src={TFT}
         alt="THE FIRST TIME"
         title="NIGHTS LIKE THIS"
         artist="The Kid LAROI"
-        isExplicit={false}
-      />
-      {/* <Song
-        setBackground={setBackground}
-        link="https://www.youtube.com/watch?v=p03BfZWGKDw"
-        bgColor="bg-[#6b5f3e]"
-        src={TFT2}
-        alt="THE FIRST TIME (Deluxe)"
-        title="NIGHTS LIKE THIS PT 2"
-        artist="The Kid LAROI"
-        isExplicit={true}
-      /> */}
-      <Song
-        setBackground={setBackground}
-        link="https://www.youtube.com/watch?v=kIEWJ1ljEro"
-        bgColor="bg-[#3999bf]"
-        src={Joji}
-        alt="SMITHEREENS"
-        title="Die For You"
-        artist="Joji"
-        isExplicit={false}
-      />
-      <Song
-        setBackground={setBackground}
-        link="https://www.youtube.com/watch?v=LKsgDcckur0"
-        bgColor="bg-[#2c6b83]"
-        src={DawnFM}
-        alt="DAWN FM"
-        title="Less Than Zero"
-        artist="The Weeknd"
         isExplicit={false}
       />
     </>
@@ -64,7 +26,6 @@ const SongSection = ({ setBackground }: SongSectionProps) => {
 export default SongSection;
 
 interface SongProps {
-  setBackground: (color: string) => void;
   link: string;
   bgColor: string;
   src: StaticImageData;
@@ -75,7 +36,6 @@ interface SongProps {
 }
 
 const Song = ({
-  setBackground,
   link,
   bgColor,
   src,
@@ -86,13 +46,9 @@ const Song = ({
 }: SongProps) => {
   return (
     <Link href={link} target="_blank" prefetch={false}>
-      <div
-        className="flex items-center max-h-[9rem] bg-white/5 hover:bg-white/10 shadow-lg transition-colors duration-100 backdrop-blur-lg rounded-lg p-5 mb-4"
-        onMouseEnter={() => setBackground(bgColor)}
-        onMouseLeave={() => setBackground("bg-slate-800")}
-      >
+      <div className="flex max-h-[9rem] bg-white/5 hover:bg-white/10 group backdrop-blur-lg transition-colors duration-200 rounded-3xl p-4">
         <div className="flex items-center w-full">
-          <div className="relative min-w-12 h-12 rounded-lg overflow-hidden me-4">
+          <div className="relative w-24 h-24 rounded-lg overflow-hidden me-4">
             <Image
               src={src}
               alt={alt}
@@ -101,18 +57,54 @@ const Song = ({
               className="object-cover"
             />
           </div>
-          <div className="flex flex-col w-full">
-            <p className="block text-neutral-200 font-semibold">{title}</p>
-            <div className="flex items-center">
+          <div className="flex flex-col space-y-1">
+            <p className="text-white/50 text-sm">Top Song of 2024</p>
+            <p className="block text-white text-base">{title}</p>
+            <div className="flex items-center text-sm">
               {isExplicit && (
                 <Explicit fontSize="small" className="text-neutral-300 me-1" />
               )}
-              <p className="text-neutral-400">{artist}</p>
+              <p className="text-white/50">{artist}</p>
             </div>
           </div>
-          <div className="text-white/50 ml-auto">
-            <ArrowOutward fontSize="small" />
-          </div>
+        </div>
+        <div className="text-white/50 border border-white/20 group-hover:bg-white group-hover:text-black rounded-full p-2 w-[36px] h-[36px] flex items-center justify-center transition-colors duration-200">
+          {/* <ArrowOutward fontSize="small" /> */}
+          {/* <svg
+            height="20px"
+            width="20px"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 461.001 461.001"
+            className="fill-white/50 group-hover:fill-black transition-colors"
+            // fill="#ffffff"
+            // stroke="#ffffff"
+          >
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  // style={{ fill: "#ffffff" }}
+                  d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"
+                ></path>
+              </g>
+            </g>
+          </svg> */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20px"
+            height="20px"
+            viewBox="0 0 50 50"
+            className="fill-white/50 group-hover:fill-black transition-colors"
+          >
+            <path d="M25.009,1.982C12.322,1.982,2,12.304,2,24.991S12.322,48,25.009,48s23.009-10.321,23.009-23.009S37.696,1.982,25.009,1.982z M34.748,35.333c-0.289,0.434-0.765,0.668-1.25,0.668c-0.286,0-0.575-0.081-0.831-0.252C30.194,34.1,26,33,22.5,33.001 c-3.714,0.002-6.498,0.914-6.526,0.923c-0.784,0.266-1.635-0.162-1.897-0.948s0.163-1.636,0.949-1.897 c0.132-0.044,3.279-1.075,7.474-1.077C26,30,30.868,30.944,34.332,33.253C35.022,33.713,35.208,34.644,34.748,35.333z M37.74,29.193 c-0.325,0.522-0.886,0.809-1.459,0.809c-0.31,0-0.624-0.083-0.906-0.26c-4.484-2.794-9.092-3.385-13.062-3.35 c-4.482,0.04-8.066,0.895-8.127,0.913c-0.907,0.258-1.861-0.272-2.12-1.183c-0.259-0.913,0.272-1.862,1.184-2.12 c0.277-0.079,3.854-0.959,8.751-1c4.465-0.037,10.029,0.61,15.191,3.826C37.995,27.328,38.242,28.388,37.74,29.193z M40.725,22.013 C40.352,22.647,39.684,23,38.998,23c-0.344,0-0.692-0.089-1.011-0.275c-5.226-3.068-11.58-3.719-15.99-3.725 c-0.021,0-0.042,0-0.063,0c-5.333,0-9.44,0.938-9.481,0.948c-1.078,0.247-2.151-0.419-2.401-1.495 c-0.25-1.075,0.417-2.149,1.492-2.4C11.729,16.01,16.117,15,21.934,15c0.023,0,0.046,0,0.069,0 c4.905,0.007,12.011,0.753,18.01,4.275C40.965,19.835,41.284,21.061,40.725,22.013z"></path>
+          </svg>
         </div>
       </div>
     </Link>
