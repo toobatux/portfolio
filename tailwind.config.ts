@@ -28,11 +28,13 @@ const config: Config = {
         slidein: {
           from: {
             opacity: "0",
-            transform: "translateY(10px)",
+            transform: "translateY(5px)",
+            filter: "blur(5px)",
           },
           to: {
             opacity: "1",
             transform: "translateY(0)",
+            filter: "blur(0px)",
           },
         },
         // blob: {

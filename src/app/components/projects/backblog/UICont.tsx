@@ -1,8 +1,8 @@
 const UICont = () => {
   return (
     <>
-      <div className="h-full bg-white/5 p-5 rounded-xl text-gray-300">
-        <div className="text-2xl font-semibold text-gray-200 mb-2">
+      <div className="h-full">
+        <div className="text-2xl font-semibold text-white/90 mb-2">
           User Interface: Continued
         </div>
         <p className="block mt-4">

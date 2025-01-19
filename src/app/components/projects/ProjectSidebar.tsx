@@ -15,18 +15,19 @@ interface ProjectSidebarProps {
 export default function ProjectSidebar({ projects }: ProjectSidebarProps) {
   return (
     <div className="w-full">
-      <div className="flex justify-between mb-2">
-        <div className="text-gray-200 font-semibold">Other Projects</div>
-        <div className="flex lg:hidden">
-          <Link
-            href="/projects/"
-            className="flex hover:underline text-gray-400 items-end"
-          >
-            <div className="text-gray-400 font-semibold">See more</div>
-          </Link>
+      <div className="flex justify-between mb-6">
+        <div className="text-2xl font-semibold text-neutral-100 flex items-center">
+          Other Projects
         </div>
+        <Link
+          href="/projects/"
+          className="flex text-white rounded-full hover:text-black hover:bg-white border-2 border-white/10 px-4 py-2 transition-all duration-300"
+          prefetch={false}
+        >
+          See more
+        </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:space-x-2 lg:block lg:space-x-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:space-x-2">
         {projects.map((project, index) => (
           <div key={index} className="mb-2">
             <Project
@@ -37,14 +38,6 @@ export default function ProjectSidebar({ projects }: ProjectSidebarProps) {
             />
           </div>
         ))}
-      </div>
-      <div className="hidden lg:block">
-        <Link
-          href="/projects/"
-          className="flex items-end hover:underline text-gray-400 justify-center"
-        >
-          <div className="text-gray-400 font-semibold">See more</div>
-        </Link>
       </div>
     </div>
   );

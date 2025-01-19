@@ -1,4 +1,4 @@
-import Link from "next/link";
+"use client";
 
 interface Section {
   id: string;
@@ -26,8 +26,8 @@ const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
 
 export default function SectionSidebar({ sections }: SectionSidebarProps) {
   return (
-    <div className="w-full">
-      <div className="text-gray-200 font-semibold mb-2 px-2">On this page</div>
+    <>
+      <div className="text-white/90 font-semibold mb-2 px-2">On this page</div>
       <div className="flex flex-col space-y-1">
         {sections.map((section) => (
           <a
@@ -36,10 +36,10 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
             onClick={(e) => handleScroll(e, section.id)}
             className="flex items-center  hover:bg-white/10 rounded-lg p-2"
           >
-            <p className="block text-sm text-gray-400">{section.title}</p>
+            <p className="block text-sm text-white/55">{section.title}</p>
           </a>
         ))}
       </div>
-    </div>
+    </>
   );
 }
