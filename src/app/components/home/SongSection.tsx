@@ -46,7 +46,7 @@ const Song = ({
 }: SongProps) => {
   return (
     <Link href={link} target="_blank" prefetch={false}>
-      <div className="flex max-h-[9rem] bg-white/5 hover:bg-white/10 group backdrop-blur-lg transition-colors duration-200 rounded-3xl p-4">
+      <div className="flex max-h-[9rem] bg-white/5 hover:bg-white/10 group transition-colors duration-200 rounded-3xl p-4">
         <div className="flex items-center w-full">
           <div className="relative w-24 h-24 rounded-lg overflow-hidden me-4">
             <Image
@@ -69,33 +69,6 @@ const Song = ({
           </div>
         </div>
         <div className="text-white/50 border border-white/20 group-hover:bg-white group-hover:text-black rounded-full p-2 w-[36px] h-[36px] flex items-center justify-center transition-colors duration-200">
-          {/* <ArrowOutward fontSize="small" /> */}
-          {/* <svg
-            height="20px"
-            width="20px"
-            version="1.1"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 461.001 461.001"
-            className="fill-white/50 group-hover:fill-black transition-colors"
-            // fill="#ffffff"
-            // stroke="#ffffff"
-          >
-            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <g>
-                <path
-                  // style={{ fill: "#ffffff" }}
-                  d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"
-                ></path>
-              </g>
-            </g>
-          </svg> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20px"

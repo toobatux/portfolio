@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <div className={`${background}`}>
         {/* h-[35rem] */}
-        <div className="absolute inset-0 bg-grad h-screen opacity-80"></div>
+        <div className="absolute inset-0 bg-grad h-[40rem] opacity-80"></div>
       </div>
       <div className="relative h-full w-full">
         <main className="flex min-h-screen flex-col justify-between items-center md:px-8 md:pt-8">
@@ -52,7 +52,28 @@ export default function Home() {
             {/* Right Column */}
             <div className="p-6">
               <div className="animate-slidein [--slidein-delay:600ms] opacity-0">
+                <div className="flex justify-between mb-8">
+                  <div className="text-2xl font-semibold text-neutral-100 flex items-center">
+                    Projects
+                  </div>
+                  <Link
+                    href="/projects/"
+                    className="flex text-white rounded-full hover:text-black hover:bg-white border-2 border-white/10 px-4 py-2 transition-all duration-300"
+                    prefetch={false}
+                  >
+                    All projects
+                  </Link>
+                </div>
                 <ProjectsSection setBackground={setBackground} />
+                <div className="flex items-center justify-center mt-4 mb-12">
+                  <Link
+                    href="/projects/"
+                    className="inline-block text-white rounded-full hover:text-black hover:bg-white border-2 border-white/10 px-4 py-2 transition-all duration-300"
+                    prefetch={false}
+                  >
+                    See more
+                  </Link>
+                </div>
               </div>
               {/* <div className="animate-slidein [--slidein-delay:1400ms] opacity-0">
                 <SongSection setBackground={setBackground} />

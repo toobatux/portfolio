@@ -16,9 +16,7 @@ export default function ProjectLayout({
     <>
       <script>0</script>
       <Navbar />
-      <div
-        className={`absolute inset-0 bg-slate-800 bg-[size:20px_20px] bg-opacity-15 transition-colors duration-500`}
-      ></div>
+      <div className="bg-neutral-950"></div>
       <div className="relative min-h-screen flex flex-col lg:pt-8">
         <div className="flex justify-center">
           <div className="flex w-full justify-center">

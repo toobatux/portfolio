@@ -148,9 +148,9 @@ const Section = ({ title, children }: SectionProps) => (
 );
 
 const Progression = () => (
-  <article className="h-full bg-white/5 p-5 rounded-xl text-neutral-300">
-    <header className="text-neutral-200">
-      <h1 className="text-2xl font-semibold">Progression</h1>
+  <article className="h-full">
+    <header className="">
+      <h1 className="text-2xl font-semibold text-white/90">Progression</h1>
       <p className="mt-4">
         This straightforward design was not immediate and required several
         rounds of user testing and revisions. The first prototype merely served
@@ -160,7 +160,7 @@ const Progression = () => (
     </header>
 
     <Section title="First Iteration">
-      <p>
+      <p className="text-white/55">
         The first iteration consists of only a few pages and allowed our group
         to experiment with how certain features of the app could be visualized.
         This example features two home pages, with the first showing a large
@@ -174,7 +174,7 @@ const Progression = () => (
     </Section>
 
     <Section title="Second Iteration">
-      <p>
+      <p className="text-white/55">
         The second iteration features several improvements over the last. The
         &quot;Up Next...&quot; section now has larger buttons and a clear
         separation between title, date, and rating. Each log now also includes
@@ -182,7 +182,7 @@ const Progression = () => (
         distinguish logs.
       </p>
       <ImageBlock src={SecondIter} alt="Second Iteration" />
-      <p>
+      <p className="text-white/55">
         The logs in both prototypes can be scrolled horizontally to show all
         their entries. The log page can also be accessed by clicking their
         titles, giving users control over the log and making it easier to see
@@ -191,7 +191,7 @@ const Progression = () => (
     </Section>
 
     <Section title="Final Iteration">
-      <p>
+      <p className="text-white/55">
         The final iteration is a significant improvement upon the previous ones.
         Although horizontal scrolling on the home page enabled users to view log
         contents quickly, there was no simple way to include log features
@@ -200,14 +200,14 @@ const Progression = () => (
         draggable, with the top-left tile influencing the &quot;What&apos;s
         Next?&quot; section.
       </p>
-      <p>
+      <p className="text-white/55">
         All buttons were changed to a bright blue color, creating contrast with
         the background. A swiping feature replaced check buttons, allowing users
         to swipe left on a movie to mark it as complete, moving it to a
         &quot;Watched&quot; section.
       </p>
       <ImageBlock src={FinalIter} alt="Final Iteration" />
-      <p>
+      <p className="text-white/55">
         The movie detail page also received an overhaul, now featuring a movie
         poster, background image, and streaming providers. While many more pages
         could be discussed, I am proud of the final product. User test results

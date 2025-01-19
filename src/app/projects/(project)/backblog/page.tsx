@@ -1,10 +1,9 @@
 "use client";
-import BackBlogPic from "/public/backblog.png";
+import BackBlogPic from "/public/backblogWide.png";
 import GoyangiPic from "/public/goyangi.jpg";
 import WatchTowerPic from "/public/watchtower.jpg";
 import Overview from "@/app/components/projects/backblog/Overview";
 import System from "@/app/components/projects/backblog/System";
-import Background from "@/app/components/projects/backblog/Background";
 import Header from "@/app/components/projects/Header";
 import ScrollTop from "@/app/components/home/ScrollTop";
 import Responsibilities from "@/app/components/projects/backblog/Responsibilities";
@@ -15,15 +14,18 @@ import Progression from "@/app/components/projects/backblog/Progression";
 import Links from "@/app/components/projects/backblog/Links";
 import ProjectSidebar from "@/app/components/projects/ProjectSidebar";
 import SectionSidebar from "@/app/components/projects/SectionSidebar";
+import Image from "next/image";
+import Motivation from "@/app/components/projects/backblog/Motivation";
+import Conclusion from "@/app/components/projects/backblog/Conclusion";
 
 const sections = [
   { id: "overview", title: "Overview" },
+  { id: "links", title: "Links" },
+  { id: "motivation", title: "Motivation" },
   { id: "system", title: "System" },
-  { id: "ui", title: "User Interface" },
-  { id: "background", title: "Background" },
   { id: "responsibilities", title: "Responsibilities" },
-  { id: "uicont", title: "UI: Continued" },
-  { id: "progression", title: "Progression" },
+  { id: "ui", title: "User Interface" },
+  { id: "concl", title: "Conclusion" },
 ];
 
 const projects = [
@@ -45,64 +47,59 @@ export default function BackBlog() {
   const tools = ["Kotlin", "Compose", "Swift", "Swift UI"];
   return (
     <>
-      <aside className="hidden p-4 md:flex md:justify-center md:flex-none w-48">
+      {/* <aside className="hidden p-4 md:flex md:justify-center md:flex-none w-48">
         <div className="fixed w-40">
           <SectionSidebar sections={sections} />
         </div>
-      </aside>
+      </aside> */}
       <div className="flex flex-col max-w-[50rem] w-full m-4 lg:mx-12">
-        <div className="mb-6">
-          <Header
-            title={"BackBlog"}
-            tagLine="Movies for Everyone"
-            background="bg-blue-800"
-            image={BackBlogPic}
-            tools={tools}
-          />
-          <Links />
-        </div>
-        <div className="mb-6">
-          <div id="overview">
-            <Overview />
+        <Header
+          title="BackBlog: A Collaborative Movie Tracker for iOS and Android"
+          year="2023 - 2024"
+          image={BackBlogPic}
+          tools={tools}
+          background="bg-[#3B414C]"
+        />
+
+        <div className="text-white/55 space-y-14">
+          <div className="mt-12">
+            <div id="overview">
+              <Overview />
+            </div>
           </div>
-        </div>
-        <div className="mb-6">
-          <div id="system">
-            <System />
+          <div className="mt-12">
+            <div id="links">
+              <Links />
+            </div>
+          </div>
+          <div className="mt-12">
+            <div id="motivation">
+              <Motivation />
+            </div>
+          </div>
+          <div className="mb-6">
+            <div id="system">
+              <System />
+            </div>
+          </div>
+          <div className="mb-6">
+            <div id="responsibilities">
+              <Responsibilities />
+            </div>
+          </div>
+          <div className="mb-6">
+            <div id="ui">
+              <UIOverview />
+            </div>
+          </div>
+          <div className="mb-6">
+            <div id="concl">
+              <Conclusion />
+            </div>
           </div>
         </div>
 
-        <div className="mb-6">
-          <div id="ui">
-            <UIOverview />
-          </div>
-        </div>
-
-        <div className="mb-6">
-          <div id="background">
-            <Background />
-          </div>
-        </div>
-
-        <div className="mb-6">
-          <div id="responsibilities">
-            <Responsibilities />
-          </div>
-        </div>
-
-        <div className="mb-6">
-          <div id="uicont">
-            <UICont />
-          </div>
-        </div>
-
-        <div className="mb-6">
-          <div id="progression">
-            <Progression />
-          </div>
-        </div>
-
-        <div className="lg:hidden">
+        <div className="my-12">
           {/* <OtherProjects /> */}
           <ProjectSidebar projects={projects} />
         </div>
@@ -111,9 +108,27 @@ export default function BackBlog() {
           <ScrollTop />
         </div>
       </div>
-      <aside className="hidden p-4 lg:flex lg:justify-center lg:flex-none w-48">
+      {/* <aside className="hidden p-4 lg:flex lg:justify-center lg:flex-none w-48">
         <div className="fixed w-40">
-          <ProjectSidebar projects={projects} />
+          <div className="w-full flex flex-col justify-between">
+            <SectionSidebar sections={sections} />
+            <div className="mt-auto">
+              <ScrollTop />
+            </div>
+          </div>
+        </div>
+      </aside> */}
+      <aside className="hidden lg:flex lg:justify-center lg:flex-none w-48">
+        <div className="fixed w-40">
+          <div className="w-full flex flex-col">
+            {/* Section Sidebar */}
+            <SectionSidebar sections={sections} />
+          </div>
+
+          {/* ScrollTop fixed at the bottom of the screen */}
+          <div className="fixed bottom-10">
+            <ScrollTop />
+          </div>
         </div>
       </aside>
     </>

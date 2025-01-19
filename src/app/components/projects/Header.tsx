@@ -2,49 +2,39 @@ import Image, { StaticImageData } from "next/image";
 
 interface HeaderProps {
   title: string;
-  tagLine?: string;
-  background: string;
+  year?: string;
   image: StaticImageData;
   tools: string[];
+  background: string;
 }
 
-const Header = ({ title, tagLine, background, image, tools }: HeaderProps) => {
+const Header = ({ title, year, image, tools, background }: HeaderProps) => {
   return (
     <>
-      <div
-        className={`w-full h-40 md:h-64 ${background} bg-[size:20px_20px] bg-opacity-20 rounded-lg px-8`}
-      >
-        <div className="relative flex justify-between items-center h-full w-full">
-          <div className="flex flex-col">
-            <p className="block text-neutral-200 text-4xl font-bold">{title}</p>
-            <p className="text-neutral-400 mt-1">{tagLine}</p>
-          </div>
-          <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-xl overflow-hidden">
-            <Image
-              src={image}
-              alt={title}
-              fill
-              sizes="(max-width: 128px)"
-              className="object-cover p-2 rounded-2xl"
-            />
-          </div>
+      <div className="space-y-4 md:space-y-6 mb-10">
+        <div className="text-white/50">{year}</div>
+        <h1 className="text-white text-2xl md:text-4xl font-semibold transition-transform">
+          {title}
+        </h1>
+        <div className="flex items-center flex-wrap gap-y-2">
+          {tools.map((tool, index) => (
+            <div
+              key={index}
+              className="bg-white/5 rounded-lg px-3 py-1 text-white/45 text-xs me-1.5"
+            >
+              {tool}
+            </div>
+          ))}
         </div>
       </div>
-      <div className="relative">
-        <div className="flex w-full mt-4">
-          <div className="flex flex-col">
-            <div className="flex items-center">
-              {tools.map((tool, index) => (
-                <div
-                  key={index}
-                  className="bg-white/10 rounded-full px-3 py-1 text-white/50 text-xs me-1.5"
-                >
-                  {tool}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+      <div
+        className={`relative w-full max-h-[25rem] overflow-hidden rounded-xl ${background}`}
+      >
+        <Image
+          src={image}
+          alt="BackBlog"
+          className="object-contain w-full h-full"
+        />
       </div>
     </>
   );
