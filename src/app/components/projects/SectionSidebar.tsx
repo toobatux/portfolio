@@ -113,10 +113,10 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
             key={section.id}
             href={`#${section.id}`}
             onClick={(e) => handleScroll(e, section.id)}
-            className="flex items-center hover:bg-white/10 rounded-lg p-2"
+            className="flex items-center group rounded-xl p-2"
           >
             <p
-              className={`block text-sm ${
+              className={`block text-sm group-hover:underline ${
                 activeSection === section.id ? "text-white" : "text-white/55"
               }`}
             >
