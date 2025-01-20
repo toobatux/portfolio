@@ -53,23 +53,24 @@ interface ProjectInterface {
 const Project = ({ img, title, tagLine, link }: ProjectInterface) => {
   return (
     <Link href={link} prefetch={false}>
-      <div className="flex flex-row lg:flex-col bg-white/5 hover:bg-white/10 shadow-lg backdrop-blur-lg rounded-lg p-4">
-        <div className="relative w-12 h-12 rounded-lg overflow-hidden me-4">
-          <Image
-            src={img}
-            alt={title}
-            sizes="(max-width: 48px)"
-            fill
-            placeholder="blur"
-            className="object-cover"
-          />
-        </div>
-        {/* Text Container */}
-        <div className="flex flex-col justify-center">
-          <p className="block text-gray-200 text-lg font-bold lg:my-2">
-            {title}
-          </p>
-          <p className="block text-gray-400 text-sm">{tagLine}</p>
+      <div className="flex h-[102px] items-center bg-white/5 border border-white/10 backdrop-blur-lg rounded-xl shadow-lg p-2 hover:bg-white/10 transition-colors">
+        <div className="flex w-full p-3">
+          <div className="flex flex-col gap-1 justify-center">
+            <div className="text-white/90 text-sm">{title}</div>
+            <div className="text-white/55 text-xs">{tagLine}</div>
+          </div>
+          <div className="text-white/90 ml-auto">
+            <div className="relative w-12 h-12 rounded-lg overflow-hidden">
+              <Image
+                src={img}
+                alt={title}
+                sizes="(max-width: 48px)"
+                fill
+                placeholder="blur"
+                className="object-cover"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </Link>
