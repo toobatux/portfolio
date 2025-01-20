@@ -59,3 +59,7 @@ ul {
 ul li::marker {
   color: slategrey;
 }
+
+.profile {
+  line-height: 1.2rem;
+}

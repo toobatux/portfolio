@@ -42,7 +42,7 @@ const ProfileCard = ({ isOpenToWork, location }: ProfileProps) => {
                 Software Engineer
               </p>
             </div>
-            <p className="text-white/55">
+            <p className="text-white/55 profile">
               BSc in Information Systems. Working in the JS ecosystem.
             </p>
           </div>
