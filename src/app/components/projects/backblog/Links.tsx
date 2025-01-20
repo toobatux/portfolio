@@ -4,7 +4,7 @@ import Link from "next/link";
 const Links = () => {
   return (
     <section className="h-full">
-      <div className="text-2xl font-semibold text-white/90 mb-6">Links</div>
+      <div className="text-2xl font-medium text-white/90 mb-6">Links</div>
       <div className="relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 mb-4">
           <Link

@@ -18,9 +18,7 @@ const pages = [
 
 const UIOverview = () => (
   <div className="h-full">
-    <h2 className="text-2xl font-semibold text-white/90 mb-2">
-      User Interface
-    </h2>
+    <h2 className="text-2xl font-medium text-white/90 mb-2">User Interface</h2>
     <p className="my-4">
       Given the app&apos;s extensive feature set, it was essential to design it
       so that opportunities for confusion were minimized. I achieved this by

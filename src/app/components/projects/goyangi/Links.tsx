@@ -4,7 +4,7 @@ import Link from "next/link";
 const Links = () => {
   return (
     <section className="h-full">
-      <div className="text-2xl font-semibold text-white/90 mb-6">Links</div>
+      <div className="text-2xl font-medium text-white/90 mb-6">Links</div>
       <Link
         href="https://github.com/toobatux/Photo-App"
         target="_blank"

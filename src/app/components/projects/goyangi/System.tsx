@@ -6,7 +6,7 @@ const System = () => {
   return (
     <div className="">
       <div className="h-full rounded-xl bg-white/5 p-5 text-gray-300">
-        <div className="text-2xl font-semibold text-gray-200 mb-2">System</div>
+        <div className="text-2xl font-medium text-white/90 mb-2">System</div>
         <p className="block mt-4">
           The website was developed using the Django framework.
         </p>

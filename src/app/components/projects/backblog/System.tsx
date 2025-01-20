@@ -6,7 +6,7 @@ import { memo } from "react";
 const System = () => {
   return (
     <div className="h-full">
-      <div className="text-2xl font-semibold text-white/90 mb-6">System</div>
+      <div className="text-2xl font-medium text-white/90 mb-6">System</div>
       <div className="space-y-4">
         <p className="block">
           Both apps were developed independently on their native platforms. The

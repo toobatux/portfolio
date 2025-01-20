@@ -27,9 +27,9 @@ export default function Project({
 }: ProjectProps) {
   const projectContent = (
     <div
-      className={`flex flex-col md:flex-row md:gap-8 items-center group ${
+      className={`flex flex-col md:flex-row md:gap-8 group ${
         isDisabled ? "pointer-events-none" : "hover:bg-white/5"
-      } my-2 group transition-all duration-200 rounded-2xl p-5`}
+      } my-4 group transition-all duration-200 rounded-2xl p-5`}
     >
       {/* Project Image */}
       {/* <div className="relative w-full md:h-[200px] md:max-w-[300px] min-h-[200px] max-h-[300px] md:max-h-[360px] rounded-3xl overflow-hidden mb-4 md:mb-0 transition-all">
@@ -42,7 +42,7 @@ export default function Project({
         />
       </div> */}
       <div
-        className={`flex w-full max-h-[300px] md:h-[200px] md:max-w-[300px] justify-center ${background} rounded-xl mb-4 md:mb-0`}
+        className={`flex w-full h-[220px] md:h-[200px] md:max-w-[300px] justify-center ${background} rounded-xl mb-4 md:mb-0`}
       >
         <Image
           src={src}
@@ -54,11 +54,14 @@ export default function Project({
       </div>
 
       {/* Title and Subtitle */}
-      <div className="flex flex-col h-full w-full space-y-6">
+      <div className="flex flex-col h-[inherit] w-full justify-between md:my-2">
         <div className="flex flex-col flex-grow">
-          <p className="block text-white font-bold text-lg mb-2">{title}</p>
-          <p className="block text-white/50 mb-4">{description}</p>
-          <div className="flex items-center flex-wrap gap-y-2">
+          <div className="space-y-1 mb-6">
+            <p className="text-white/55">{date}</p>
+            <p className="block text-white font-medium text-xl mb-2">{title}</p>
+            <p className="block text-white/50 mb-4">{description}</p>
+          </div>
+          {/* <div className="flex items-center flex-wrap gap-y-2">
             {tools.map((tool, index) => (
               <div
                 key={index}
@@ -67,10 +70,10 @@ export default function Project({
                 {tool}
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
         {!isDisabled && (
-          <div className="flex items-center mt-6 md:mt-12 gap-1">
+          <div className="flex items-center gap-1 mt-2 md:mt-0">
             <div className="text-blue-400 text-xs learn-more">Learn more</div>
           </div>
         )}

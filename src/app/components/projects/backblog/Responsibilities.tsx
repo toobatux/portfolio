@@ -1,7 +1,7 @@
 const Responsibilities = () => {
   return (
     <div className="h-full">
-      <div className="text-2xl font-semibold text-white/90 mb-6">
+      <div className="text-2xl font-medium text-white/90 mb-6">
         Responsibilities
       </div>
       <div className="space-y-4">

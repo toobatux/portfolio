@@ -17,7 +17,7 @@ import { Visibility } from "@mui/icons-material";
 
 // const inter = Cabin({ weight: ["400", "700"], subsets: ["latin"] });
 const font = Onest({
-  weight: ["400", "700"],
+  weight: ["400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
 });

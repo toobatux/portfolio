@@ -2,7 +2,7 @@ const Demo = () => {
   return (
     <>
       <section className="h-full">
-        <div className="text-2xl font-semibold text-white/90 mb-6">
+        <div className="text-2xl font-medium text-white/90 mb-6">
           Demo Video
         </div>
         <div className="flex justify-center bg-black rounded-lg mt-4 h-[15rem] md:h-[20rem] lg:h-[25rem]">

@@ -34,11 +34,11 @@ const ProfileCard = ({ isOpenToWork, location }: ProfileProps) => {
             />
           </div> */}
           <div className="mt-8">
-            <h1 className="block text-3xl md:text-4xl text-neutral-100 font-bold mb-1">
+            <h1 className="block text-3xl md:text-4xl text-white font-bold mb-1">
               Tom Krusinski
             </h1>
             <div className="flex items-center mb-8">
-              <p className="text-xl md:text-2xl text-white/55">
+              <p className="text-xl md:text-2xl text-white/55 font-medium">
                 Software Engineer
               </p>
             </div>

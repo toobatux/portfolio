@@ -99,11 +99,10 @@ export default function BackBlog() {
           </div>
         </div>
 
-        <div className="my-12">
+        <div className="mt-[10rem]">
           {/* <OtherProjects /> */}
           <ProjectSidebar projects={projects} />
         </div>
-
         <div className="flex items-center justify-center my-12">
           <ScrollTop />
         </div>

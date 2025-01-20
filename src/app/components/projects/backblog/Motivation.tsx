@@ -4,9 +4,7 @@ import Process from "/public/geniuses.png";
 const Motivation = () => {
   return (
     <section className="h-full">
-      <div className="text-2xl font-semibold text-white/90 mb-6">
-        Motivation
-      </div>
+      <div className="text-2xl font-medium text-white/90 mb-6">Motivation</div>
 
       <p>
         BackBlog was created by myself and four other students as a year-long

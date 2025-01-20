@@ -150,7 +150,7 @@ const Section = ({ title, children }: SectionProps) => (
 const Progression = () => (
   <article className="h-full">
     <header className="">
-      <h1 className="text-2xl font-semibold text-white/90">Progression</h1>
+      <h1 className="text-2xl font-medium text-white/90">Progression</h1>
       <p className="mt-4">
         This straightforward design was not immediate and required several
         rounds of user testing and revisions. The first prototype merely served

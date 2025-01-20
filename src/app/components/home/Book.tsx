@@ -23,7 +23,7 @@ const Book = () => {
               />
             </div>
             <div className="flex flex-col space-y-1">
-              <p className="text-white/50 text-sm">Currently Reading</p>
+              <p className="text-white/50">Currently Reading</p>
               <p className="block text-white text-base line-clamp-2">
                 this & Object Prototypes
               </p>

@@ -58,14 +58,9 @@ const Song = ({
             />
           </div>
           <div className="flex flex-col space-y-1">
-            <p className="text-white/50 text-sm">Top Song of 2024</p>
+            <p className="text-white/50">Top Song of 2024</p>
             <p className="block text-white text-base">{title}</p>
-            <div className="flex items-center text-sm">
-              {isExplicit && (
-                <Explicit fontSize="small" className="text-neutral-300 me-1" />
-              )}
-              <p className="text-white/50">{artist}</p>
-            </div>
+            <p className="text-white/50">{artist}</p>
           </div>
         </div>
         <div className="text-white/50 border border-white/20 group-hover:bg-white group-hover:text-black rounded-full p-2 w-[36px] h-[36px] flex items-center justify-center transition-colors duration-200">

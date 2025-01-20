@@ -26,7 +26,7 @@ export default function ProjectsSection({
           link="/projects/studypal"
           src={Chingu}
           alt="StudyPal"
-          title="StudyPal"
+          title="StudyPal: An Educational Platform"
           description="An educational web app with flashcards and guides"
           tools={["React", "TypeScript", "Tailwind", "Next.js"]}
           isDisabled={false}
@@ -37,7 +37,7 @@ export default function ProjectsSection({
           link="/projects/backblog"
           src={BackBlog}
           alt="BackBlog"
-          title="BackBlog"
+          title="BackBlog: A Collaborative Movie Tracker for iOS and Android"
           description="A collaborative movie playlisting app"
           tools={["Kotlin", "Jetpack Compose", "Swift", "SwiftUI"]}
           isDisabled={false}
@@ -48,7 +48,7 @@ export default function ProjectsSection({
           link="/projects/goyangi"
           src={Goyangi}
           alt="Goyangi"
-          title="Goyangi"
+          title="Goyangi: A Social Network for Cat Photos"
           description="A social network for cat photos"
           tools={["Django", "Python", "Bootstrap", "SQLite"]}
           isDisabled={false}
@@ -59,7 +59,7 @@ export default function ProjectsSection({
           link="/projects/watchtower"
           src={WatchTower}
           alt="WatchTower"
-          title="WatchTower"
+          title="WatchTower: A Security Camera Livestream"
           description="A security camera live-stream"
           tools={["Django", "Python", "Bootstrap", "SQLite"]}
           isDisabled={false}
