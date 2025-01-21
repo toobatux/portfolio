@@ -10,11 +10,13 @@ const Navbar = () => {
   return (
     <div className="sticky top-0 z-40 w-full backdrop-blur-md flex border-b border-white/5">
       <div className="flex w-full justify-center m-2">
-        <div className="flex-auto max-w-[80rem]">
+        <div className="flex-auto max-w-6xl">
           <div className="p-4">
             <div className="relative flex items-center">
               <Link href="/" className="flex items-center space-x-2 me-5">
-                <div className="text-gray-200 font-bold">Home</div>
+                <div className="text-gray-200 font-bold hover:underline">
+                  Home
+                </div>
               </Link>
               {navLinks.map((link) => {
                 const isActive = pathName === link.href;
@@ -26,7 +28,7 @@ const Navbar = () => {
                     className={
                       isActive
                         ? "text-gray-200 font-bold underline ps-2 pe-2"
-                        : "text-gray-200 font-bold no-underline ps-2 pe-2"
+                        : "text-gray-200 font-bold hover:underline no-underline ps-2 pe-2"
                     }
                   >
                     {link.name}

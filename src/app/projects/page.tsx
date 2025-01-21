@@ -25,7 +25,7 @@ export default function Projects() {
             <ProjectsSection setBackground={() => {}} />
             <Project
               date="2022"
-              link=""
+              link="#"
               src={Foodbank}
               alt="SVC Foodbank"
               title="SVC Foodbank"

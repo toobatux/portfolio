@@ -42,7 +42,7 @@ export default function Project({
         />
       </div> */}
       <div
-        className={`flex w-full h-[220px] md:h-[200px] md:max-w-[300px] justify-center ${background} rounded-xl mb-4 md:mb-0`}
+        className={`flex w-full h-[220px] md:h-[200px] md:max-w-[300px] border border-white/5 justify-center ${background} rounded-xl mb-4 md:mb-0`}
       >
         <Image
           src={src}

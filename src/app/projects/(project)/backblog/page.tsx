@@ -52,7 +52,7 @@ export default function BackBlog() {
           <SectionSidebar sections={sections} />
         </div>
       </aside> */}
-      <div className="flex flex-col max-w-[50rem] w-full m-4 lg:mx-12">
+      <div className="flex flex-col w-full m-4 lg:mx-12">
         <Header
           title="BackBlog: A Collaborative Movie Tracker for iOS and Android"
           year="2023 - 2024"

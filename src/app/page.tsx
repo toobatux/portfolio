@@ -38,7 +38,7 @@ export default function Home() {
             </div>
 
             <div className="animate-slidein [--slidein-delay:400ms] opacity-0 overflow-x-hidden">
-              <div className="flex flex-wrap lg:flex-nowrap p-6 gap-4 mb-12 w-full h-full">
+              <div className="flex flex-wrap lg:flex-nowrap p-6 gap-4 mb-[5rem] w-full h-full">
                 <div className="lg:w-1/2 w-full flex flex-col justify-between max-w-full">
                   <About />
                 </div>
@@ -50,7 +50,7 @@ export default function Home() {
             </div>
 
             {/* Right Column */}
-            <div className="p-6">
+            <div className="lg:p-6">
               <div className="animate-slidein [--slidein-delay:600ms] opacity-0">
                 <div className="flex justify-between mb-8">
                   <div className="text-2xl font-semibold text-neutral-100 flex items-center">
@@ -65,7 +65,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <ProjectsSection setBackground={setBackground} />
-                <div className="flex items-center justify-center mt-4 mb-12">
+                <div className="flex items-center justify-center mt-8 mb-12">
                   <Link
                     href="/projects/"
                     className="inline-block text-white rounded-full hover:text-black hover:bg-white border-2 border-white/10 px-4 py-2 transition-all duration-300"

@@ -11,8 +11,10 @@ const StudyPal = () => {
   const tools = ["React", "TypeScript", "Tailwind", "Next.js"];
   return (
     <>
-      <div className="flex flex-col max-w-[50rem] w-full m-4 lg:mx-12">
-        <Alert />
+      <div className="flex flex-col w-full m-4 lg:mx-12">
+        <div className="mb-6">
+          <Alert />
+        </div>
         <Header
           title="StudyPal: An Educational Platform"
           year="2024"
