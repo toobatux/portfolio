@@ -11,7 +11,7 @@ const StudyPal = () => {
   const tools = ["React", "TypeScript", "Tailwind", "Next.js"];
   return (
     <>
-      <div className="flex flex-col w-full m-4 lg:mx-12">
+      <div className="flex flex-col w-full m-4 md:m-12 lg:my-4 lg:mx-12">
         <div className="mb-6">
           <Alert />
         </div>

@@ -20,7 +20,7 @@ export default function ProjectLayout({
       <div className="relative min-h-screen flex flex-col lg:pt-8">
         <div className="flex justify-center">
           <div className="flex w-full justify-center">
-            <div className="flex justify-center max-w-6xl">{children}</div>
+            <div className="flex justify-center max-w-[68rem]">{children}</div>
           </div>
         </div>
         <div className="flex justify-center">

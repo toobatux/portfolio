@@ -60,7 +60,9 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
 
   return (
     <>
-      <div className="text-white/90 font-semibold mb-2 px-2">On this page</div>
+      <div className="text-white/90 font-semibold mt-4 mb-2 px-2">
+        On this page
+      </div>
       <div className="flex flex-col space-y-1">
         {sections.map((section) => (
           <a

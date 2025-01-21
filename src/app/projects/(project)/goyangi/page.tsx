@@ -35,7 +35,7 @@ export default function Goyangi() {
   const tools = ["Django", "Python", "Bootstrap", "SQLite"];
   return (
     <>
-      <div className="flex flex-col w-full m-4 lg:mx-12">
+      <div className="flex flex-col w-full m-4 md:m-12 lg:my-4 lg:mx-12">
         <div className="text-white/55 space-y-14 mb-12">
           <div className="mb-4">
             <Header
