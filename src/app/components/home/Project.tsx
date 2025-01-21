@@ -56,11 +56,13 @@ export default function Project({
       {/* Title and Subtitle */}
       <div className="flex flex-col h-[inherit] w-full justify-between md:my-2">
         <div className="flex flex-col flex-grow">
-          <div className="space-y-1 mb-6">
+          <div className="space-y-2 mb-3">
             <p className="text-white/55">{date}</p>
-            <p className="block text-white font-medium text-xl mb-2">{title}</p>
-            <p className="block text-white/50 mb-4">{description}</p>
+            <p className="block text-white font-medium text-xl mb-2 article-title">
+              {title}
+            </p>
           </div>
+          <p className="block text-white/50 mb-4 profile">{description}</p>
           {/* <div className="flex items-center flex-wrap gap-y-2">
             {tools.map((tool, index) => (
               <div

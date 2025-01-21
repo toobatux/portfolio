@@ -6,8 +6,8 @@ const Overview = () => {
         <p>
           BackBlog is a{" "}
           <b className="text-white/90"> collaborative movie playlisting app</b>{" "}
-          independently developed for both iOS and Android devices. The app aims
-          to make organizing movie watchlists easy and fun!
+          developed natively for both iOS and Android devices. The app aims to
+          make organizing movie watchlists easy and fun!
         </p>
         <p>
           Create movie logs solo or with friends, search thousands of movies,

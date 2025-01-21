@@ -41,11 +41,9 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#000000" />
       </head>
-      <body className={font.className}>
+      <body className={`${font.className} bg-neutral-950`}>
         <script>0</script>
-        <div className="relative min-h-screen min-w-full bg-neutral-950">
-          {children}
-        </div>
+        <div className="min-h-screen min-w-full bg-neutral-950">{children}</div>
       </body>
     </html>
   );

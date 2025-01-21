@@ -63,3 +63,7 @@ ul li::marker {
 .profile {
   line-height: 1.2rem;
 }
+
+.article-title {
+  line-height: 1.5rem;
+}

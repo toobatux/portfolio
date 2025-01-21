@@ -27,7 +27,7 @@ export default function ProjectsSection({
           src={Chingu}
           alt="StudyPal"
           title="StudyPal: An Educational Platform"
-          description="An educational web app with flashcards and guides"
+          description="Create or discover flashcard sets and study guides to ace your next exam"
           tools={["React", "TypeScript", "Tailwind", "Next.js"]}
           isDisabled={false}
           background="bg-[#171717]"
@@ -38,7 +38,7 @@ export default function ProjectsSection({
           src={BackBlog}
           alt="BackBlog"
           title="BackBlog: A Collaborative Movie Tracker for iOS and Android"
-          description="A collaborative movie playlisting app"
+          description="Track which movies have been watched and easily pick what comes next."
           tools={["Kotlin", "Jetpack Compose", "Swift", "SwiftUI"]}
           isDisabled={false}
           background="bg-[#3B414C]"
@@ -49,7 +49,7 @@ export default function ProjectsSection({
           src={Goyangi}
           alt="Goyangi"
           title="Goyangi: A Social Network for Cat Photos"
-          description="A social network for cat photos"
+          description="Post photos of your cats, make new friends, and interact with their posts."
           tools={["Django", "Python", "Bootstrap", "SQLite"]}
           isDisabled={false}
           background="bg-[#101010]"
@@ -60,7 +60,7 @@ export default function ProjectsSection({
           src={WatchTower}
           alt="WatchTower"
           title="WatchTower: A Security Camera Livestream"
-          description="A security camera live-stream"
+          description="Stream video from your machine and track motion events"
           tools={["Django", "Python", "Bootstrap", "SQLite"]}
           isDisabled={false}
           background="bg-[#0A0A0A]"
