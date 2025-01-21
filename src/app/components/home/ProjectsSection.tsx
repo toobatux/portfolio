@@ -29,7 +29,7 @@ export default function ProjectsSection({
           title="StudyPal: An Educational Platform"
           description="Create or discover flashcard sets and study guides to ace your next exam"
           tools={["React", "TypeScript", "Tailwind", "Next.js"]}
-          isDisabled={false}
+          isDisabled={true}
           background="bg-[#171717]"
         />
         <Project
