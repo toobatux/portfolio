@@ -50,7 +50,7 @@ export default function Home() {
             </div>
 
             {/* Right Column */}
-            <div className="lg:p-6">
+            <div className="p-6">
               <div className="animate-slidein [--slidein-delay:600ms] opacity-0">
                 <div className="flex justify-between mb-8">
                   <div className="text-2xl font-semibold text-neutral-100 flex items-center">
