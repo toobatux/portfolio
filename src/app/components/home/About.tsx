@@ -7,7 +7,7 @@ const About = () => {
       <div className="border border-white/10 transition-colors duration-200 rounded-3xl p-4 h-full">
         <div className="flex h-full w-full flex-col justify-between">
           <div className="w-full items-center">
-            <p className="inline-block text-neutral-100 py-1.5 px-3 border border-white/20 rounded-xl">
+            <p className="inline-block text-neutral-100 py-1 px-3 border border-white/20 rounded-xl">
               Skills
             </p>
           </div>
