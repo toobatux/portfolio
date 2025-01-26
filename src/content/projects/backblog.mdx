@@ -1,0 +1,104 @@
+---
+title: "BackBlog: Collaborative Movie Playlisting App"
+description: "Track which movies have been watched and easily pick what comes next"
+date: "2023 - 2024"
+src: "/backblogPhone2-2.png"
+bgColor: "bg-[#3B414C]"
+author: "Tom Krusinski"
+tags:
+  - Movie App
+  - Collaborative Apps
+  - iOS Development
+  - Android Development
+  - UI/UX Design
+  - Senior Project
+headings:
+  - Overview
+  - Links
+  - Motivation
+  - System
+  - Responsibilities
+  - User Interface
+  - Conclusion
+---
+
+
+import Links from "@/app/components/projects/backblog/Links";
+import Tools from "@/app/components/projects/Tools";
+import ImageCap from "@/app/components/projects/ImageCap";
+
+###### 2023 - 2024
+
+# BackBlog: A Collaborative Movie Tracker for iOS and Android
+
+<Tools tools={["Kotlin", "Jetpack Compose", "Swift", "Swift UI"]}/>
+
+<ImageCap src="/backblogPhone2-2.png" bgColor="bg-[#3B414C]" caption="" hasBorder={false} hasCaption={false} />
+{/* ![BackBlog Image](/backblogPhone2-2.png) */}
+
+## <span id="overview">Overview</span>
+
+
+BackBlog is a **collaborative movie playlisting app** developed natively for both iOS and Android devices. The app aims to make organizing movie watchlists easy and fun!
+
+Create movie logs solo or with friends, search thousands of movies, keep track of which movies have been watched, and discover what others are watching. Use the shuffle feature to easily pick your next movie!
+
+## <span id="links">Links</span>
+<Links 
+/>
+
+## <span id="motivation">Motivation</span>
+
+BackBlog was created by myself and four other students as a year-long senior project. We were tasked with solving any problem of our choosing, so we quickly began brainstorming. After several rounds of sharing ridiculous ideas, we had nothing. Naturally, the conversation shifted focus to which TV shows and movies were consuming our time outside of class... Great.
+
+<ImageCap src="/geniuses.png" bgColor="bg-[#313338]" caption="The Creative Process" hasBorder={false} hasCaption={true}/>
+
+Through our seemingly trivial conversation about movies and TV shows, we eventually stumbled upon a shared dilemma: **the challenge of deciding what to watch next!**
+
+As broke and bored college students, we often found ourselves watching movies together, both in-person and online. This led to the problem of keeping track of which movies we had already watched with each friend group, and figuring out which one should be next on the list. And so, we set out to solve this very problem.
+
+## <span id="system">System</span>
+
+Both apps were developed independently on their native platforms. The Android version was developed using [Kotlin](https://kotlinlang.org/) and [Jetpack Compose](https://developer.android.com/compose), while the iOS version was built using [Swift](https://www.swift.org/) and [SwiftUI](https://developer.apple.com/xcode/swiftui/).
+
+[Firebase](https://firebase.google.com/) stores users, logs, and friendships (users who are not logged in may store logs locally and sync them upon login).
+
+[The Movie Database (TMDB)](https://www.themoviedb.org/?language=en-US) provides data for thousands of movies.
+
+<ImageCap src="/backblogSys.png" bgColor="bg-black" caption="System Diagram" hasBorder={true} hasCaption={true}/>
+
+The app operates seamlessly between iOS and Android devices. For example, if two users are viewing the same log on separate devices, any updates to the log will appear instantly on both devices.
+
+## <span id="responsibilities">Responsibilities</span>
+
+Given that we had an entire academic year to complete the project, we spent the first semester prototyping the interface and refining the user experience. The following semester was dedicated to building the final prototype.
+
+As the lead UI/UX designer and developer, I was responsible for both designing these prototypes as well as implementing the front-end of both applications. I used Figma to design three prototypes of increasing complexity, gathering valuable feedback from user testing at each stage. The Figma mobile app provided an excellent simulation of a real app, enabling us to collect more insightful data.
+
+The design phase proved to be quite challenging, as it required me to create a clean and intuitive interface that balanced the often conflicting needs of both developers and testers. This process frequently invovled revisiting our feature set and prioritizing the essentials to ensure we could deliver the minimum viable product on time.
+
+Once the design phase was complete, I began the development process. I built the front-end for both applications by writing reusable components for each page and integrating them with our API to display dynamic data.
+
+## <span id="user interface">User Interface</span>
+
+Given the app's extensive feature set, it was essential to design it so that opportunities for confusion were minimized. I achieved this by maintaining consistency between pages and providing a clear visual hierarchy. Each page is structured into well-defined sections with appropriate headings in the same position on every page, ensuring a familiar navigation flow.
+
+Key functions on every page are behind buttons highlighted with a distinct light blue color, which contrasts with the background and makes them easy to recognize. It was also important that tasks and actions were streamlined so they can be done in as few steps as possible. Most tasks require no more than 3 clicks to complete. Users are given feedback via toast popups for success and error messages.
+
+<ImageCap src="/FinalIter.png" bgColor="" caption="Final Iteration" hasBorder={false} hasCaption={true}/>
+
+The first iteration consisted of just a few pages and allowed our team to explore how various app features could be visually represented. While there were some issues, such as overlapping elements, inconsistent sizing, and a lack of focus on key features, this early version provided a valuable foundation for refinement.
+
+<ImageCap src="/FirstIter.png" bgColor="" caption="First Iteration" hasBorder={false} hasCaption={true}/>
+
+The second iteration introduced several enhancements over the first, including a clearer separation of elements and the use of avatars to indicate which user added each movie. New pages, such as the movie details page, were also incorporated. However, the ability to easily create a new log from the landing page was still missing.
+
+Initially, logs were horizontally scrollable, allowing users to quickly view their contents. I had considered including additional log features, such as adding and shuffling, in this section; however, doing so resulted in a cluttered page. As a result, this approach was eventually replaced with a tile-based layout in the final version to create a cleaner design.
+
+<ImageCap src="/SecondIter.png" bgColor="" caption="Second Iteration" hasBorder={false} hasCaption={true}/>
+
+The first iteration featured about 8 fully designed screens and menus, while the final iteration was expanded to over 20, reflecting the increased complexity and improvements made throughout the process. Testing proved that the final prototype is very refined and supports the needs of our users well.
+
+## <span id="conclusion">Conclusion</span>
+
+Write conclusion here
