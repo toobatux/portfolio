@@ -16,22 +16,22 @@ const ImageCap = ({
   hasCaption,
 }: ImageCapProps) => {
   return (
-    <div className="my-10">
+    <div className="my-8">
       <div
-        className={`relative w-full justify-center ${bgColor} rounded-lg ${
+        className={`relative w-full justify-center ${bgColor} rounded-[18px] ${
           hasBorder ? "border border-white/10" : ""
         }`}
       >
         <Image
           src={src}
           alt={caption}
-          width={1000}
-          height={1000}
+          width={1920}
+          height={1440}
           className="object-contain rounded-lg w-full"
         />
       </div>
       {hasCaption && (
-        <div className="flex w-full justify-center mt-4 text-white/40">
+        <div className="flex w-full justify-center mt-2 text-sm text-white/40">
           <h5>{caption}</h5>
         </div>
       )}

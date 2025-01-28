@@ -58,7 +58,7 @@ export default async function Page({
 
   return (
     <>
-      <div className="w-full m-4 md:m-12 lg:my-4 lg:mx-12">
+      <div className="w-full m-5 md:m-12 lg:my-4 lg:mx-12 transition-all">
         <div className="article">{data.content}</div>
         <div className="mt-[10rem]">
           <ProjectSidebar projects={projects} />

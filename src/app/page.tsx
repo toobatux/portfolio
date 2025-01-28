@@ -13,12 +13,14 @@ export default function Home() {
     <>
       <div className="bg-black">
         {/* h-[35rem] */}
-        <div className="absolute inset-0 bg-grad h-[40rem] opacity-80"></div>
+        <div className="absolute inset-0 z-0 bg-grad h-[40rem] opacity-80"></div>
+        {/* pt-[12rem] md:pt-[15rem] pb-[10rem] */}
+        {/* <div className="fixed top-0 z-[0] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
       </div>
-      <div className="relative h-full w-full">
+      <div className="relative h-full w-full z-10">
         <main className="flex min-h-screen flex-col justify-between items-center md:px-8 md:pt-8">
           <div className="z-10 w-full max-w-6xl justify-between text-sm h-full">
-            <div className="m-6 pt-[10rem] md:pt-[13rem] pb-20">
+            <div className="flex py-[12rem] md:py-[16rem] items-center px-6">
               <div className="animate-slidein [--slidein-delay:200ms] opacity-0">
                 <div className="mb-12">
                   <ProfileCard isOpenToWork={true} />

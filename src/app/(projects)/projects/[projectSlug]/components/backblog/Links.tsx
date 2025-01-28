@@ -3,7 +3,7 @@ import Link from "next/link";
 const Links = () => {
   return (
     <section>
-      <div className="relative">
+      <div className="relative links">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 mb-4">
           <Link
             href="https://github.com/toobatux/backblog"

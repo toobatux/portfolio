@@ -38,7 +38,7 @@ const myFont = localFont({
 });
 
 // const inter = Cabin({ weight: ["400", "700"], subsets: ["latin"] });
-const font = Playfair_Display({
+const font = DM_Sans({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
@@ -61,9 +61,10 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
+        {/* <script src="https://unpkg.com/react-scan/dist/auto.global.js"></script> */}
         <meta name="theme-color" content="#000000" />
       </head>
-      <body className={`${myFont.className} bg-neutral-950`}>
+      <body className={`${font.className} bg-neutral-950`}>
         <script>0</script>
         <div className="min-h-screen min-w-full bg-neutral-950">{children}</div>
       </body>

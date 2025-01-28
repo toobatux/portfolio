@@ -17,7 +17,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
                 <span className="absolute w-3 h-3 rounded-full bg-blue-600 opacity-75 animate-ping"></span>
                 <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
               </div>
-              <div className="text-white/80">Open to work</div>
+              <div className="text-white/80 me-1">Available</div>
             </div>
           </div>
         )}

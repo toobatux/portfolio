@@ -32,7 +32,7 @@ export default function ProjectLayout({
   return (
     <>
       <div className="flex w-full min-h-screen justify-center lg:pt-8">
-        <div className="flex w-full max-w-[68rem]">{children}</div>
+        <div className="flex w-full max-w-[63rem]">{children}</div>
       </div>
     </>
   );

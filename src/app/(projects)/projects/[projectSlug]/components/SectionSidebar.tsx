@@ -11,7 +11,7 @@ const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
   e.preventDefault();
 
   const section = document.getElementById(id);
-  const navbarHeight = 200;
+  const navbarHeight = 100;
 
   if (section) {
     window.scrollTo({
@@ -36,7 +36,7 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
         });
       },
       {
-        rootMargin: "-50% 0px", // Trigger when 50% of the section is in view
+        rootMargin: "-20% 0px", // Trigger when 50% of the section is in view
       }
     );
 
@@ -55,7 +55,7 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
 
   return (
     <>
-      <div className="text-white/90 font-semibold mt-4 mb-2 px-2">
+      <div className="text-white/90 font-semibold mt-8 mb-2 px-2">
         On this page
       </div>
       <div className="flex flex-col space-y-1">
@@ -64,13 +64,13 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
             key={section}
             href={`#${section.toLowerCase()}`}
             onClick={(e) => handleScroll(e, section.toLowerCase())}
-            className="flex items-center group rounded-xl p-2"
+            className="flex items-center group rounded-xl px-2 py-1"
           >
             <p
               className={`block text-sm group-hover:underline ${
                 activeSection === section.toLowerCase()
-                  ? "text-white"
-                  : "text-white/55"
+                  ? "text-white/80"
+                  : "text-white/40"
               }`}
             >
               {section}
