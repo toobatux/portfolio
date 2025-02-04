@@ -18,7 +18,7 @@ export default function Home() {
         {/* <div className="fixed top-0 z-[0] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
       </div>
       <div className="relative h-full w-full z-10">
-        <main className="flex min-h-screen flex-col justify-between items-center md:px-8 md:pt-8">
+        <main className="flex min-h-screen flex-col justify-between items-center md:px-8 md:pt-8 transition-all">
           <div className="z-10 w-full max-w-6xl justify-between text-sm h-full">
             <div className="flex py-[12rem] md:py-[16rem] items-center px-6">
               <div className="animate-slidein [--slidein-delay:200ms] opacity-0">
