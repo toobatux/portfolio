@@ -4,22 +4,22 @@ import Batman from "/public/batman.jpg";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { name: "Projects", href: "/projects" },
-  { name: "Blog", href: "/blog" },
+  { name: "Work", href: "/work" },
+  // { name: "Blog", href: "/blog" },
 ];
 
 const Navbar = () => {
   const pathName = usePathname();
   return (
-    <div className="sticky top-0 z-40 w-full backdrop-blur-md flex border-b border-white/10">
-      <div className="flex w-full justify-center m-2">
-        <div className="flex-auto max-w-6xl">
-          <div className="py-2 px-4">
-            <div className="relative flex items-center justify-between">
+    <div className="sticky top-0 z-40 w-full bg-black flex">
+      <div className="flex w-full justify-center px-6 py-4">
+        <div className="flex-auto max-w-7xl">
+          <div className="">
+            <div className="relative flex justify-between">
               <Link href="/" className="flex items-center">
-                <div className="text-white font-medium">tom krusinski</div>
+                <div className="text-white text-2xl font-bold">T/K</div>
               </Link>
-              <div className="flex gap-4">
+              <div className="flex gap-4 items-center">
                 {navLinks.map((link) => {
                   const isActive = pathName === link.href;
 
@@ -30,7 +30,7 @@ const Navbar = () => {
                       className={
                         isActive
                           ? "text-white underline ps-2"
-                          : "text-white/70 hover:underline hover:text-white no-underline ps-2 transition-colors"
+                          : "text-black/65 dark:text-white/65 hover:underline hover:text-black dark:hover:text-white no-underline ps-2 transition-colors"
                       }
                     >
                       {link.name}

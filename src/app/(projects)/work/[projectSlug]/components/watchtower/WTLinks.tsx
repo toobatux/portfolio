@@ -1,7 +1,7 @@
 import { ArrowOutward } from "@mui/icons-material";
 import Link from "next/link";
 
-const Links = () => {
+const WTLinks = () => {
   return (
     // <div className="relative">
     //   <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
@@ -60,7 +60,6 @@ const Links = () => {
     // </div>
 
     <section className="h-full">
-      <div className="text-2xl font-medium text-white/90 mb-6">Links</div>
       <div className="relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 mb-4">
           <Link
@@ -68,7 +67,7 @@ const Links = () => {
             target="_blank"
             prefetch={false}
           >
-            <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-xl shadow-lg p-2 hover:bg-white/10 transition-colors">
+            <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-[18px] shadow-lg p-2 hover:bg-white/10 transition-colors">
               <div className="flex p-3">
                 <div className="flex flex-col gap-1">
                   <div className="text-white/55 text-xs">OpenCV</div>
@@ -99,7 +98,7 @@ const Links = () => {
             target="_blank"
             prefetch={false}
           >
-            <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-xl shadow-lg p-2 hover:bg-white/10 transition-colors">
+            <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-[18px] shadow-lg p-2 hover:bg-white/10 transition-colors">
               <div className="flex p-3">
                 <div className="flex flex-col gap-1">
                   <div className="text-white/55 text-xs">PiCamera2</div>
@@ -130,4 +129,4 @@ const Links = () => {
   );
 };
 
-export default Links;
+export default WTLinks;

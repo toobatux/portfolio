@@ -6,17 +6,17 @@ import WatchTower from "/public/watchtowerFinal.png";
 
 import Project from "./Project";
 
-export default function ProjectsSection() {
+export default function Projects() {
   return (
     <>
-      <div className="w-full rounded-xl">
+      <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 md:gap-8">
         {/* <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 text-neutral-200 font-semibold flex items-center">
           <Info className="me-2" /> This section is in development
         </div> */}
         {/* <hr className="my-4 border-white/10" /> */}
         <Project
           date="2024"
-          link="/projects/studypal"
+          link="/work/studypal"
           src={Chingu}
           alt="StudyPal"
           title="StudyPal: An Educational Platform"
@@ -27,7 +27,7 @@ export default function ProjectsSection() {
         />
         <Project
           date="2023-2024"
-          link="/projects/backblog"
+          link="/work/backblog"
           src={BackBlog}
           alt="BackBlog"
           title="BackBlog: A Collaborative Movie Tracker for iOS and Android"
@@ -38,7 +38,7 @@ export default function ProjectsSection() {
         />
         <Project
           date="2024"
-          link="/projects/goyangi"
+          link="/work/goyangi"
           src={Goyangi}
           alt="Goyangi"
           title="Goyangi: A Social Network for Cat Photos"
@@ -47,9 +47,9 @@ export default function ProjectsSection() {
           isDisabled={false}
           background="bg-[#101010]"
         />
-        <Project
+        {/* <Project
           date="2023-2024"
-          link="/projects/watchtower"
+          link="/work/watchtower"
           src={WatchTower}
           alt="WatchTower"
           title="WatchTower: A Security Camera Livestream"
@@ -57,7 +57,7 @@ export default function ProjectsSection() {
           tools={["Django", "Python", "Bootstrap", "SQLite"]}
           isDisabled={false}
           background="bg-[#0A0A0A]"
-        />
+        /> */}
       </div>
     </>
   );

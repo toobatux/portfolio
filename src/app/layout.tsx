@@ -5,6 +5,8 @@ import {
   Roboto,
   Montserrat,
   IBM_Plex_Sans,
+  IBM_Plex_Mono,
+  Roboto_Mono,
   Onest,
   Playfair_Display,
 } from "next/font/google";
@@ -38,7 +40,13 @@ const myFont = localFont({
 });
 
 // const inter = Cabin({ weight: ["400", "700"], subsets: ["latin"] });
-const font = DM_Sans({
+const font = Onest({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const poppins = Poppins({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
@@ -64,9 +72,10 @@ export default function RootLayout({
         {/* <script src="https://unpkg.com/react-scan/dist/auto.global.js"></script> */}
         <meta name="theme-color" content="#000000" />
       </head>
-      <body className={`${font.className} bg-neutral-950`}>
+      {/* bg-[#191919] */}
+      <body className={`${font.className} bg-white dark:bg-black`}>
         <script>0</script>
-        <div className="min-h-screen min-w-full bg-neutral-950">{children}</div>
+        <div className="min-h-screen min-w-full">{children}</div>
       </body>
     </html>
   );

@@ -11,9 +11,9 @@ const Book = () => {
         href="https://www.google.com/books/edition/_/mIG-oAEACAAJ?hl=en"
         target="_blank"
       >
-        <div className="flex max-h-[9rem] bg-white/5 hover:bg-white/10 group transition-colors duration-200 rounded-3xl p-4">
+        <div className="flex max-h-[9rem] border-2 border-white/10 group transition-colors duration-200 rounded-[18px] p-4">
           <div className="flex items-center w-full">
-            <div className="relative min-w-16 min-h-24 rounded-lg overflow-hidden me-4">
+            <div className="relative min-w-16 min-h-24 rounded overflow-hidden me-4">
               <Image
                 src={BookPic}
                 alt="book"

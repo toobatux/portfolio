@@ -1,16 +1,15 @@
 import { ArrowOutward } from "@mui/icons-material";
 import Link from "next/link";
 
-const Links = () => {
+export default function GoyangiLinks() {
   return (
     <section className="h-full">
-      <div className="text-2xl font-medium text-white/90 mb-6">Links</div>
       <Link
         href="https://github.com/toobatux/Photo-App"
         target="_blank"
         prefetch={false}
       >
-        <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-xl shadow-lg p-2 hover:bg-white/10 transition-colors">
+        <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-[18px] shadow-lg p-2 hover:bg-white/10 transition-colors">
           <div className="flex p-3">
             <div className="flex flex-col gap-1">
               <div className="text-white/90 text-sm">toobatux/Photo-App</div>
@@ -34,6 +33,4 @@ const Links = () => {
       </Link>
     </section>
   );
-};
-
-export default Links;
+}

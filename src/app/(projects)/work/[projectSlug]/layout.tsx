@@ -4,8 +4,8 @@ import WatchTower from "/public/watchtower.jpg";
 import Navbar from "../../../components/Navbar";
 import ScrollTop from "../../../components/ScrollTop";
 import Footer from "@/app/components/Footer";
-import SectionSidebar from "@/app/(projects)/projects/[projectSlug]/components/SectionSidebar";
-import ProjectSidebar from "@/app/(projects)/projects/[projectSlug]/components/ProjectSidebar";
+import SectionSidebar from "@/app/(projects)/work/[projectSlug]/components/SectionSidebar";
+import ProjectSidebar from "@/app/(projects)/work/[projectSlug]/components/ProjectSidebar";
 
 const sections = ["Overview", "Motivation"];
 

@@ -4,10 +4,10 @@ const TechStack = () => {
   return (
     <>
       {/* bg-gradient-to-tl from-transparent to-white/5 */}
-      <div className="border border-white/10 transition-colors duration-200 rounded-3xl p-4 h-full">
+      <div className="border-2 border-white/10 transition-colors duration-200 rounded-[18px] p-4 h-full">
         <div className="flex h-full w-full flex-col justify-between">
           <div className="w-full items-center">
-            <p className="inline-block text-neutral-100 py-1 px-3 border border-white/20 rounded-xl">
+            <p className="inline-block text-neutral-100 py-1 px-3 border border-white/20 rounded-full">
               Skills
             </p>
           </div>
@@ -21,6 +21,7 @@ const TechStack = () => {
                   <Skills />
                 </div>
               </div>
+              <div className="absolute inset-0 z-20 w-full h-full bg-gradient-to-r from-black via-transparent to-black"></div>
             </div>
           </div>
           <div className="space-y-1">

@@ -10,7 +10,7 @@ const Tools = ({ tools }: ToolsProps) => {
       {tools.map((tool, index) => (
         <div
           key={index}
-          className="border border-white/10 rounded-xl px-3 py-1 text-white/45 text-xs me-1.5"
+          className="border-2 border-white/10 rounded-xl px-3 py-1 text-white/45 text-xs me-1.5"
         >
           {tool}
         </div>

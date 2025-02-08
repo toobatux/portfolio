@@ -53,7 +53,7 @@ interface ProjectInterface {
 const Project = ({ img, title, tagLine, link }: ProjectInterface) => {
   return (
     <Link href={link} prefetch={false}>
-      <div className="flex h-[102px] items-center bg-white/5 border border-white/10 backdrop-blur-lg rounded-xl shadow-lg p-2 hover:bg-white/10 transition-colors">
+      <div className="flex h-[102px] items-center bg-white/5 border border-white/10 backdrop-blur-lg rounded-[18px] shadow-lg p-2 hover:bg-white/10 transition-colors">
         <div className="flex w-full p-3">
           <div className="flex flex-col gap-1 justify-center">
             <div className="text-white/90 font-medium">{title}</div>
