@@ -25,6 +25,7 @@ const TechStack = () => {
             </div>
           </div>
           <div className="space-y-1">
+            {/* <hr className="border-1 border-white/15 mb-4" /> */}
             <div className="text-white/90 text-base">
               {`Technology I'm working with`}
             </div>

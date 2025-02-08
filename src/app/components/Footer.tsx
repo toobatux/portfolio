@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <div className="w-full">
       <hr className="border-white/10" />
-      <div className="flex w-full justify-center items-center">
-        <div className="flex-col w-full max-w-6xl items-center px-8 md:px-6 py-12">
+      <div className="flex w-full justify-center items-center px-8">
+        <div className="flex-col w-full max-w-7xl items-center py-12 p-6">
           <div className="flex w-full justify-between mb-12">
             <div className="flex-col text-white/50 space-y-2">
               <div className="text-white font-semibold">Tom Krusinski</div>
