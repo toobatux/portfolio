@@ -73,11 +73,11 @@ ul li::marker {
 }
 
 .article {
-  @apply text-white/60 pt-4;
+  @apply text-white/60;
 }
 
 .article h1 {
-  @apply text-white text-3xl md:text-4xl font-bold transition-transform my-4 md:my-4 leading-8;
+  @apply text-white text-3xl md:text-4xl font-bold transition-transform my-4 md:my-4;
 }
 
 .article h2 {

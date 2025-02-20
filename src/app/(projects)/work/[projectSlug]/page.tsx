@@ -62,7 +62,7 @@ export default async function Page({
 
   return (
     <>
-      <div className="w-full m-5 md:m-12 lg:my-4 lg:mx-12 transition-all">
+      <div className="w-full m-5 md:mx-12 my-4 lg:mx-12 transition-all">
         <div className="article">{data.content}</div>
         <div className="mt-[10rem]">
           <ProjectSidebar projects={projects} />
@@ -71,7 +71,7 @@ export default async function Page({
           <ScrollTop />
         </div>
       </div>
-      <aside className="hidden lg:flex lg:justify-center lg:flex-none w-48">
+      <aside className="hidden lg:flex lg:justify-center lg:flex-none w-48 lg:my-4">
         <div className="fixed w-40">
           <div className="w-full flex flex-col">
             <SectionSidebar sections={data.frontmatter.headings} />
