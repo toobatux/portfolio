@@ -20,7 +20,7 @@ export default function ProjectSidebar({ projects }: ProjectSidebarProps) {
           Other Projects
         </div>
         <Link
-          href="/projects/"
+          href="/work/"
           className="flex text-white rounded-full hover:text-black hover:bg-white border-2 border-white/10 px-4 py-2 transition-all duration-300"
           prefetch={false}
         >

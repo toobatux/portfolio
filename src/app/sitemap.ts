@@ -7,23 +7,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: 'https://tomkrusinski.com/projects',
+      url: 'https://tomkrusinski.com/work',
       lastModified: new Date(),
     },
     {
-      url: 'https://tomkrusinski.com/backblog',
+      url: 'https://tomkrusinski.com/work/backblog',
       lastModified: new Date(),
     },
     {
-      url: 'https://tomkrusinski.com/goyangi',
+      url: 'https://tomkrusinski.com/work/goyangi',
       lastModified: new Date(),
     },
     {
-      url: 'https://tomkrusinski.com/watchtower',
+      url: 'https://tomkrusinski.com/work/watchtower',
       lastModified: new Date(),
     },
     {
-      url: 'https://tomkrusinski.com/studypal',
+      url: 'https://tomkrusinski.com/work/studypal',
       lastModified: new Date(),
     },
   ]
