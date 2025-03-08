@@ -104,7 +104,7 @@ const BackBlog = () => {
         className={`flex w-full px-6 transition-all max-w-7xl mx-auto ${myFont.className}`}
       >
         <div
-          className="relative flex flex-col md:flex-row w-full h-[35rem] md:h-[35rem] lg:h-[45rem] border border-white/10 bg-gradient-to-b shadow-xl from-white/5 to-black backdrop-blur-3xl overflow-hidden mx-auto items-center justify-between p-12 xl:px-[10rem] md:py-0 transition-all gap-12 rounded-[18px]"
+          className="relative flex flex-col md:flex-row w-full h-[35rem] md:h-[35rem] lg:h-[45rem] border-2 border-white/10 bg-gradient-to-b shadow-xl from-white/5 to-black backdrop-blur-3xl overflow-hidden mx-auto items-center justify-between p-12 xl:px-[10rem] md:py-0 transition-all gap-12 rounded-[18px]"
           ref={container}
         >
           <div
