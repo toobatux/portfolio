@@ -47,8 +47,8 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col space-y-2 text-white/50 text-sm">
-              <Link href="/projects" className="hover:underline">
-                All projects
+              <Link href="/work" className="hover:underline">
+                Work
               </Link>
               <Link
                 href="https://github.com/toobatux/portfolio"
