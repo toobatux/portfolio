@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/Navbar";
+import Test from "@/app/components/Test";
 import React from "react";
 
 export default function ProjectsLayout({
@@ -10,7 +11,7 @@ export default function ProjectsLayout({
 }>) {
   return (
     <>
-      <Navbar />
+      <Test />
       {children}
       <Footer />
     </>

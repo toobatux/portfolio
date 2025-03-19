@@ -22,17 +22,17 @@ import { Visibility } from "@mui/icons-material";
 const myFont = localFont({
   src: [
     {
-      path: "../fonts/GeneralSans/GeneralSans-Regular.otf",
+      path: "../fonts/Satoshi/Satoshi-Regular.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../fonts/GeneralSans/GeneralSans-Medium.otf",
+      path: "../fonts/Satoshi/Satoshi-Medium.otf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../fonts/GeneralSans/GeneralSans-Bold.otf",
+      path: "../fonts/Satoshi/Satoshi-Bold.otf",
       weight: "700",
       style: "normal",
     },
@@ -73,7 +73,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
       </head>
       {/* bg-[#191919] */}
-      <body className={`${font.className} bg-white dark:bg-black`}>
+      <body className={`${myFont.className} app-bg`}>
         <script>0</script>
         <div className="min-h-screen min-w-full">{children}</div>
       </body>

@@ -46,9 +46,9 @@ const Song = ({
 }: SongProps) => {
   return (
     <Link href={link} target="_blank" prefetch={false}>
-      <div className="flex max-h-[9rem] border-2 border-white/10 group transition-colors duration-200 rounded-[18px] p-4">
+      <div className="flex max-h-[9rem] border border-white/10 shadow-xl bg-white/5 backdrop-blur-3xl group transition-colors duration-200 rounded-[24px] p-5">
         <div className="flex items-center w-full">
-          <div className="relative w-24 h-24 rounded overflow-hidden me-4">
+          <div className="relative w-24 h-24 rounded overflow-hidden me-5">
             <Image
               src={src}
               alt={alt}
@@ -59,15 +59,15 @@ const Song = ({
           </div>
           <div className="flex flex-col">
             <p className="text-white/50">Top Song of 2024</p>
-            <p className="block text-white text-base">{title}</p>
+            <p className="block text-white text-base font-medium">{title}</p>
             <p className="text-white/50">{artist}</p>
           </div>
         </div>
-        <div className="text-white/50 border border-white/20 group-hover:bg-white group-hover:text-black rounded-full p-2 w-[36px] h-[36px] flex items-center justify-center transition-colors duration-200">
+        <div className="text-white/50 app-bg border border-white/20 group-hover:bg-white group-hover:text-black rounded-full p-2 w-[36px] h-[36px] flex items-center justify-center transition-colors duration-200">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20px"
-            height="20px"
+            width="24px"
+            height="24px"
             viewBox="0 0 50 50"
             className="fill-white/50 group-hover:fill-black transition-colors"
           >

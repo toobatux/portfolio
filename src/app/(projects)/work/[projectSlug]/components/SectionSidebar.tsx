@@ -55,7 +55,9 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
 
   return (
     <>
-      <div className="text-white/90 font-semibold mb-2 px-2">On this page</div>
+      <div className="text-black/90 dark:text-white/90 font-semibold mb-2 px-2">
+        On this page
+      </div>
       <div className="flex flex-col space-y-1">
         {sections.map((section) => (
           <a
@@ -67,8 +69,8 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
             <p
               className={`block text-sm group-hover:underline ${
                 activeSection === section.toLowerCase()
-                  ? "text-white/80"
-                  : "text-white/40"
+                  ? "text-black/80 dark:text-white/80"
+                  : "text-black/40 dark:text-white/40"
               }`}
             >
               {section}

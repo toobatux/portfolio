@@ -4,7 +4,7 @@ const TechStack = () => {
   return (
     <>
       {/* bg-gradient-to-tl from-transparent to-white/5 */}
-      <div className="border-2 border-white/10 transition-colors duration-200 rounded-[18px] p-4 h-full">
+      <div className="border border-white/10 transition-colors duration-200 rounded-[24px] p-5 h-full">
         <div className="flex h-full w-full flex-col justify-between">
           <div className="w-full items-center space-y-1 mb-4 lg:mb-0">
             {/* <p className="inline-block text-white/50 py-1 px-3 border-2 border-white/10 rounded">

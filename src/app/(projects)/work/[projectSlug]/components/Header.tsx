@@ -12,8 +12,8 @@ const Header = ({ title, year, image, tools, background }: HeaderProps) => {
   return (
     <>
       <div className="space-y-4 md:space-y-6 mb-10">
-        <div className="text-white/50">{year}</div>
-        <h1 className="text-white text-2xl md:text-4xl font-semibold transition-transform">
+        <div className="dark:text-white/50">{year}</div>
+        <h1 className="dark:text-white text-2xl md:text-4xl font-semibold transition-transform">
           {title}
         </h1>
         <div className="flex items-center flex-wrap gap-y-2">

@@ -6,7 +6,7 @@ import WatchTower from "/public/watchtowerFinal.png";
 
 import Project from "./Project";
 
-export default function Projects() {
+export default function HomeProjects() {
   return (
     <>
       <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 md:gap-8">

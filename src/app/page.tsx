@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <div className="bg-white dark:bg-black">
         {/* h-[35rem] */}
-        {/* <div className="absolute inset-0 z-0 bg-grad h-[40rem] opacity-80"></div> */}
+        <div className="absolute inset-0 z-0 bg-grad h-[40rem] opacity-80"></div>
         {/* pt-[12rem] md:pt-[15rem] pb-[10rem] */}
         {/* <div className="fixed top-0 z-[0] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
       </div>
@@ -26,20 +26,16 @@ export default function Home() {
             <div className="w-full max-w-7xl mx-auto justify-between text-sm h-full">
               <div className="flex pt-[6rem] md:pt-[12rem] px-6 mb-12 h-screen min-h-[40rem] md:pb-2">
                 <div className="relative flex flex-col w-full justify-between">
-                  <div className="space-y-24">
-                    <ProfileCard isOpenToWork={false} />
-                    <Contact />
-                  </div>
+                  <ProfileCard isOpenToWork={false} />
                   <div className="absolute bottom-20 flex w-full justify-end mb-[5rem]">
                     <ArrowDownward className="text-white/55" />
                   </div>
                 </div>
               </div>
               <InfoBento />
+              <BackBlog />
             </div>
           </div>
-
-          <BackBlog />
 
           <div className="z-20 w-full justify-between text-sm h-full mt-28 mb-12 md:pt-8 md:px-8 transition-all">
             <div className="w-full max-w-7xl mx-auto">

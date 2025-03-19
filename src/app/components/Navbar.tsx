@@ -11,13 +11,13 @@ const navLinks = [
 const Navbar = () => {
   const pathName = usePathname();
   return (
-    <div className="sticky top-0 z-40 w-full bg-black flex">
+    <div className="sticky top-0 z-40 w-full bg-white dark:bg-black flex">
       <div className="flex w-full justify-center px-6 py-4">
         <div className="flex-auto max-w-7xl">
           <div className="">
             <div className="relative flex justify-between">
               <Link href="/" className="flex items-center">
-                <div className="text-white text-2xl font-bold">T/K</div>
+                <div className="dark:text-white text-2xl font-bold">T/K</div>
               </Link>
               <div className="flex gap-4 items-center">
                 {navLinks.map((link) => {

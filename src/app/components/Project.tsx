@@ -36,14 +36,16 @@ export default function Project({
       <div className="flex flex-col h-[inherit] w-full justify-between md:my-2">
         <div className="flex flex-col flex-grow">
           <div className="space-y-2 mb-3">
-            <p className="text-white/60">{date}</p>
+            <p className="dark:text-white/60">{date}</p>
             <p
-              className={`inline-block text-white font-medium text-xl mb-2 article-title group-hover:underline line-clamp-2 overflow-ellipsis ${myFont.className}`}
+              className={`inline-block dark:text-white font-medium text-xl mb-2 article-title group-hover:underline line-clamp-2 overflow-ellipsis ${myFont.className}`}
             >
               {title}
             </p>
           </div>
-          <p className={`block text-white/60 mb-4 profile ${myFont.className}`}>
+          <p
+            className={`block dark:text-white/60 mb-4 profile ${myFont.className}`}
+          >
             {description}
           </p>
         </div>
