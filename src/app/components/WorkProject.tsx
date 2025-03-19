@@ -32,6 +32,8 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
       const tl = gsap.timeline();
       tl.timeScale(3.5);
 
+      if (!projectsContainer.current) return;
+
       const projectItems = gsap.utils.toArray(
         projectsContainer.current.querySelectorAll("li > a > div")
       );
