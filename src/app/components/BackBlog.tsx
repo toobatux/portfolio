@@ -111,19 +111,19 @@ const BackBlog = () => {
           ref={container}
         >
           <div
-            className="flex flex-col w-full md:w-1/2 justify-center text-white items-center me-2"
+            className="flex flex-col w-full md:w-1/2 justify-center text-white items-center"
             ref={text}
           >
-            <div className="flex flex-col items-center md:items-start">
-              <div className="text-sm text-white/65 transition-all mb-4">
+            <div className="flex flex-col items-center md:items-start w-full md:w-3/4">
+              <div className="text-sm lg:text-lg text-white/65 transition-all mb-4 text-center md:text-left">
                 Featured Work
               </div>
               <div
-                className={`text-4xl transition-all text-center md:text-start font-semibold ${myFont.className}`}
+                className={`text-4xl lg:text-5xl transition-all text-center md:text-left font-semibold ${myFont.className}`}
               >
                 BackBlog Movie Tracker
               </div>
-              <div className="inline-block mt-8 text-sm md:text-base text-white/50 bg-black border-2 border-white/10 group-hover:bg-white group-hover:text-black transform-colors duration-300 px-4 py-2 rounded-full">
+              <div className="mt-8 text-sm md:text-base text-white/50 bg-black border-2 border-white/10 group-hover:bg-white group-hover:text-black transform-colors duration-300 px-4 py-2 rounded-full self-center md:self-start">
                 Learn more
               </div>
             </div>
