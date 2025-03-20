@@ -129,18 +129,20 @@ const BackBlog = () => {
             </div>
           </div>
           <div className="flex flex-col w-full md:w-1/2 items-center">
-            <div
-              className="relative flex md:translate-y-[10rem] lg:translate-y-[15rem] w-full justify-center md:max-w-[25rem]"
-              ref={photo}
-            >
-              <Image
-                src="/bbPhone.png"
-                alt="backblog"
-                width={500}
-                height={500}
-                className="object-contain"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
+            <div className="md:translate-y-[8rem] lg:translate-y-[12rem]">
+              <div
+                className="relative flex w-full justify-center md:max-w-[20rem] lg:max-w-[28rem] group-hover:-translate-y-[10px] transition-transform"
+                // ref={photo}
+              >
+                <Image
+                  src="/bbPhone.png"
+                  alt="backblog"
+                  width={500}
+                  height={500}
+                  className="object-contain"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
+              </div>
             </div>
           </div>
         </div>

@@ -49,7 +49,7 @@ export default async function BlogsPage() {
           </div> */}
 
           <div className="flex flex-col z-10 w-full items-center text-sm h-full mt-24 px-6 gap-6">
-            <div className="flex p-4 items-center justify-center h-24 w-24 bg-white/10 rounded-xl border border-white/5">
+            <div className="flex p-4 items-center justify-center h-24 w-24 bg-black/5 backdrop-blur-lg dark:bg-white/10 rounded-xl border border-white/5">
               <Image
                 src={Construction}
                 height={100}
