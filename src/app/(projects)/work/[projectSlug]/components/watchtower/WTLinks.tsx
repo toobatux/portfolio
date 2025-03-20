@@ -67,7 +67,7 @@ const WTLinks = () => {
             target="_blank"
             prefetch={false}
           >
-            <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-[18px] shadow-lg p-2 hover:bg-white/10 transition-colors">
+            <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-[24px] shadow-lg p-2 hover:bg-white/10 transition-colors">
               <div className="flex p-3">
                 <div className="flex flex-col gap-1">
                   <div className="text-white/55 text-xs">OpenCV</div>
@@ -98,7 +98,7 @@ const WTLinks = () => {
             target="_blank"
             prefetch={false}
           >
-            <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-[18px] shadow-lg p-2 hover:bg-white/10 transition-colors">
+            <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-[24px] shadow-lg p-2 hover:bg-white/10 transition-colors">
               <div className="flex p-3">
                 <div className="flex flex-col gap-1">
                   <div className="text-white/55 text-xs">PiCamera2</div>

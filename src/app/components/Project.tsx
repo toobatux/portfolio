@@ -56,7 +56,7 @@ export default function Project({
         )} */}
       </div>
       <div
-        className={`flex h-[220px] w-full md:max-w-full overflow-hidden justify-center ${background} md:mb-0 rounded-[18px] transition-all`}
+        className={`flex h-[220px] w-full md:max-w-full overflow-hidden justify-center ${background} md:mb-0 rounded-[24px] transition-all`}
       >
         <Image
           src={src}

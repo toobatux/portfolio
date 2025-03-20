@@ -18,7 +18,7 @@ const ImageCap = ({
   return (
     <div className="my-8">
       <div
-        className={`relative w-full justify-center ${bgColor} rounded-[18px] ${
+        className={`relative w-full justify-center ${bgColor} rounded-[24px] ${
           hasBorder ? "border border-white/10" : ""
         }`}
       >

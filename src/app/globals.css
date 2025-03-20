@@ -12,6 +12,15 @@
     radial-gradient(at 53% 30%, hsla(210, 55%, 32%, 0.37) 0px, transparent 50%),
     radial-gradient(at 87% 9%, hsla(240, 55%, 56%, 0.2) 0px, transparent 50%),
     radial-gradient(at 33% 0%, hsla(195, 55%, 25%, 0.51) 0px, transparent 50%);
+
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(
+    25deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(5, 5, 93, 0.5606443260898109) 40%,
+    rgba(2, 101, 121, 0.6866947462578781) 100%
+  ); */
+
   /* background: rgb(78, 151, 255);
   background: radial-gradient(
     circle,
@@ -116,7 +125,7 @@ ul li::marker {
 }
 
 .article img {
-  @apply rounded-[18px] h-auto max-h-[400px] md:h-[400px];
+  @apply rounded-[24px] h-auto max-h-[400px] md:h-[400px];
 }
 
 .app-bg {

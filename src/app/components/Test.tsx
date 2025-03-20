@@ -45,7 +45,7 @@ export default function Test() {
       }`}
     >
       <div className="flex w-full justify-center">
-        <div className="flex justify-center bg-white/5 backdrop-blur-lg p-2 border border-white/10 rounded-[18px]">
+        <div className="flex justify-center shadow-md bg-white/5 backdrop-blur-lg p-2 border border-white/10 rounded-[24px]">
           {/* <h1 ref={textRef} className="text-2xl font-bold">
             T/K
           </h1> */}
@@ -66,7 +66,7 @@ export default function Test() {
                       isActive
                         ? "text-white bg-white/15"
                         : "text-black/65 dark:text-white/65"
-                    } px-6 py-2 rounded-lg hover:bg-white/10 transition-colors`}
+                    } px-6 py-2 rounded-[16px] hover:bg-white/10 transition-colors`}
                 >
                   {link.name}
                 </Link>
