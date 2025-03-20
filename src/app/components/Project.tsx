@@ -63,7 +63,7 @@ export default function Project({
           alt={alt}
           width={500}
           placeholder="blur"
-          className="object-contain transition-all"
+          className="object-contain transition-all group-hover:scale-[1.02]"
         />
       </div>
     </div>

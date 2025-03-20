@@ -71,13 +71,13 @@ const Contact = () => {
         </Link>
       </div> */}
 
-      <ul className="flex gap-2">
+      <ul className="flex flex-wrap gap-2">
         {contacts.map((contact, index) => (
           <li key={index}>
             <Link
               href={contact.link}
               target="_blank"
-              className="flex h-full group items-center dark:text-white/55 border-2 border-black/55 dark:border-white/20 hover:text-white dark:hover:text-black hover:bg-black dark:hover:bg-white transform-colors duration-300 px-4 py-2 rounded-[24px]"
+              className="flex h-full group items-center dark:text-white/55 border-2 border-black/55 dark:border-white/20 hover:text-white dark:hover:text-black hover:bg-black dark:hover:bg-white transform-colors duration-300 px-2.5 md:px-4 py-1.5 md:py-2 rounded-[24px]"
             >
               <div className="px-1 me-1">{contact.name}</div>
               <div className="flex h-full items-center">
