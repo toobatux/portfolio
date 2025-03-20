@@ -52,7 +52,10 @@ export default function Test() {
 
           <div className="flex gap-2 items-center">
             {navLinks.map((link) => {
-              const isActive = pathName === link.href;
+              const isActive =
+                link.href === "/"
+                  ? pathName === "/"
+                  : pathName.startsWith(link.href);
 
               return (
                 <Link
