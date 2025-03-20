@@ -3,11 +3,20 @@ import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const navLinks = [
+  { name: "home", href: "/" },
+  { name: "work", href: "/work" },
+  { name: "blog", href: "/blog" },
+  // { name: "Blog", href: "/blog" },
+];
 
 export default function Test() {
   const [showNav, setShowNav] = useState(true);
   const lastScrollY = useRef(0);
   const textRef = useRef(null);
+  const pathName = usePathname();
 
   // Handle scroll detection
   useEffect(() => {
@@ -31,40 +40,35 @@ export default function Test() {
 
   return (
     <div
-      className={`sticky top-0 md:top-2 z-40 w-full dark:text-white px-6 py-4 transition-transform ${
+      className={`sticky top-0 z-40 w-full dark:text-white py-4 px-6 transition-transform ${
         showNav ? "translate-y-0" : "-translate-y-full"
       }`}
     >
       <div className="flex w-full justify-center">
-        <div className="flex w-full justify-center">
+        <div className="flex justify-center bg-white/5 backdrop-blur-lg p-2 border border-white/10 rounded-[18px]">
           {/* <h1 ref={textRef} className="text-2xl font-bold">
             T/K
           </h1> */}
+
           <div className="flex gap-2 items-center">
-            <Link
-              href="/"
-              className="px-4 py-2 rounded-2xl backdrop-blur-lg text-black/65 dark:text-white/65 border border-white/20 hover:bg-white/20 transition-colors"
-            >
-              home
-            </Link>
-            <Link
-              href="/work/"
-              className="px-4 py-2 rounded-2xl backdrop-blur-lg text-black/65 dark:text-white/65 border border-white/20 hover:bg-white/20 transition-colors"
-            >
-              work
-            </Link>
-            <Link
-              href="/blog/"
-              className="px-4 py-2 rounded-2xl backdrop-blur-lg text-black/65 dark:text-white/65 border border-white/20 hover:bg-white/20 transition-colors"
-            >
-              blog
-            </Link>
-            {/* <Link
-              href="/blog/"
-              className="text-black/65 dark:text-white/65 hover:underline hover:text-black dark:hover:text-white no-underline ps-2 transition-colors"
-            >
-              Blog
-            </Link> */}
+            {navLinks.map((link) => {
+              const isActive = pathName === link.href;
+
+              return (
+                <Link
+                  href={link.href}
+                  key={link.name}
+                  className={`
+                    ${
+                      isActive
+                        ? "text-white bg-white/15"
+                        : "text-black/65 dark:text-white/65"
+                    } px-6 py-2 rounded-lg hover:bg-white/10 transition-colors`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

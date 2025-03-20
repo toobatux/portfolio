@@ -12,6 +12,13 @@
     radial-gradient(at 53% 30%, hsla(210, 55%, 32%, 0.37) 0px, transparent 50%),
     radial-gradient(at 87% 9%, hsla(240, 55%, 56%, 0.2) 0px, transparent 50%),
     radial-gradient(at 33% 0%, hsla(195, 55%, 25%, 0.51) 0px, transparent 50%);
+  /* background: rgb(78, 151, 255);
+  background: radial-gradient(
+    circle,
+    rgba(78, 151, 255, 1) 0%,
+    rgba(152, 210, 255, 1) 42%,
+    rgba(255, 255, 255, 0) 100%
+  ); */
 }
 
 .learn-more {
