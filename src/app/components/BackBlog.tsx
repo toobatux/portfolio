@@ -16,87 +16,107 @@ const BackBlog = () => {
   const text = useRef(null);
 
   useGSAP(() => {
-    let mm = gsap.matchMedia();
+    // let mm = gsap.matchMedia();
 
-    mm.add("(min-width: 750px)", () => {
-      gsap.fromTo(
-        photo.current,
-        {
-          y: 200,
-          opacity: 0,
-        },
-        {
-          y: 170,
-          opacity: 1,
-          duration: 1,
-          scrollTrigger: {
-            trigger: photo.current,
-            start: "top 90%",
-            end: "top 70%",
-            scrub: true,
-          },
-        }
-      );
+    // mm.add("(min-width: 750px)", () => {
+    //   gsap.fromTo(
+    //     photo.current,
+    //     {
+    //       y: 200,
+    //       opacity: 0,
+    //     },
+    //     {
+    //       y: 170,
+    //       opacity: 1,
+    //       duration: 1,
+    //       scrollTrigger: {
+    //         trigger: photo.current,
+    //         start: "top 90%",
+    //         end: "top 70%",
+    //         scrub: true,
+    //       },
+    //     }
+    //   );
+    // });
+
+    // mm.add("(max-width: 749px)", () => {
+    //   gsap.fromTo(
+    //     photo.current,
+    //     {
+    //       y: 100,
+    //       opacity: 0,
+    //     },
+    //     {
+    //       y: 0,
+    //       opacity: 1,
+    //       duration: 1,
+    //       scrollTrigger: {
+    //         trigger: photo.current,
+    //         start: "top 90%",
+    //         end: "top 50%",
+    //         scrub: true,
+    //       },
+    //     }
+    //   );
+    // });
+
+    // gsap.fromTo(
+    //   container.current,
+    //   {
+    //     y: 100,
+    //     opacity: 0,
+    //   },
+    //   {
+    //     y: 0,
+    //     opacity: 1,
+    //     duration: 2,
+    //     scrollTrigger: {
+    //       trigger: container.current,
+    //       start: "top 80%",
+    //       end: "top 50%",
+    //       scrub: true,
+    //     },
+    //   }
+    // );
+
+    // gsap.fromTo(
+    //   text.current,
+    //   {
+    //     y: 100,
+    //     opacity: 0,
+    //   },
+    //   {
+    //     y: 0,
+    //     opacity: 1,
+    //     duration: 1,
+    //     scrollTrigger: {
+    //       trigger: text.current,
+    //       start: "top 80%",
+    //       end: "top 70%",
+    //       scrub: true,
+    //     },
+    //   }
+    // );
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: container.current,
+        start: "top 75%",
+        // toggleActions: "play none none reverse",
+      },
     });
 
-    mm.add("(max-width: 749px)", () => {
-      gsap.fromTo(
-        photo.current,
-        {
-          y: 100,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          scrollTrigger: {
-            trigger: photo.current,
-            start: "top 90%",
-            end: "top 50%",
-            scrub: true,
-          },
-        }
-      );
+    tl.timeScale(1);
+
+    gsap.set(container.current, {
+      y: 100,
+      opacity: 0,
     });
 
-    gsap.fromTo(
-      container.current,
-      {
-        y: 100,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 2,
-        scrollTrigger: {
-          trigger: container.current,
-          start: "top 80%",
-          end: "top 50%",
-          scrub: true,
-        },
-      }
-    );
-
-    gsap.fromTo(
-      text.current,
-      {
-        y: 100,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: text.current,
-          start: "top 80%",
-          end: "top 70%",
-          scrub: true,
-        },
-      }
-    );
+    tl.to(container.current, {
+      y: 0,
+      opacity: 1,
+    });
   });
   return (
     <div className="flex mx-auto px-6">

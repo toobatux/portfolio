@@ -36,21 +36,41 @@ const InfoBento = () => {
     //   }
     // );
 
-    gsap.fromTo(
-      container.current,
-      { y: 100, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: container.current,
-          start: "top 80%",
-          end: "top 50%",
-          scrub: true,
-        },
-      }
-    );
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: container.current,
+        start: "top 75%",
+        // toggleActions: "play none none reverse",
+      },
+    });
+
+    tl.timeScale(1);
+
+    gsap.set(container.current, {
+      y: 100,
+      opacity: 0,
+    });
+
+    tl.to(container.current, {
+      y: 0,
+      opacity: 1,
+    });
+
+    // gsap.fromTo(
+    //   container.current,
+    //   { y: 100, opacity: 0 },
+    //   {
+    //     y: 0,
+    //     opacity: 1,
+    //     duration: 1,
+    //     scrollTrigger: {
+    //       trigger: container.current,
+    //       start: "top 80%",
+    //       end: "top 50%",
+    //       scrub: true,
+    //     },
+    //   }
+    // );
   });
 
   return (
