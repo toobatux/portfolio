@@ -24,7 +24,7 @@ export default function Home() {
         <main className="flex min-h-screen flex-col items-center">
           <div className="w-full z-10 justify-center md:px-8 md:pt-8 transition-all">
             <div className="w-full max-w-7xl mx-auto justify-between text-sm h-full">
-              <div className="flex pt-[6rem] md:pt-[12rem] px-6 mb-12 h-screen min-h-[40rem] md:pb-2">
+              <div className="flex pt-[6rem] md:pt-[12rem] px-6 mb-0 h-screen min-h-[40rem] md:pb-2">
                 <div className="relative flex flex-col w-full justify-between">
                   <ProfileCard isOpenToWork={false} />
                   <div className="absolute bottom-20 flex w-full justify-end mb-[5rem]">
