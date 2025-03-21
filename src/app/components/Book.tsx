@@ -10,6 +10,7 @@ const Book = () => {
       <Link
         href="https://www.google.com/books/edition/_/mIG-oAEACAAJ?hl=en"
         target="_blank"
+        className="rounded-[24px] overflow-hidden"
       >
         <div className="flex max-h-[9rem] border border-white/10 shadow-xl bg-black/5 dark:bg-white/5 group transition-colors duration-200 rounded-[24px] p-5">
           <div className="flex items-center w-full">
