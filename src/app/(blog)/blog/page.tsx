@@ -43,7 +43,7 @@ export default async function BlogsPage() {
       <div className="absolute inset-0 bg-grad h-[30rem] opacity-55 scale-x-[-1]"></div>
 
       <div className="relative w-full">
-        <div className="flex min-h-screen flex-col justify-between items-center md:p-8">
+        <div className="flex min-h-screen flex-col justify-between items-center md:px-8 py-12">
           {/* <div className="z-10 w-full max-w-7xl justify-between text-sm h-full my-16 px-6">
             <div className="text-4xl dark:text-white font-bold mb-10">Blog</div>
           </div> */}
