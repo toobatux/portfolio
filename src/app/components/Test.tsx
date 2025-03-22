@@ -40,7 +40,7 @@ export default function Test() {
 
   return (
     <div
-      className={`sticky top-0 z-40 w-full dark:text-white py-4 px-6 transition-transform ${
+      className={`sticky top-0 z-40 w-full text-black dark:text-white py-4 px-6 transition-transform ${
         showNav ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -64,9 +64,9 @@ export default function Test() {
                   className={`
                     ${
                       isActive
-                        ? "text-white bg-white/15"
+                        ? "text-black dark:text-white bg-black/15 dark:bg-white/15"
                         : "text-black/65 dark:text-white/65"
-                    } px-6 py-2 rounded-[16px] hover:bg-white/10 transition-colors`}
+                    } px-6 py-2 rounded-[16px] hover:bg-black/10 dark:hover:bg-white/10 transition-colors`}
                 >
                   {link.name}
                 </Link>

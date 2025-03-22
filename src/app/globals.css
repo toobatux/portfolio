@@ -129,5 +129,9 @@ ul li::marker {
 }
 
 .app-bg {
-  @apply dark:bg-black;
+  @apply bg-[#D9D9D9] dark:bg-black;
+}
+
+html {
+  scroll-behavior: smooth;
 }

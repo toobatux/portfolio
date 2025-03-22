@@ -3,12 +3,15 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ProjectSection from "./components/ProjectSection";
 import InfoBento from "./components/InfoBento";
-import { ArrowDownward, ArrowOutward } from "@mui/icons-material";
+import { ArrowDownward, ArrowForward, ArrowOutward } from "@mui/icons-material";
 import Link from "next/link";
 import Test from "./components/Test";
 import Navbar from "./components/Navbar";
 import Image from "next/image";
 import BackBlog from "./components/BackBlog";
+import Book from "./components/Book";
+import SongSection from "./components/SongSection";
+import TechStack from "./components/TechStack";
 
 export default function Home() {
   return (
@@ -32,12 +35,15 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
               <InfoBento />
-              <BackBlog />
             </div>
           </div>
 
-          <div className="z-20 w-full justify-between text-sm h-full mt-28 mb-12 md:pt-8 md:px-8 transition-all">
+          <div
+            id="work"
+            className="z-20 w-full justify-between text-sm h-full mt-28 mb-12 md:pt-8 md:px-8 transition-all"
+          >
             <div className="w-full max-w-7xl mx-auto">
               {/* <div className="animate-slidein [--slidein-delay:400ms] opacity-0 overflow-x-hidden"> */}
               {/* </div> */}
