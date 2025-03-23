@@ -6,6 +6,7 @@ import { TextPlugin } from "gsap/TextPlugin";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Tools from "../(projects)/work/[projectSlug]/components/Tools";
 
 gsap.registerPlugin(useGSAP, TextPlugin);
 
@@ -17,6 +18,7 @@ type Project = {
   bgColor: string;
   filename: string;
   slug: string;
+  tools: string[];
 };
 
 interface WorkProjectProps {
@@ -88,17 +90,18 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
                 <div className="flex flex-col-reverse md:flex-row md:gap-8 group my-4 group transition-all duration-200 rounded py-5">
                   <div className="flex flex-col h-[inherit] w-full justify-between md:my-2">
                     <div className="flex flex-col flex-grow">
-                      <div className="space-y-2 mb-3">
-                        <p className="dark:text-white/55 font-medium">
-                          {project.date}
-                        </p>
-                        <p className="inline-block dark:text-white font-medium text-xl mb-2 article-title group-hover:underline">
+                      <p className="dark:text-white/60">{project.date}</p>
+                      <div className="space-y-1 mt-2 mb-5">
+                        <p
+                          className={`inline-block dark:text-white font-medium text-xl article-title group-hover:underline line-clamp-2 overflow-ellipsis`}
+                        >
                           {project.title}
                         </p>
+                        <p className={`block dark:text-white/60 profile`}>
+                          {project.description}
+                        </p>
                       </div>
-                      <p className="block dark:text-white/50 mb-4 profile">
-                        {project.description}
-                      </p>
+                      {project.tools && <Tools tools={project.tools} />}
                     </div>
 
                     {/* <div className="flex items-center gap-1 mt-2 md:mt-0">

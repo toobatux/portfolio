@@ -1,16 +1,16 @@
 import React from "react";
 
 interface ToolsProps {
-  tools: [];
+  tools: string[];
 }
 
 const Tools = ({ tools }: ToolsProps) => {
   return (
-    <div className="flex items-center flex-wrap gap-y-2 mb-8 md:mb-12">
+    <div className="flex items-center flex-wrap gap-y-2 gap-x-2">
       {tools.map((tool, index) => (
         <div
           key={index}
-          className="border-2 border-black/10 dark:border-white/10 rounded-xl px-3 py-1 text-black/45 dark:text-white/45 text-xs me-1.5"
+          className="flex items-center bg-white/10 rounded px-3 py-1 text-black/45 dark:text-white/40 text-xs"
         >
           {tool}
         </div>

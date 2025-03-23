@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import ChevronRight from "@mui/icons-material/ChevronRight";
 import myFont from "../font/font";
+import Tools from "../(projects)/work/[projectSlug]/components/Tools";
 
 interface ProjectProps {
   date: string;
@@ -28,26 +29,27 @@ export default function Project({
 }: ProjectProps) {
   const projectContent = (
     <div
-      className={`flex flex-col-reverse gap-4 md:gap-2 group rounded ${
+      className={`flex flex-col-reverse gap-2 rounded ${
         isDisabled ? "pointer-events-none" : ""
-      } my-2 transition-all duration-200 py-1`}
+      } transition-all duration-200`}
     >
       {/* Title and Subtitle */}
       <div className="flex flex-col h-[inherit] w-full justify-between md:my-2">
         <div className="flex flex-col flex-grow">
-          <div className="space-y-2 mb-3">
-            <p className="dark:text-white/60">{date}</p>
+          <p className="dark:text-white/60">{date}</p>
+          <div className="space-y-1 mt-2 mb-5">
             <p
-              className={`inline-block dark:text-white font-medium text-xl mb-2 article-title group-hover:underline line-clamp-2 overflow-ellipsis ${myFont.className}`}
+              className={`inline-block dark:text-white font-medium text-xl article-title group-hover:underline line-clamp-2 overflow-ellipsis ${myFont.className}`}
             >
               {title}
             </p>
+            <p
+              className={`block dark:text-white/60 profile ${myFont.className}`}
+            >
+              {description}
+            </p>
           </div>
-          <p
-            className={`block dark:text-white/60 mb-4 profile ${myFont.className}`}
-          >
-            {description}
-          </p>
+          <Tools tools={tools} />
         </div>
         {/* {!isDisabled && (
           <div className="flex items-center gap-1 mt-2 md:mt-0">
@@ -75,7 +77,7 @@ export default function Project({
       {isDisabled ? (
         <div className="pointer-events-none">{projectContent}</div>
       ) : (
-        <Link href={link} prefetch={false}>
+        <Link href={link} prefetch={false} className="group">
           {/* <div className="flex flex-col md:flex-row md:gap-8 items-center group border-t border-t-white/10 transition-colors duration-200 backdrop-blur-lg py-8 px-0 md:px-0"> */}
           {projectContent}
         </Link>
