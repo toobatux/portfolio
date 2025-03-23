@@ -22,6 +22,7 @@ export default async function Projects() {
         date: string;
         src: string;
         bgColor: string;
+        tools: string[];
       }>({
         source: content,
         options: {
