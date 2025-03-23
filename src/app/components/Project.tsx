@@ -31,7 +31,7 @@ export default function Project({
     <div
       className={`flex flex-col-reverse gap-2 rounded ${
         isDisabled ? "pointer-events-none" : ""
-      } transition-all duration-200`}
+      } transition-all duration-200 pb-8`}
     >
       {/* Title and Subtitle */}
       <div className="flex flex-col h-[inherit] w-full justify-between my-3">
@@ -68,6 +68,7 @@ export default function Project({
           className="object-contain transition-all group-hover:scale-[1.02]"
         />
       </div>
+      <hr className="md:hidden border border-white/10 mb-6" />
     </div>
   );
 

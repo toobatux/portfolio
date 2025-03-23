@@ -58,7 +58,7 @@ const ProjectSection = () => {
     <>
       <div className="p-6 text-black dark:text-white" ref={container}>
         {/* <div className="animate-slidein [--slidein-delay:600ms] opacity-0"> */}
-        <div className="flex justify-between mb-12">
+        <div className="flex justify-between mb-6">
           <div className="text-4xl font-semibold flex items-center">Work</div>
           <Link
             href="/work/"
@@ -69,6 +69,8 @@ const ProjectSection = () => {
           </Link>
         </div>
         <HomeProjects />
+        {/* <hr className="md:hidden border border-white/10 my-6" /> */}
+
         {/* <div className="flex items-center justify-center mt-8 mb-12">
           <Link
             href="/work/"
