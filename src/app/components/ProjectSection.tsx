@@ -62,7 +62,7 @@ const ProjectSection = () => {
           <div className="text-4xl font-semibold flex items-center">Work</div>
           <Link
             href="/work/"
-            className="flex text-black dark:text-white rounded-full hover:text-white hover:bg-black dark:hover:text-black dark:hover:bg-white border-2 border-black dark:border-white/20 px-4 py-2 transition-all duration-300"
+            className="flex dark:text-white/55 border-2 border-black/55 dark:border-white/20 hover:text-white dark:hover:text-black hover:bg-black dark:hover:bg-white rounded-full px-4 py-2 transition-all duration-300"
             prefetch={false}
           >
             See more
