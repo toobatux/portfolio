@@ -56,7 +56,7 @@ const InfoBento = () => {
               <div className="text-black/50 dark:text-white/50 border border-black/20 dark:border-white/20 app-bg group-hover:bg-black dark:group-hover:bg-white group-hover:text-white dark:group-hover:text-black rounded-full p-2 w-[36px] h-[36px] flex items-center justify-center transition-colors duration-200">
                 <ArrowForward
                   fontSize="small"
-                  className="group-hover:rotate-90 transition-transform"
+                  className="group-hover:rotate-90 transition-transform duration-300"
                 />
               </div>
             </div>
