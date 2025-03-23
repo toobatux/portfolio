@@ -30,13 +30,12 @@ export default function Home() {
               <div className="flex pt-[6rem] md:pt-[12rem] px-6 mb-0 h-screen min-h-[40rem] md:pb-2">
                 <div className="relative flex flex-col w-full justify-between">
                   <ProfileCard isOpenToWork={false} />
-                  <div className="absolute bottom-20 flex w-full justify-end mb-[5rem]">
-                    <ArrowDownward className="text-white/55" />
-                  </div>
                 </div>
               </div>
 
-              <InfoBento />
+              <div id="info" className="pt-10">
+                <InfoBento />
+              </div>
             </div>
           </div>
 

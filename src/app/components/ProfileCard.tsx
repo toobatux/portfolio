@@ -4,8 +4,11 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
 import Contact from "./Contact";
+import { ExpandMore } from "@mui/icons-material";
+import { ScrollTrigger } from "gsap/all";
+import Link from "next/link";
 
-gsap.registerPlugin(useGSAP, TextPlugin);
+gsap.registerPlugin(useGSAP, TextPlugin, ScrollTrigger);
 
 interface ProfileProps {
   isOpenToWork: boolean;
@@ -14,10 +17,10 @@ interface ProfileProps {
 const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
   const work = useRef(null);
   const first = useRef(null);
-  const last = useRef(null);
   const occup = useRef(null);
   const bio = useRef(null);
   const contact = useRef(null);
+  const arrow = useRef(null);
 
   useGSAP(() => {
     // gsap.from(work.current, {
@@ -49,11 +52,20 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
 
     tl.timeScale(3.5);
 
-    gsap.set([first.current, occup.current, bio.current, contact.current], {
-      y: 100,
-      opacity: 0,
-      filter: "blur(20px)",
-    });
+    gsap.set(
+      [
+        first.current,
+        occup.current,
+        bio.current,
+        contact.current,
+        arrow.current,
+      ],
+      {
+        y: 100,
+        opacity: 0,
+        filter: "blur(20px)",
+      }
+    );
 
     tl.to(
       first.current,
@@ -95,6 +107,33 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
       },
       "-=0.5"
     );
+    tl.to(
+      arrow.current,
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        filter: "blur(0px)",
+      },
+      "-=0.5"
+    );
+
+    gsap.set(arrow.current, {
+      opacity: 1,
+      y: 0,
+    });
+
+    gsap.to(arrow.current, {
+      opacity: 0,
+      y: -100,
+      scrollTrigger: {
+        trigger: arrow.current,
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 0.5,
+        toggleActions: "play reverse play reverse",
+      },
+    });
   });
 
   return (
@@ -143,6 +182,17 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
         </div>
         <div ref={contact} className="mt-24">
           <Contact />
+        </div>
+        <div
+          ref={arrow}
+          className="absolute bottom-20 flex w-full justify-center mb-[7rem]"
+        >
+          <Link
+            href="#info"
+            className="p-2 rounded-full hover:bg-white/10 transition-colors"
+          >
+            <ExpandMore className="text-white/55" />
+          </Link>
         </div>
       </section>
     </>
