@@ -64,7 +64,7 @@ const Song = ({
           </div>
           <div className="flex flex-col">
             <p className="text-black/65 dark:text-white/65">Top Song of 2024</p>
-            <p className="block dark:text-white text-base font-medium">
+            <p className="block dark:text-white text-base font-medium group-hover:underline">
               {title}
             </p>
             <p className="text-black/65 dark:text-white/65">{artist}</p>

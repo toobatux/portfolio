@@ -27,7 +27,7 @@ const Book = () => {
               <p className="text-black/65 dark:text-white/65">
                 Currently Reading
               </p>
-              <p className="block dark:text-white text-base line-clamp-2 font-medium">
+              <p className="block dark:text-white text-base line-clamp-2 font-medium group-hover:underline">
                 this & Object Prototypes
               </p>
               <div className="flex items-center text-sm">
