@@ -34,7 +34,7 @@ export default function Project({
       } transition-all duration-200`}
     >
       {/* Title and Subtitle */}
-      <div className="flex flex-col h-[inherit] w-full justify-between md:my-2">
+      <div className="flex flex-col h-[inherit] w-full justify-between my-3">
         <div className="flex flex-col flex-grow">
           <p className="dark:text-white/60">{date}</p>
           <div className="space-y-1 mt-2 mb-5">
