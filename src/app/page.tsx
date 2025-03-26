@@ -43,7 +43,7 @@ export default function Home() {
 
           <div
             id="work"
-            className="z-20 w-full justify-between text-sm h-full mt-28 mb-12 md:pt-8 md:px-8 transition-all"
+            className="z-10 w-full justify-between text-sm h-full mt-28 mb-12 md:pt-8 md:px-8 transition-all"
           >
             <div className="w-full max-w-6xl mx-auto">
               {/* <div className="animate-slidein [--slidein-delay:400ms] opacity-0 overflow-x-hidden"> */}
