@@ -40,7 +40,7 @@ export default function Test() {
 
   return (
     <div
-      className={`sticky top-0 z-40 w-full text-black dark:text-white py-4 px-6 transition-transform ${
+      className={`fixed top-0 left-0 right-0 z-20 w-full text-black dark:text-white py-4 px-6 transition-transform ${
         showNav ? "translate-y-0" : "-translate-y-full"
       }`}
     >

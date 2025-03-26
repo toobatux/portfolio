@@ -118,22 +118,22 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
       "-=0.5"
     );
 
-    gsap.set(arrow.current, {
-      opacity: 1,
-      y: 0,
-    });
+    // gsap.set(arrow.current, {
+    //   opacity: 1,
+    //   y: 0,
+    // });
 
-    gsap.to(arrow.current, {
-      opacity: 0,
-      y: -100,
-      scrollTrigger: {
-        trigger: arrow.current,
-        start: "top 80%",
-        end: "top 20%",
-        scrub: 0.5,
-        toggleActions: "play reverse play reverse",
-      },
-    });
+    // gsap.to(arrow.current, {
+    //   opacity: 0,
+    //   y: -10,
+    //   scrollTrigger: {
+    //     trigger: arrow.current,
+    //     start: "top 80%",
+    //     end: "top 20%",
+    //     scrub: 0.5,
+    //     toggleActions: "play reverse play reverse",
+    //   },
+    // });
   });
 
   return (
@@ -157,15 +157,15 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
           </p>
         )}
         <div className="w-full items-center">
-          <div className="mt-8 mb-8">
+          <div className="mb-8">
             {/* text-[#CDC9B9] */}
-            <div className="flex flex-col w-full text-5xl md:text-8xl dark:text-white font-bold mb-8">
+            <div className="flex flex-col w-full text-5xl md:text-6xl dark:text-white font-bold mb-4">
               <h1 ref={first}>Tom Krusinski</h1>
               {/* <h1 ref={last}>Krusinski</h1> */}
             </div>
             <div className="flex items-center">
               <p
-                className="text-xl md:text-2xl text-black/90 dark:text-white/55 font-semibold"
+                className="text-xl md:text-3xl text-black/90 dark:text-white/55 font-semibold"
                 ref={occup}
               >
                 Software Engineer
@@ -182,17 +182,6 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
         </div>
         <div ref={contact} className="mt-24">
           <Contact />
-        </div>
-        <div
-          ref={arrow}
-          className="absolute bottom-20 flex w-full justify-center mb-[7rem]"
-        >
-          <Link
-            href="#info"
-            className="p-2 rounded-full hover:bg-white/10 transition-colors"
-          >
-            <ExpandMore className="text-white/55" />
-          </Link>
         </div>
       </section>
     </>

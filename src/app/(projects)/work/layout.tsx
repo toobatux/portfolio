@@ -12,7 +12,7 @@ export default function ProjectsLayout({
   return (
     <>
       <Test />
-      {children}
+      <div className="pt-20">{children}</div>
       <Footer />
     </>
   );

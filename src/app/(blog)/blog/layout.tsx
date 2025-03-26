@@ -13,7 +13,7 @@ export default function BlogLayout({
   return (
     <>
       <Test />
-      {children}
+      <div className="pt-20">{children}</div>
       <Footer />
     </>
   );
