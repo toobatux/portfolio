@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="w-full">
       <hr className="border-white/10" />
       <div className="flex w-full justify-center items-center md:px-8">
-        <div className="flex-col w-full max-w-7xl items-center py-12 p-6">
+        <div className="flex-col w-full max-w-6xl items-center py-12 p-6">
           <div className="flex w-full justify-between mb-12">
             <div className="flex-col text-white/50 space-y-2">
               <div className="text-white font-semibold">Tom Krusinski</div>
