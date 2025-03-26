@@ -14,7 +14,7 @@ const Expand = () => {
   useGSAP(() => {
     const tl = gsap.timeline();
 
-    tl.set(arrow.current, {
+    gsap.set(arrow.current, {
       opacity: 0,
       y: 10,
     });
@@ -24,27 +24,27 @@ const Expand = () => {
       delay: 0.75,
     });
 
-    gsap.set(arrow.current, {
-      opacity: 1,
-      y: 0,
-    });
+    // gsap.set(arrow.current, {
+    //   opacity: 1,
+    //   y: 0,
+    // });
 
-    gsap.to(arrow.current, {
-      opacity: 0,
-      y: -20,
-      scrollTrigger: {
-        trigger: arrow.current,
-        start: "top 90%",
-        end: "top 85%",
-        scrub: true,
-        toggleActions: "play reverse play reverse",
-      },
-    });
+    // gsap.to(arrow.current, {
+    //   opacity: 0,
+    //   y: -20,
+    //   scrollTrigger: {
+    //     trigger: arrow.current,
+    //     start: "top 90%",
+    //     end: "top 85%",
+    //     scrub: true,
+    //     toggleActions: "play reverse play reverse",
+    //   },
+    // });
   });
   return (
     <div
       ref={arrow}
-      className="fixed bottom-14 right-0 left-0 flex justify-center"
+      className="absolute bottom-14 right-0 left-0 flex justify-center"
     >
       <Link
         href="#info"
