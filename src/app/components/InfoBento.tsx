@@ -23,6 +23,7 @@ const InfoBento = () => {
       scrollTrigger: {
         trigger: container.current,
         start: "top 75%",
+        toggleActions: "play reverse play reverse",
       },
     });
 

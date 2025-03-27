@@ -37,7 +37,7 @@ const ProjectSection = () => {
       scrollTrigger: {
         trigger: container.current,
         start: "top 75%",
-        // toggleActions: "play none none reverse",
+        toggleActions: "play reverse play reverse",
       },
     });
 

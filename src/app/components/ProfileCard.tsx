@@ -15,6 +15,7 @@ interface ProfileProps {
 }
 
 const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
+  const section = useRef(null);
   const work = useRef(null);
   const first = useRef(null);
   const occup = useRef(null);
@@ -118,6 +119,23 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
       "-=0.5"
     );
 
+    gsap.set(section.current, {
+      y: 0,
+      opacity: 1,
+    });
+
+    gsap.to(section.current, {
+      y: 0,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: section.current,
+        start: "top 20%",
+        end: "top 0%",
+        scrub: true,
+        toggleActions: "play reverse play reverse",
+      },
+    });
+
     // gsap.set(arrow.current, {
     //   opacity: 1,
     //   y: 0,
@@ -138,7 +156,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
 
   return (
     <>
-      <section className="w-full">
+      <section className="w-full" ref={section}>
         {isOpenToWork && (
           // <div className="inline-block">
           //   <div className="flex items-center border border-white/15 bg-gradient-to-br from-white/5 to-transparent rounded-full py-1.5 px-3 gap-2 text-sm">
