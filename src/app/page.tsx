@@ -28,7 +28,7 @@ export default function Home() {
         <main className="flex min-h-screen flex-col items-center">
           {/* <div className="w-full z-10 justify-center md:px-8 md:pt-8 transition-all"> */}
           <div className="w-full max-w-6xl mx-auto justify-between text-sm h-full">
-            <div className="flex items-center px-6 mb-0 h-screen md:pb-2">
+            <div className="flex items-center px-8 md:px-12 mb-0 h-screen md:pb-2 transition-all">
               <div className="relative flex flex-col w-full justify-between">
                 <ProfileCard isOpenToWork={false} />
               </div>
@@ -43,7 +43,7 @@ export default function Home() {
 
           <div
             id="work"
-            className="z-10 w-full justify-between text-sm h-full mt-28 mb-12 md:pt-8 md:px-8 transition-all"
+            className="z-10 w-full justify-between text-sm h-full mt-28 mb-12 md:pt-8 transition-all"
           >
             <div className="w-full max-w-6xl mx-auto">
               {/* <div className="animate-slidein [--slidein-delay:400ms] opacity-0 overflow-x-hidden"> */}

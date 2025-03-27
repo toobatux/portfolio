@@ -41,7 +41,7 @@ const InfoBento = () => {
   });
 
   return (
-    <div ref={container} className="flex flex-col gap-4 px-6">
+    <div ref={container} className="flex flex-col gap-4 px-8 md:px-12">
       <div className="flex flex-wrap lg:flex-nowrap gap-4 w-full h-full">
         <div className="lg:w-2/5 w-full flex flex-col gap-4 justify-between max-w-full">
           <BackBlog />

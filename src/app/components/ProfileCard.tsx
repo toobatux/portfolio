@@ -174,14 +174,16 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
             OPEN TO WORK
           </p>
         )}
-        <div className="w-full items-center">
+        <div className="text-center w-full items-center">
           <div className="mb-8">
             {/* text-[#CDC9B9] */}
             <div className="flex flex-col w-full text-5xl md:text-6xl dark:text-white font-bold mb-4">
-              <h1 ref={first}>Tom Krusinski</h1>
+              <h1 ref={first} className="text-center">
+                Tom Krusinski
+              </h1>
               {/* <h1 ref={last}>Krusinski</h1> */}
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <p
                 className="text-xl md:text-3xl text-black/90 dark:text-white/55 font-semibold"
                 ref={occup}
@@ -198,7 +200,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
             BSc in Information Systems. Working in the JS ecosystem.
           </p>
         </div>
-        <div ref={contact} className="mt-24">
+        <div ref={contact} className="flex mt-24 w-full justify-center">
           <Contact />
         </div>
       </section>
