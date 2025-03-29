@@ -77,7 +77,7 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
     { scope: projectsContainer, dependencies: [projects] }
   );
   return (
-    <div className="z-10 w-full max-w-7xl justify-between text-sm h-full my-16 px-6">
+    <div className="z-10 w-full max-w-6xl justify-between text-sm h-full my-16 px-8 lg:px-12">
       <div ref={header} className="text-4xl dark:text-white font-bold mb-10">
         {title}
       </div>
@@ -87,7 +87,18 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
             <li key={project.filename}>
               <hr className="w-full border border-black/10 dark:border-white/10" />
               <Link href={`/work/${project.slug}`}>
-                <div className="flex flex-col-reverse md:flex-row md:gap-8 group my-4 group transition-all duration-200 rounded py-5">
+                <div className="flex flex-col md:flex-row md:gap-8 group my-4 group transition-all duration-200 rounded py-5">
+                  <div
+                    className={`flex w-full h-[220px] md:h-[200px] md:max-w-[300px] justify-center ${project.bgColor} rounded-[24px] overflow-hidden mb-4 md:mb-0`}
+                  >
+                    <Image
+                      src={project.src}
+                      alt={project.title}
+                      height={500}
+                      width={500}
+                      className="object-contain group-hover:scale-[1.02] transition-transform"
+                    />
+                  </div>
                   <div className="flex flex-col h-[inherit] w-full justify-between md:my-2">
                     <div className="flex flex-col flex-grow">
                       <p className="dark:text-white/60">{project.date}</p>
@@ -109,17 +120,6 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
                               Learn more
                             </div>
                           </div> */}
-                  </div>
-                  <div
-                    className={`flex w-full h-[220px] md:h-[200px] md:max-w-[300px] justify-center ${project.bgColor} rounded-[24px] overflow-hidden mb-4 md:mb-0`}
-                  >
-                    <Image
-                      src={project.src}
-                      alt={project.title}
-                      height={500}
-                      width={500}
-                      className="object-contain group-hover:scale-[1.02] transition-transform"
-                    />
                   </div>
                 </div>
               </Link>
