@@ -78,14 +78,14 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
   );
   return (
     <div className="z-10 w-full max-w-6xl justify-between text-sm h-full my-16 px-8 lg:px-12">
-      <div ref={header} className="text-4xl dark:text-white font-bold mb-10">
+      <div ref={header} className="text-4xl text-white font-bold mb-10">
         {title}
       </div>
-      <ul className="dark:text-white" ref={projectsContainer}>
+      <ul className="text-white" ref={projectsContainer}>
         {projects.map((project) => {
           return (
             <li key={project.filename}>
-              <hr className="w-full border border-black/10 dark:border-white/10" />
+              <hr className="w-full border border-white/10" />
               <Link href={`/work/${project.slug}`}>
                 <div className="flex flex-col md:flex-row md:gap-8 group my-4 group transition-all duration-200 rounded py-5">
                   <div
@@ -101,14 +101,14 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
                   </div>
                   <div className="flex flex-col h-[inherit] w-full justify-between md:my-2">
                     <div className="flex flex-col flex-grow">
-                      <p className="dark:text-white/60">{project.date}</p>
+                      <p className="text-white/60">{project.date}</p>
                       <div className="space-y-1 mt-2 mb-5">
                         <p
-                          className={`inline-block dark:text-white font-medium text-xl article-title group-hover:underline line-clamp-2 overflow-ellipsis`}
+                          className={`inline-block text-white font-medium text-xl article-title group-hover:underline line-clamp-2 overflow-ellipsis`}
                         >
                           {project.title}
                         </p>
-                        <p className={`block dark:text-white/60 profile`}>
+                        <p className={`block text-white/60 profile`}>
                           {project.description}
                         </p>
                       </div>

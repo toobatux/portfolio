@@ -10,7 +10,7 @@ const Tools = ({ tools }: ToolsProps) => {
       {tools.map((tool, index) => (
         <div
           key={index}
-          className="flex items-center bg-white/10 rounded px-3 py-1 text-black/45 dark:text-white/40 text-xs"
+          className="flex items-center bg-white/10 rounded px-3 py-1 text-white/40 text-xs"
         >
           {tool}
         </div>

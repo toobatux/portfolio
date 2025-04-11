@@ -125,10 +125,10 @@ const BackBlog = () => {
         className="flex w-full h-full z-0 items-center justify-center rounded-[24px] overflow-hidden"
       >
         <div className={`flex w-full transition-all ${myFont.className}`}>
-          <div className="relative group flex flex-col w-full h-[35rem] border border-black/10 dark:border-white/10 bg-white dark:bg-white/5 backdrop-blur-3xl overflow-hidden mx-auto items-center justify-between p-12 transition-all gap-12 rounded-[24px]">
-            <div className="flex flex-col w-full justify-center dark:text-white items-center">
+          <div className="relative group flex flex-col w-full h-[35rem] border  border-white/10 bg-white/5 backdrop-blur-3xl overflow-hidden mx-auto items-center justify-between p-12 transition-all gap-12 rounded-[24px]">
+            <div className="flex flex-col w-full justify-center text-white items-center">
               <div className="flex flex-col items-center w-full">
-                <div className="text-sm text-black/65 dark:text-white/65 transition-all mb-4 text-center">
+                <div className="text-sm  text-white/65 transition-all mb-4 text-center">
                   Featured Work
                 </div>
                 <div
@@ -136,7 +136,7 @@ const BackBlog = () => {
                 >
                   BackBlog Movie Tracker
                 </div>
-                <div className="mt-8 text-sm text-black/50 dark:text-white/50 app-bg dark:bg-black border-2 border-black/10 dark:border-white/10 group-hover:bg-black dark:group-hover:bg-white group-hover:text-white dark:group-hover:text-black transform-colors duration-300 px-4 py-2 rounded-full self-center">
+                <div className="mt-8 text-sm  text-white/50 app-bg bg-black border-2  border-white/10  group-hover:bg-white group-hover:text-black transform-colors duration-300 px-4 py-2 rounded-full self-center">
                   Learn more
                 </div>
               </div>
@@ -154,7 +154,7 @@ const BackBlog = () => {
                     height={500}
                     className="object-contain"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent dark:to-black to-white" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black " />
                 </div>
               </div>
             </div>

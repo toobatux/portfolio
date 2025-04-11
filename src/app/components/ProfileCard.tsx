@@ -168,7 +168,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
           //   </div>
           // </div>
           <p
-            className="inline-block text-black/55 dark:text-white/55 border border-black/55 dark:border-white/55 px-2 py-1 rounded"
+            className="inline-block text-white/55 border border-white/55 px-2 py-1 rounded"
             ref={work}
           >
             OPEN TO WORK
@@ -177,7 +177,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
         <div className="text-center w-full items-center">
           <div className="mb-8">
             {/* text-[#CDC9B9] */}
-            <div className="flex flex-col w-full text-5xl md:text-6xl dark:text-white font-bold mb-4">
+            <div className="flex flex-col w-full text-5xl md:text-6xl text-white font-bold mb-4">
               <h1 ref={first} className="text-center">
                 Tom Krusinski
               </h1>
@@ -185,7 +185,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
             </div>
             <div className="flex items-center justify-center">
               <p
-                className="text-xl md:text-3xl text-black/90 dark:text-white/55 font-semibold"
+                className="text-xl md:text-3xl text-white/55 font-semibold"
                 ref={occup}
               >
                 Software Engineer
@@ -193,10 +193,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
             </div>
             {/* <p className="text-white/55 mt-2">- Pittsburgh, PA</p> */}
           </div>
-          <p
-            className="text-black/90 dark:text-white/55 profile font-medium"
-            ref={bio}
-          >
+          <p className=" text-white/55 profile font-medium" ref={bio}>
             BSc in Information Systems. Working in the JS ecosystem.
           </p>
         </div>

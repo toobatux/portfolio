@@ -49,7 +49,7 @@ export default async function BlogsPage() {
           </div> */}
 
           <div className="flex flex-col z-10 w-full items-center text-sm h-full mt-24 px-6 gap-6">
-            <div className="flex p-4 items-center justify-center h-24 w-24 bg-black/5 backdrop-blur-lg dark:bg-white/10 rounded-xl border border-white/5">
+            <div className="flex p-4 items-center justify-center h-24 w-24 backdrop-blur-lg bg-white/10 rounded-xl border border-white/5">
               <Image
                 src={Construction}
                 height={100}
@@ -58,10 +58,10 @@ export default async function BlogsPage() {
               />
             </div>
             <div className="flex flex-col text-center gap-4">
-              <div className="text-3xl lg:text-5xl dark:text-white font-bold transition-all">
+              <div className="text-3xl lg:text-5xl text-white font-bold transition-all">
                 Under Construction
               </div>
-              <div className="dark:text-white/55 font-light">
+              <div className="text-white/55 font-light">
                 This page is under construction. Come back soon!
               </div>
             </div>

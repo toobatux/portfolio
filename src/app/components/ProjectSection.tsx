@@ -56,13 +56,13 @@ const ProjectSection = () => {
 
   return (
     <>
-      <div className="px-8 md:px-12 text-black dark:text-white" ref={container}>
+      <div className="px-8 md:px-12  text-white" ref={container}>
         {/* <div className="animate-slidein [--slidein-delay:600ms] opacity-0"> */}
         <div className="flex justify-between mb-6 md:mb-8">
           <div className="text-4xl font-semibold flex items-center">Work</div>
           <Link
             href="/work/"
-            className="flex dark:text-white/55 border-2 border-black/55 dark:border-white/20 hover:text-white dark:hover:text-black hover:bg-black dark:hover:bg-white rounded-full px-4 py-2 transition-all duration-300"
+            className="flex text-white/55 border-2 border-white/20 hover:text-black hover:bg-white rounded-full px-4 py-2 transition-all duration-300"
             prefetch={false}
           >
             See more
