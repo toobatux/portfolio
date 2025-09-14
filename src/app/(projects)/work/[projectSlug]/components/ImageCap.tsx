@@ -18,7 +18,7 @@ const ImageCap = ({
   return (
     <div className="my-8">
       <div
-        className={`relative w-full justify-center ${bgColor} rounded-[24px] ${
+        className={`relative w-full justify-center bg-white/10 p-1 rounded-2xl ${
           hasBorder ? "border border-white/10" : ""
         }`}
       >
@@ -27,11 +27,11 @@ const ImageCap = ({
           alt={caption}
           width={1920}
           height={1440}
-          className="object-contain rounded-lg w-full"
+          className="object-cover md:object-contain rounded-lg w-full"
         />
       </div>
       {hasCaption && (
-        <div className="flex w-full justify-center mt-2 text-sm text-white/40">
+        <div className="flex w-full justify-center mt-2 text-sm text-white/60">
           <h5>{caption}</h5>
         </div>
       )}

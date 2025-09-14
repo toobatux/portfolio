@@ -3,7 +3,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { compileMDX } from "next-mdx-remote/rsc";
 import WorkProject from "@/app/components/WorkProject";
-import Construction from "@/../../public/construction.svg";
+import Construction from "@/../public/construction.svg";
 import Image from "next/image";
 
 export default async function BlogsPage() {
@@ -40,10 +40,11 @@ export default async function BlogsPage() {
 
   return (
     <>
-      <div className="absolute inset-0 bg-grad h-[30rem] opacity-55 scale-x-[-1]"></div>
+      {/* <div className="absolute inset-0 bg-grad h-[30rem] opacity-55 scale-x-[-1]"></div> */}
+      <div className="absolute top-0 z-[-2] min-h-screen w-screen bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 
-      <div className="relative w-full">
-        <div className="flex min-h-screen flex-col justify-between items-center md:px-8 py-12">
+      <div className="relative w-full h-full">
+        <div className="flex min-h-[68vh] flex-col pt-24 items-center md:px-8 py-12">
           {/* <div className="z-10 w-full max-w-7xl justify-between text-sm h-full my-16 px-6">
             <div className="text-4xl dark:text-white font-bold mb-10">Blog</div>
           </div> */}
@@ -58,7 +59,7 @@ export default async function BlogsPage() {
               />
             </div>
             <div className="flex flex-col text-center gap-4">
-              <div className="text-3xl lg:text-5xl text-white font-bold transition-all">
+              <div className="text-xl lg:text-3xl text-white font-bold transition-all">
                 Under Construction
               </div>
               <div className="text-white/55 font-light">

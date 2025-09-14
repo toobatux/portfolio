@@ -7,7 +7,6 @@ import Tools from "../(projects)/work/[projectSlug]/components/Tools";
 interface ProjectProps {
   date: string;
   link: string;
-  src: StaticImageData;
   alt: string;
   title: string;
   description: string;
@@ -19,7 +18,6 @@ interface ProjectProps {
 export default function Project({
   date,
   link,
-  src,
   alt,
   title,
   description,
@@ -29,21 +27,23 @@ export default function Project({
 }: ProjectProps) {
   const projectContent = (
     <div
-      className={`flex flex-col-reverse gap-2 rounded ${
+      className={`flex rounded-2xl border border-white/5 p-6 bg-white/5 hover:bg-white/10 ${
         isDisabled ? "pointer-events-none" : ""
-      } transition-all duration-200 pb-8`}
+      } transition-all duration-200`}
     >
       {/* Title and Subtitle */}
-      <div className="flex flex-col h-[inherit] w-full justify-between my-3">
+      <div className="flex flex-col h-[inherit] w-full justify-between">
         <div className="flex flex-col flex-grow">
-          <p className="text-white/60">{date}</p>
-          <div className="space-y-1 mt-2 mb-5">
+          {/* <p className="text-white/60 mb-2">{date}</p> */}
+          <div className="space-y-1 mb-6">
             <p
-              className={`inline-block text-white font-medium text-xl article-title group-hover:underline line-clamp-2 overflow-ellipsis ${myFont.className}`}
+              className={`inline-block text-white font-medium article-title line-clamp-2 overflow-ellipsis ${myFont.className}`}
             >
               {title}
             </p>
-            <p className={`block text-white/60 profile ${myFont.className}`}>
+            <p
+              className={`block text-white/60 text-sm profile ${myFont.className}`}
+            >
               {description}
             </p>
           </div>
@@ -55,18 +55,18 @@ export default function Project({
           </div>
         )} */}
       </div>
-      <div
-        className={`flex h-[220px] w-full md:max-w-full overflow-hidden justify-center ${background} md:mb-0 rounded-[24px] transition-all`}
+      {/* <div
+        className={`flex h-[200px] w-[200px] md:max-w-full overflow-hidden justify-center ${background} md:mb-0 rounded-lg transition-all`}
       >
         <Image
           src={src}
           alt={alt}
           width={500}
           placeholder="blur"
-          className="object-contain transition-all group-hover:scale-[1.02]"
+          className="object-contain transition-all"
         />
-      </div>
-      <hr className="md:hidden border border-white/10 mb-6" />
+      </div> */}
+      {/* <hr className="md:hidden border border-white/10 mb-6" /> */}
     </div>
   );
 

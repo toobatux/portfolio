@@ -10,8 +10,8 @@ import WTLinks from "./components/watchtower/WTLinks";
 import SectionSidebar from "@/app/(projects)/work/[projectSlug]/components/SectionSidebar";
 import ScrollTop from "@/app/components/ScrollTop";
 import ProjectSidebar from "@/app/(projects)/work/[projectSlug]/components/ProjectSidebar";
-import Goyangi from "/public/goyangi.jpg";
-import WatchTower from "/public/watchtower.jpg";
+import Goyangi from "@/../public/goyangi.jpg";
+import WatchTower from "@/../public/watchtower.jpg";
 
 const projects = [
   {
@@ -28,11 +28,10 @@ const projects = [
   },
 ];
 
-export default async function Page({
-  params,
-}: {
-  params: { projectSlug: string };
+export default async function Page(props: {
+  params: Promise<{ projectSlug: string }>;
 }) {
+  const params = await props.params;
   const content = await fs.readFile(
     path.join(
       process.cwd(),
@@ -62,7 +61,8 @@ export default async function Page({
 
   return (
     <>
-      <div className="w-full m-5 md:mx-12 my-4 lg:mx-12 transition-all">
+      <div className="fixed top-0 right-0 left-0 z-[-2] h-screen w-screen bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <div className="w-full px-8 lg:px-12 my-4 lg:mx-12 transition-all">
         <div className="article">{data.content}</div>
         <div className="mt-[10rem]">
           <ProjectSidebar projects={projects} />
@@ -71,7 +71,7 @@ export default async function Page({
           <ScrollTop />
         </div>
       </div>
-      <aside className="hidden lg:flex lg:justify-center lg:flex-none w-48 lg:my-4">
+      <aside className="hidden md:flex md:justify-center md:flex-none w-48 md:my-4">
         <div className="fixed w-40">
           <div className="w-full flex flex-col">
             <SectionSidebar sections={data.frontmatter.headings} />

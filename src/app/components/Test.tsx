@@ -4,11 +4,16 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import {
+  BookOutlined,
+  CasesOutlined,
+  WavingHandOutlined,
+} from "@mui/icons-material";
 
 const navLinks = [
-  { name: "home", href: "/" },
-  { name: "work", href: "/work" },
-  { name: "blog", href: "/blog" },
+  { name: <WavingHandOutlined />, href: "/" },
+  { name: <CasesOutlined />, href: "/work" },
+  { name: <BookOutlined />, href: "/blog" },
   // { name: "Blog", href: "/blog" },
 ];
 
@@ -23,7 +28,7 @@ export default function Test() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
-      if (scrollY > 75) {
+      if (scrollY > 5) {
         setShowNav(scrollY < lastScrollY.current);
       } else {
         setShowNav(true);
@@ -40,12 +45,12 @@ export default function Test() {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 z-20 w-full text-white py-4 px-6 transition-transform ${
-        showNav ? "translate-y-0" : "-translate-y-full"
+      className={`fixed bottom-6 left-0 right-0 z-50 w-full text-white py-4 px-6 transition-transform shadow ${
+        showNav ? "translate-y-0" : "translate-y-[calc(100%+1.5rem)]"
       }`}
     >
       <div className="flex w-full justify-center">
-        <div className="flex justify-center shadow-md bg-white/5 backdrop-blur-lg p-2 border border-white/10 rounded-[24px]">
+        <div className="flex justify-center shadow-md bg-black p-2 border border-white/15 rounded-full">
           {/* <h1 ref={textRef} className="text-2xl font-bold">
             T/K
           </h1> */}
@@ -60,11 +65,11 @@ export default function Test() {
               return (
                 <Link
                   href={link.href}
-                  key={link.name}
+                  key={link.href}
                   className={`
                     ${
                       isActive ? " text-white  bg-white/15" : " text-white/65"
-                    } px-6 py-2 rounded-[16px] hover:bg-white/10 transition-colors`}
+                    } flex h-10 w-10 justify-center items-center rounded-full hover:bg-white/10 transition-colors`}
                 >
                   {link.name}
                 </Link>

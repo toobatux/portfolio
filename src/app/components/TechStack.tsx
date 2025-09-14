@@ -4,8 +4,8 @@ const TechStack = () => {
   return (
     <>
       {/* bg-gradient-to-tl from-transparent to-white/5 */}
-      <div className="border bg-transparent border-white/10 transition-colors duration-200 rounded-[24px] p-5 h-full">
-        <div className="flex w-full lg:h-[19rem] flex-col justify-between">
+      <div className="bg-transparent rounded-2xl border border-white/10 p-6 transition-colors duration-200 h-[20rem]">
+        <div className="flex w-full flex-col justify-between">
           <div className="w-full items-center space-y-1 mb-4 lg:mb-0">
             {/* <p className="inline-block text-white/50 py-1 px-3 border-2 border-white/10 rounded">
               Skills
@@ -17,7 +17,7 @@ const TechStack = () => {
               {`I'm always excited to learn something new!`}
             </div>
           </div>
-          <div className="flex py-4 lg:py-0">
+          <div className="flex h-full items-center py-4">
             <div className="relative overflow-hidden">
               <div className="flex">
                 <div className="anim-group">

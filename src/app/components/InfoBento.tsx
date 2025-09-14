@@ -41,9 +41,10 @@ const InfoBento = () => {
   });
 
   return (
-    <div ref={container} className="flex flex-col gap-4 px-8 md:px-12">
-      <div className="flex flex-wrap lg:flex-nowrap gap-4 w-full h-full">
-        <div className="lg:w-2/5 w-full flex flex-col gap-4 justify-between max-w-full">
+    <>
+      {/* <div ref={container} className="flex flex-col gap-4">
+      <div className="flex gap-4 w-full h-full"> */}
+      {/* <div className="lg:w-2/5 w-full flex flex-col gap-4 justify-between max-w-full">
           <BackBlog />
           <Link href="#work">
             <div className="flex max-h-[9rem] border border-white/10 shadow-xl bg-white/5 group transition-colors duration-200 rounded-[24px] p-5">
@@ -62,14 +63,15 @@ const InfoBento = () => {
               </div>
             </div>
           </Link>
-        </div>
-        <div className="lg:w-3/5 w-full flex flex-col gap-4 h-full max-w-full">
-          <TechStack />
-          <Book />
-          <SongSection />
-        </div>
+        </div> */}
+      <div className="w-full flex gap-4 h-full max-w-full">
+        <TechStack />
+        <Book />
+        {/* <SongSection /> */}
       </div>
-    </div>
+      {/* </div>
+    </div> */}
+    </>
   );
 };
 

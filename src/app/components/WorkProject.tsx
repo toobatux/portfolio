@@ -47,7 +47,7 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
       });
 
       gsap.set(projectItems, {
-        y: 40,
+        y: 10,
         opacity: 0,
         filter: "blur(10px)",
       });
@@ -77,56 +77,82 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
     { scope: projectsContainer, dependencies: [projects] }
   );
   return (
-    <div className="z-10 w-full max-w-6xl justify-between text-sm h-full my-16 px-8 lg:px-12">
-      <div ref={header} className="text-4xl text-white font-bold mb-10">
-        {title}
-      </div>
+    <div className="z-10 w-full text-sm h-full">
+      <div className="text-2xl text-white font-semibold mb-8">{title}</div>
       <ul className="text-white" ref={projectsContainer}>
-        {projects.map((project) => {
+        {projects.map((project, index) => {
           return (
-            <li key={project.filename}>
-              <hr className="w-full border border-white/10" />
+            <li key={project.filename} className="group">
+              <hr className="w-full border-t border-white/10 z-10" />
               <Link href={`/work/${project.slug}`}>
-                <div className="flex flex-col md:flex-row md:gap-8 group my-4 group transition-all duration-200 rounded py-5">
-                  <div
-                    className={`flex w-full h-[220px] md:h-[200px] md:max-w-[300px] justify-center ${project.bgColor} rounded-[24px] overflow-hidden mb-4 md:mb-0`}
-                  >
-                    <Image
-                      src={project.src}
-                      alt={project.title}
-                      height={500}
-                      width={500}
-                      className="object-contain group-hover:scale-[1.02] transition-transform"
-                    />
+                <div className="flex flex-row justify-between gap-2 hover:bg-white/5 transition-all rounded py-6 px-4">
+                  <div className="flex flex-col justify-center gap-4 w-1/4 md:w-1/2">
+                    <p className={`inline-block text-white font-medium`}>
+                      {project.title}
+                    </p>
+                    {/* {project.tools && <Tools tools={project.tools} />} */}
                   </div>
-                  <div className="flex flex-col h-[inherit] w-full justify-between md:my-2">
-                    <div className="flex flex-col flex-grow">
-                      <p className="text-white/60">{project.date}</p>
-                      <div className="space-y-1 mt-2 mb-5">
-                        <p
-                          className={`inline-block text-white font-medium text-xl article-title group-hover:underline line-clamp-2 overflow-ellipsis`}
-                        >
-                          {project.title}
-                        </p>
-                        <p className={`block text-white/60 profile`}>
-                          {project.description}
-                        </p>
-                      </div>
-                      {project.tools && <Tools tools={project.tools} />}
+                  <div className="flex w-1/2 items-center gap-4">
+                    <div className="flex w-3/4 md:w-1/2">
+                      <p className={`block text-white/60`}>
+                        {project.description}
+                      </p>
                     </div>
-
-                    {/* <div className="flex items-center gap-1 mt-2 md:mt-0">
-                            <div className="text-blue-400 text-xs learn-more">
-                              Learn more
-                            </div>
-                          </div> */}
+                    <div className="flex w-1/2 justify-end">
+                      <p>{project.date}</p>
+                    </div>
                   </div>
+
+                  {/* <div className="flex md:w-1/5 justify-end">
+                    <div
+                      className={`flex h-[200px] md:h-[100px] md:max-w-[200px] justify-center ${project.bgColor} overflow-hidden mb-4 md:mb-0`}
+                    >
+                      <Image
+                        src={project.src}
+                        alt={project.title}
+                        height={500}
+                        width={500}
+                        className="object-contain group-hover:scale-[1.02] transition-transform"
+                      />
+                    </div>
+                  </div> */}
                 </div>
               </Link>
             </li>
           );
         })}
       </ul>
+      {/* <div className="flex w-full justify-center">
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
+          {projects.map((project, index) => {
+            return (
+              <li
+                key={project.filename}
+                className="flex w-[350px] items-center group"
+              >
+                <div className="flex flex-col gap-2">
+                  <div className="flex h-[350px]">
+                    <Image
+                      src={project.src}
+                      alt={project.title}
+                      height={900}
+                      width={900}
+                      className="object-cover group-hover:scale-[1.02] transition-transform"
+                    />
+                  </div>
+                  <div className="text-white/60">{project.date}</div>
+                  <div className="text-lg text-white uppercase">
+                    {project.title}
+                  </div>
+                  <div className="text-white/60 profile">
+                    {project.description}
+                  </div>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div> */}
     </div>
   );
 };

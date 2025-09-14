@@ -129,8 +129,8 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
       opacity: 0,
       scrollTrigger: {
         trigger: section.current,
-        start: "top 20%",
-        end: "top 0%",
+        start: "top 5%",
+        end: "top -30%",
         scrub: true,
         toggleActions: "play reverse play reverse",
       },
@@ -156,48 +156,68 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
 
   return (
     <>
-      <section className="w-full" ref={section}>
+      <section className="flex flex-col w-full" ref={section}>
         {isOpenToWork && (
-          // <div className="inline-block">
-          //   <div className="flex items-center border border-white/15 bg-gradient-to-br from-white/5 to-transparent rounded-full py-1.5 px-3 gap-2 text-sm">
-          //     <div className="relative">
-          //       <span className="absolute w-3 h-3 rounded-full bg-blue-600 opacity-75 animate-ping"></span>
-          //       <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
-          //     </div>
-          //     <div className="text-white/80 me-1">Available</div>
-          //   </div>
-          // </div>
-          <p
-            className="inline-block text-white/55 border border-white/55 px-2 py-1 rounded"
-            ref={work}
-          >
-            OPEN TO WORK
-          </p>
+          <div className="w-fit inline-block mb-12">
+            <div className="flex items-center border border-white/10 bg-gradient-to-br from-white/5 to-transparent rounded-full py-1.5 px-3 gap-2 text-sm">
+              <div className="relative">
+                <span className="absolute w-3 h-3 rounded-full bg-primary opacity-75 animate-ping"></span>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              </div>
+              <div className="text-white/65 me-1">Available for projects</div>
+            </div>
+          </div>
+          // <p
+          //   className="inline-block text-white/55 border border-white/55 px-2 py-1 rounded"
+          //   ref={work}
+          // >
+          //   OPEN TO WORK
+          // </p>
         )}
-        <div className="text-center w-full items-center">
-          <div className="mb-8">
+        <p className="text-primary text-lg mb-6">Hi, I'm</p>
+        <div className="flex w-full flex-col lg:flex-row lg:justify-between mb-8">
+          <div className="flex w-full lg:w-1/2">
             {/* text-[#CDC9B9] */}
-            <div className="flex flex-col w-full text-5xl md:text-6xl text-white font-bold mb-4">
-              <h1 ref={first} className="text-center">
-                Tom Krusinski
-              </h1>
+            <div
+              ref={first}
+              className="flex flex-col w-full text-5xl md:text-7xl text-white"
+            >
+              <h1 className="font-semibold">Tom</h1>
+              <h1>Krusinski</h1>
               {/* <h1 ref={last}>Krusinski</h1> */}
             </div>
-            <div className="flex items-center justify-center">
+            {/* <div className="flex items-center">
               <p
-                className="text-xl md:text-3xl text-white/55 font-semibold"
+                className="text-xl md:text-3xl text-white/65 font-semibold"
                 ref={occup}
               >
                 Software Engineer
               </p>
-            </div>
+            </div> */}
             {/* <p className="text-white/55 mt-2">- Pittsburgh, PA</p> */}
           </div>
-          <p className=" text-white/55 profile font-medium" ref={bio}>
-            BSc in Information Systems. Working in the JS ecosystem.
-          </p>
+          <div
+            ref={occup}
+            className="flex w-full lg:w-1/2 min-h-full items-end pt-14"
+          >
+            <div className="flex flex-col gap-6 text-white/65 lg:ms-14">
+              <p>
+                Software engineer, UX designer. BSc information systems.
+                Currently building <span className="text-primary">stryve</span>,
+                a platform for learning.
+              </p>
+              <p className="hidden lg:flex">
+                I work with JavaScript, TypeScript, React, Next.JS, Python, C++,
+                and more.
+              </p>
+            </div>
+          </div>
+          {/* <p className=" text-white/65 profile font-medium mt-10" ref={bio}>
+            Software Engineer. BSc in Information Systems. Working in the JS
+            ecosystem.
+          </p> */}
         </div>
-        <div ref={contact} className="flex mt-24 w-full justify-center">
+        <div ref={contact} className="flex mt-12 w-full">
           <Contact />
         </div>
       </section>

@@ -11,9 +11,9 @@ export default function ProjectsLayout({
 }>) {
   return (
     <>
-      <Test />
+      {/* <Test /> */}
       <div className="pt-20">{children}</div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

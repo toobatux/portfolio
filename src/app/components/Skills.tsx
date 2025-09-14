@@ -203,7 +203,7 @@ const Skills = () => {
 export default Skills;
 
 interface SkillProps {
-  icon: ReactElement;
+  icon: ReactElement<any>;
 }
 
 const Skill = ({ icon }: SkillProps) => {

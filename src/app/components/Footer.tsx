@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full">
-      <hr className="border-white/10" />
+    <div className="w-full bg-black border-t border-white/10">
+      {/* <hr className="border-white/10" /> */}
       <div className="flex w-full justify-center items-center">
-        <div className="flex-col w-full max-w-6xl items-center py-12 px-8 md:px-12 transition-transform">
+        <div className="flex-col w-full max-w-7xl items-center py-12 px-8 md:px-12 transition-transform">
           <div className="flex w-full justify-between mb-12">
             <div className="flex-col text-white/50 space-y-2">
-              <div className="text-white font-semibold">Tom Krusinski</div>
+              <div className="text-white font-medium">Tom Krusinski</div>
               <div className="flex items-center gap-2">
                 <Link
                   href="https://github.com/toobatux"
@@ -46,7 +46,7 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col space-y-2 text-white/50 text-sm">
+            <div className="flex flex-col space-y-2 text-white/65 text-sm">
               <Link href="/work" className="hover:underline">
                 Work
               </Link>
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full max-w-6xl items-center">
-            <div className="text-xs text-white/50">© Tom Krusinski 2025</div>
+            <div className="text-xs text-white/55">© Tom Krusinski 2025</div>
           </div>
         </div>
       </div>

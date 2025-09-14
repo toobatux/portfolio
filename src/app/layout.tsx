@@ -18,6 +18,8 @@ import { Open_Sans } from "next/font/google";
 import { Cabin } from "next/font/google";
 import "./globals.css";
 import { Visibility } from "@mui/icons-material";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const myFont = localFont({
   src: [
@@ -73,9 +75,11 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
       </head>
       {/* bg-[#191919] */}
-      <body className={`${myFont.className} app-bg`}>
+      <body className={`${myFont.className} app-bg text-white`}>
         <script>0</script>
-        <div className="min-h-screen min-w-full">{children}</div>
+        <Navbar />
+        <div className="min-w-full">{children}</div>
+        <Footer />
       </body>
     </html>
   );

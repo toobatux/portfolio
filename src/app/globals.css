@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bg-grad {
-  background-color: hsla(0, 0%, 0%, 0);
+  /* background-color: hsla(0, 0%, 0%, 0);
   background-image: radial-gradient(
       at 98% 50%,
       hsla(210, 55%, 32%, 0.37) 0px,
@@ -11,7 +11,21 @@
     ),
     radial-gradient(at 53% 30%, hsla(210, 55%, 32%, 0.37) 0px, transparent 50%),
     radial-gradient(at 87% 9%, hsla(240, 55%, 56%, 0.2) 0px, transparent 50%),
-    radial-gradient(at 33% 0%, hsla(195, 55%, 25%, 0.51) 0px, transparent 50%);
+    radial-gradient(at 33% 0%, hsla(195, 55%, 25%, 0.51) 0px, transparent 50%); */
+
+  /* background: #262626;
+  background: radial-gradient(
+    circle,
+    rgba(38, 38, 38, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
+
+  background: #262626;
+  background: linear-gradient(
+    180deg,
+    rgba(38, 38, 38, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
 
   /* background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -89,11 +103,11 @@ ul li::marker {
 }
 
 .article {
-  @apply text-white/60;
+  @apply text-white/80;
 }
 
 .article h1 {
-  @apply text-white text-3xl md:text-4xl font-bold transition-transform my-4 md:my-4;
+  @apply text-white text-3xl font-bold transition-transform my-4 md:my-4;
 }
 
 .article h2 {
@@ -125,7 +139,7 @@ ul li::marker {
 }
 
 .article img {
-  @apply rounded-[24px] h-auto max-h-[400px] md:h-[400px];
+  @apply rounded-2xl h-auto max-h-[400px] md:h-[400px];
 }
 
 .app-bg {

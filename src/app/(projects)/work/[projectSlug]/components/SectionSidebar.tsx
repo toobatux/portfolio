@@ -36,7 +36,8 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
         });
       },
       {
-        rootMargin: "-20% 0px", // Trigger when 50% of the section is in view
+        rootMargin: "-100px 0px -50% 0px", // Trigger when 50% of the section is in view
+        threshold: 0.1,
       }
     );
 
@@ -67,8 +68,8 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
             <p
               className={`block text-sm group-hover:underline ${
                 activeSection === section.toLowerCase()
-                  ? "text-white/80"
-                  : "text-white/40"
+                  ? "text-white"
+                  : "text-white/50"
               }`}
             >
               {section}

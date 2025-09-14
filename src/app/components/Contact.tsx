@@ -77,9 +77,9 @@ const Contact = () => {
             <Link
               href={contact.link}
               target="_blank"
-              className="flex h-full group items-center text-white/55 border-2 border-white/20  hover:text-black  hover:bg-white transform-colors duration-300 px-2.5 md:px-4 py-1.5 md:py-2 rounded-[24px]"
+              className="flex h-full group items-center bg-white/5 text-white/55 border border-white/5 hover:text-white  hover:bg-white/15 transition-colors px-2.5 md:px-4 py-1.5 md:py-2 rounded-full"
             >
-              <div className="px-1 me-1">{contact.name}</div>
+              <div className="px-2 me-1">{contact.name}</div>
               <div className="flex h-full items-center">
                 <ArrowOutward fontSize="small" className="max-w-4 max-h-4" />
               </div>

@@ -9,7 +9,7 @@ export default function GoyangiLinks() {
         target="_blank"
         prefetch={false}
       >
-        <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-[24px] shadow-lg p-2 hover:bg-white/10 transition-colors">
+        <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-2xl shadow-lg p-2 hover:bg-white/10 transition-colors">
           <div className="flex p-3">
             <div className="flex flex-col gap-1">
               <div className="text-white/90 text-sm">toobatux/Photo-App</div>

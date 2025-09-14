@@ -4,6 +4,7 @@ import { compileMDX } from "next-mdx-remote/rsc";
 import Image from "next/image";
 import Link from "next/link";
 import WorkProject from "@/app/components/WorkProject";
+import Footer from "@/app/components/Footer";
 
 export default async function Projects() {
   const filenames = await fs.readdir(
@@ -39,13 +40,13 @@ export default async function Projects() {
   );
   return (
     <>
-      <div className="absolute inset-0 bg-grad h-[40rem] opacity-50"></div>
+      <div className="absolute top-0 z-[-2] h-full w-screen bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 
-      {/* <Navbar /> */}
-      <div className="relative w-full">
-        <div className="flex min-h-screen flex-col justify-between items-center md:p-8">
-          <WorkProject title="Work" projects={projects} />
-          {/* <Footer /> */}
+      <div className="flex flex-col w-full max-w-7xl min-h-[68vh] justify-center mx-auto px-8 md:px-12">
+        <div className="relative w-full">
+          <div className="flex flex-col justify-between items-center">
+            <WorkProject title="Projects" projects={projects} />
+          </div>
         </div>
       </div>
     </>

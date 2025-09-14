@@ -17,17 +17,17 @@ export default function ProjectSidebar({ projects }: ProjectSidebarProps) {
     <div className="w-full">
       <div className="flex justify-between mb-6">
         <div className="text-2xl font-semibold text-neutral-100 flex items-center">
-          Other Projects
+          More projects
         </div>
         <Link
           href="/work/"
-          className="flex text-white rounded-full hover:text-black hover:bg-white border-2 border-white/10 px-4 py-2 transition-all duration-300"
+          className="flex h-full items-end text-primary hover:underline"
           prefetch={false}
         >
-          See more
+          View all
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:space-x-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {projects.map((project, index) => (
           <div key={index} className="mb-2">
             <Project
@@ -53,7 +53,7 @@ interface ProjectInterface {
 const Project = ({ img, title, tagLine, link }: ProjectInterface) => {
   return (
     <Link href={link} prefetch={false}>
-      <div className="flex h-[102px] items-center bg-white/5 border border-white/10 backdrop-blur-lg rounded-[24px] shadow-lg p-2 hover:bg-white/10 transition-colors">
+      <div className="flex h-[102px] items-center bg-white/5 border border-white/10 backdrop-blur-lg rounded-2xl shadow-lg p-2 hover:bg-white/10 transition-colors">
         <div className="flex w-full p-3">
           <div className="flex flex-col gap-1 justify-center">
             <div className="text-white/90 font-medium">{title}</div>

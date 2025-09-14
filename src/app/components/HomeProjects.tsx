@@ -1,15 +1,11 @@
 import "../globals.css";
-import Chingu from "/public/chingu2.png";
-import BackBlog from "/public/backblogPhone2-2.png";
-import Goyangi from "/public/goyangi3.png";
-import WatchTower from "/public/watchtowerFinal.png";
 
 import Project from "./Project";
 
 export default function HomeProjects() {
   return (
     <>
-      <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 md:gap-y-2">
+      <div className="w-full grid gap-y-4">
         {/* <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 text-neutral-200 font-semibold flex items-center">
           <Info className="me-2" /> This section is in development
         </div> */}
@@ -17,9 +13,8 @@ export default function HomeProjects() {
         <Project
           date="2024"
           link="/work/studypal"
-          src={Chingu}
           alt="StudyPal"
-          title="StudyPal: An Educational Platform"
+          title="StudyPal Educational Platform"
           description="Create or discover flashcard sets and study guides to ace your next exam"
           tools={["React", "TypeScript", "Tailwind", "Next.js"]}
           isDisabled={false}
@@ -28,9 +23,8 @@ export default function HomeProjects() {
         <Project
           date="2023-2024"
           link="/work/backblog"
-          src={BackBlog}
           alt="BackBlog"
-          title="BackBlog: A Collaborative Movie Tracker for iOS and Android"
+          title="BackBlog Movie Tracker"
           description="Track which movies have been watched and easily pick what comes next."
           tools={["Kotlin", "Jetpack Compose", "Swift", "SwiftUI"]}
           isDisabled={false}
@@ -39,9 +33,8 @@ export default function HomeProjects() {
         <Project
           date="2024"
           link="/work/goyangi"
-          src={Goyangi}
           alt="Goyangi"
-          title="Goyangi: A Social Network for Cat Photos"
+          title="Goyangi Social Network"
           description="Post photos of your cats, make new friends, and interact with their posts."
           tools={["Django", "Python", "Bootstrap", "SQLite"]}
           isDisabled={false}

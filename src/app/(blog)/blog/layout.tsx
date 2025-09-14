@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import React from "react";
 import Test from "@/app/components/Test";
@@ -12,9 +11,9 @@ export default function BlogLayout({
 }>) {
   return (
     <>
-      <Test />
+      {/* <Test /> */}
       <div className="pt-20">{children}</div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
