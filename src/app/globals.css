@@ -1,6 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-primary: "#7877C6";
+}
+
+body {
+  color: var(--color-primary);
+}
 
 .bg-grad {
   /* background-color: hsla(0, 0%, 0%, 0);
