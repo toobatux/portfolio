@@ -174,7 +174,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
           //   OPEN TO WORK
           // </p>
         )}
-        <p className="text-primary text-lg mb-6">Hi, I'm</p>
+        <p className="text-primary text-lg mb-6">{`Hi, I'm`}</p>
         <div className="flex w-full flex-col lg:flex-row lg:justify-between mb-8">
           <div className="flex w-full lg:w-1/2">
             {/* text-[#CDC9B9] */}
