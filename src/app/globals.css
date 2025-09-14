@@ -141,7 +141,7 @@ ul li::marker {
 }
 
 .links a {
-  @apply no-underline !important;
+  @apply no-underline;
 }
 
 .article img {
