@@ -159,7 +159,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
       <section className="flex flex-col w-full" ref={section}>
         {isOpenToWork && (
           <div className="w-fit inline-block mb-12">
-            <div className="flex items-center border border-white/10 bg-gradient-to-br from-white/5 to-transparent rounded-full py-1.5 px-3 gap-2 text-sm">
+            <div className="flex items-center border border-white/10 bg-linear-to-br from-white/5 to-transparent rounded-full py-1.5 px-3 gap-2 text-sm">
               <div className="relative">
                 <span className="absolute w-3 h-3 rounded-full bg-primary opacity-75 animate-ping"></span>
                 <div className="w-3 h-3 bg-primary rounded-full"></div>

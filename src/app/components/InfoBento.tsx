@@ -47,7 +47,7 @@ const InfoBento = () => {
       {/* <div className="lg:w-2/5 w-full flex flex-col gap-4 justify-between max-w-full">
           <BackBlog />
           <Link href="#work">
-            <div className="flex max-h-[9rem] border border-white/10 shadow-xl bg-white/5 group transition-colors duration-200 rounded-[24px] p-5">
+            <div className="flex max-h-36 border border-white/10 shadow-xl bg-white/5 group transition-colors duration-200 rounded-[24px] p-5">
               <div className="flex items-center w-full">
                 <div className="flex flex-col">
                   <p className="block text-white group-hover:underline text-base line-clamp-2 font-medium">

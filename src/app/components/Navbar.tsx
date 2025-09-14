@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="flex w-full">
         <div className="flex-auto max-w-7xl mx-auto">
           <div className="">
-            <div className="relative flex w-full justify-between px-8 lg:px-12 py-6">
+            <div className="relative flex w-full justify-between px-8 lg:px-12 py-6 transition-all">
               <Link href="/" className="flex items-center">
                 <div className="text-white">T/K</div>
               </Link>

@@ -51,7 +51,7 @@ const Song = ({
       prefetch={false}
       className="rounded-[24px] overflow-hidden"
     >
-      <div className="flex max-h-[9rem] border border-white/10 shadow-xl overflow-hidden bg-white/5 backdrop-blur-3xl group transition-colors duration-200 rounded-[24px] p-5">
+      <div className="flex max-h-36 border border-white/10 shadow-xl overflow-hidden bg-white/5 backdrop-blur-3xl group transition-colors duration-200 rounded-[24px] p-5">
         <div className="flex items-center w-full">
           <div className="relative w-24 h-24 rounded overflow-hidden me-5">
             <Image

@@ -78,7 +78,8 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
   );
   return (
     <div className="z-10 w-full text-sm h-full">
-      <div className="text-2xl text-white font-semibold mb-8">{title}</div>
+      <div className="text-2xl text-white font-semibold mb-2">{title}</div>
+      <div className="text-primary mb-8">Some things I've been working on</div>
       <ul className="text-white" ref={projectsContainer}>
         {projects.map((project, index) => {
           return (

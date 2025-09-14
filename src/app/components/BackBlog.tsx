@@ -125,7 +125,7 @@ const BackBlog = () => {
         className="flex w-full h-full z-0 items-center justify-center rounded-[24px] overflow-hidden"
       >
         <div className={`flex w-full transition-all ${myFont.className}`}>
-          <div className="relative group flex flex-col w-full h-[35rem] border  border-white/10 bg-white/5 backdrop-blur-3xl overflow-hidden mx-auto items-center justify-between p-12 transition-all gap-12 rounded-[24px]">
+          <div className="relative group flex flex-col w-full h-140 border  border-white/10 bg-white/5 backdrop-blur-3xl overflow-hidden mx-auto items-center justify-between p-12 transition-all gap-12 rounded-[24px]">
             <div className="flex flex-col w-full justify-center text-white items-center">
               <div className="flex flex-col items-center w-full">
                 <div className="text-sm  text-white/65 transition-all mb-4 text-center">
@@ -154,7 +154,7 @@ const BackBlog = () => {
                     height={500}
                     className="object-contain"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black " />
+                  <div className="absolute inset-0 bg-linear-to-b from-transparent to-black " />
                 </div>
               </div>
             </div>

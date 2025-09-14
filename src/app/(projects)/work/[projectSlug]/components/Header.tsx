@@ -28,7 +28,7 @@ const Header = ({ title, year, image, tools, background }: HeaderProps) => {
         </div>
       </div>
       <div
-        className={`relative w-full max-h-[25rem] overflow-hidden rounded-xl ${background}`}
+        className={`relative w-full max-h-100 overflow-hidden rounded-xl ${background}`}
       >
         <Image
           src={image}

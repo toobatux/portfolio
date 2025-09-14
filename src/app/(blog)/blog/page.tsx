@@ -40,7 +40,7 @@ export default async function BlogsPage() {
 
   return (
     <>
-      {/* <div className="absolute inset-0 bg-grad h-[30rem] opacity-55 scale-x-[-1]"></div> */}
+      {/* <div className="absolute inset-0 bg-grad h-120 opacity-55 scale-x-[-1]"></div> */}
       <div className="absolute top-0 z-[-2] min-h-screen w-screen bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 
       <div className="relative w-full h-full">

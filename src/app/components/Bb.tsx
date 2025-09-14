@@ -11,7 +11,7 @@ const Bb = () => {
       className="flex w-full h-full z-0 items-center justify-center"
     >
       <div className={`flex w-full transition-all mx-auto`}>
-        <div className="relative group flex flex-col w-full h-[30rem] border-2 border-white/5 bg-white/5 backdrop-blur-3xl overflow-hidden mx-auto items-center justify-between p-12 transition-all gap-12 rounded-[24px]">
+        <div className="relative group flex flex-col w-full h-120 border-2 border-white/5 bg-white/5 backdrop-blur-3xl overflow-hidden mx-auto items-center justify-between p-12 transition-all gap-12 rounded-[24px]">
           <div className="flex flex-col w-full justify-center text-white items-center me-2">
             <div className="text-sm text-white/65 transition-all mb-4">
               Featured Work

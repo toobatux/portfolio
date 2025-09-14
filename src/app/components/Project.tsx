@@ -33,11 +33,11 @@ export default function Project({
     >
       {/* Title and Subtitle */}
       <div className="flex flex-col h-[inherit] w-full justify-between">
-        <div className="flex flex-col flex-grow">
+        <div className="flex flex-col grow">
           {/* <p className="text-white/60 mb-2">{date}</p> */}
           <div className="space-y-1 mb-6">
             <p
-              className={`inline-block text-white font-medium article-title line-clamp-2 overflow-ellipsis ${myFont.className}`}
+              className={`inline-block text-white font-medium article-title line-clamp-2 text-ellipsis ${myFont.className}`}
             >
               {title}
             </p>

@@ -30,7 +30,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </a>
     ),
     img: ({ ...props }) => (
-      //   <div className="w-full max-h-[25rem] bg-white">
+      //   <div className="w-full max-h-100 bg-white">
       <Image
         width={1000}
         height={1000}

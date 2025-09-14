@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: "#7877C6";
+  --color-primary: #7877c6;
 }
 
-body {
+/* body {
   color: var(--color-primary);
-}
+} */
 
 .bg-grad {
   /* background-color: hsla(0, 0%, 0%, 0);
@@ -156,4 +156,4 @@ html {
   scroll-behavior: smooth;
 }
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where(.dark, .dark *)); */
