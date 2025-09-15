@@ -4,7 +4,7 @@ import Footer from "@/app/components/Footer";
 import React from "react";
 import Test from "@/app/components/Test";
 
-export default function BlogLayout({
+export default function NoteLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

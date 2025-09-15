@@ -6,7 +6,7 @@ import WorkProject from "@/app/components/WorkProject";
 import Construction from "@/../public/construction.svg";
 import Image from "next/image";
 
-export default async function BlogsPage() {
+export default async function NotesPage() {
   // const filenames = await fs.readdir(
   //   path.join(process.cwd(), "src/content/blog")
   // );

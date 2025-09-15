@@ -4,18 +4,14 @@ import Link from "next/link";
 import Batman from "/public/batman.jpg";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-
-const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "Projects", href: "/work" },
-  { name: "Blog", href: "/blog" },
-  // { name: "Blog", href: "/blog" },
-];
+import { NavItems } from "./NavItems";
 
 const Navbar = () => {
+  const navLinks = NavItems();
+  const pathName = usePathname();
+
   const [showNav, setShowNav] = useState(true);
   const lastScrollY = useRef(0);
-  const pathName = usePathname();
 
   // Handle scroll detection
   useEffect(() => {
@@ -50,14 +46,12 @@ const Navbar = () => {
               </Link>
               <div className="flex gap-4 items-center">
                 {navLinks.map((link) => {
-                  const isActive = pathName === link.href;
-
                   return (
                     <Link
                       href={link.href}
                       key={link.name}
                       className={
-                        isActive
+                        link.active
                           ? "text-white underline ps-2"
                           : "text-white/65 hover:underline hover:text-white no-underline ps-2 transition-colors"
                       }
