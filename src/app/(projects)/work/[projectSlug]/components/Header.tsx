@@ -33,7 +33,6 @@ const Header = ({ title, year, image, tools, background }: HeaderProps) => {
         <Image
           src={image}
           alt="Project Image"
-          placeholder="blur"
           className="object-contain w-full h-full"
         />
       </div>
