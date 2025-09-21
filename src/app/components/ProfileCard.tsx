@@ -108,16 +108,16 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
       },
       "-=0.5"
     );
-    tl.to(
-      arrow.current,
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        filter: "blur(0px)",
-      },
-      "-=0.5"
-    );
+    // tl.to(
+    //   arrow.current,
+    //   {
+    //     y: 0,
+    //     opacity: 1,
+    //     duration: 1,
+    //     filter: "blur(0px)",
+    //   },
+    //   "-=0.5"
+    // );
 
     gsap.set(section.current, {
       y: 0,

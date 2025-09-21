@@ -43,13 +43,13 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
       gsap.set(header.current, {
         y: 20,
         opacity: 0,
-        filter: "blur(10px)",
+        filter: "blur(2px)",
       });
 
       gsap.set(projectItems, {
         y: 10,
         opacity: 0,
-        filter: "blur(10px)",
+        filter: "blur(2px)",
       });
 
       tl.to(

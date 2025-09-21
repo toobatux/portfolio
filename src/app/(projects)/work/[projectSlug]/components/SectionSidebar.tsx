@@ -1,6 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
+import { useGSAP } from "@gsap/react";
+import { useEffect, useRef, useState } from "react";
+
+gsap.registerPlugin(useGSAP, TextPlugin);
 
 interface SectionSidebarProps {
   sections: string[];
@@ -23,6 +28,38 @@ const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
 
 export default function SectionSidebar({ sections }: SectionSidebarProps) {
   const [activeSection, setActiveSection] = useState<string | null>(null);
+
+  const sectionsContainer = useRef<HTMLUListElement>(null);
+  useGSAP(
+    () => {
+      const tl = gsap.timeline();
+      tl.timeScale(3.5);
+
+      if (!sectionsContainer.current) return;
+
+      const sectionItems = gsap.utils.toArray(
+        sectionsContainer.current.querySelectorAll("li > a > p")
+      );
+
+      gsap.set(sectionItems, {
+        y: 10,
+        opacity: 0,
+        filter: "blur(2px)",
+      });
+
+      tl.to(
+        sectionItems,
+        {
+          y: 0,
+          opacity: 1,
+          filter: "blur(0px)",
+          stagger: 0.3,
+        },
+        "-=0.5"
+      );
+    },
+    { scope: sectionsContainer, dependencies: [sections] }
+  );
 
   // Intersection Observer callback to detect when a section is in view
   useEffect(() => {
@@ -57,26 +94,27 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
   return (
     <>
       <div className="text-white/90 font-semibold mb-2 px-2">On this page</div>
-      <div className="flex flex-col space-y-1">
+      <ul className="flex flex-col space-y-1" ref={sectionsContainer}>
         {sections.map((section) => (
-          <a
-            key={section}
-            href={`#${section.toLowerCase()}`}
-            onClick={(e) => handleScroll(e, section.toLowerCase())}
-            className="flex items-center group rounded-xl px-2 py-1"
-          >
-            <p
-              className={`block text-sm group-hover:underline ${
-                activeSection === section.toLowerCase()
-                  ? "text-white"
-                  : "text-white/50"
-              }`}
+          <li key={section}>
+            <a
+              href={`#${section.toLowerCase()}`}
+              onClick={(e) => handleScroll(e, section.toLowerCase())}
+              className="flex items-center group rounded-xl px-2 py-1"
             >
-              {section}
-            </p>
-          </a>
+              <p
+                className={`block text-sm group-hover:underline transition-colors duration-300 ${
+                  activeSection === section.toLowerCase()
+                    ? "text-white"
+                    : "text-white/50"
+                }`}
+              >
+                {section}
+              </p>
+            </a>
+          </li>
         ))}
-      </div>
+      </ul>
     </>
   );
 }
