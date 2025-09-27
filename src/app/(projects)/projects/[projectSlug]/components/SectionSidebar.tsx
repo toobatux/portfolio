@@ -4,6 +4,8 @@ import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { useGSAP } from "@gsap/react";
 import { useEffect, useRef, useState } from "react";
+import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
+import { ArticleOutlined } from "@mui/icons-material";
 
 gsap.registerPlugin(useGSAP, TextPlugin);
 
@@ -93,27 +95,28 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
 
   return (
     <>
-      <div className="text-white/90 font-semibold mb-2 px-2">On this page</div>
-      <ul className="flex flex-col space-y-1" ref={sectionsContainer}>
-        {sections.map((section) => (
-          <li key={section}>
-            <a
-              href={`#${section.toLowerCase()}`}
-              onClick={(e) => handleScroll(e, section.toLowerCase())}
-              className="flex items-center group rounded-xl px-2 py-1"
-            >
-              <p
-                className={`block text-sm group-hover:underline transition-colors duration-300 ${
-                  activeSection === section.toLowerCase()
-                    ? "text-white"
-                    : "text-white/50"
+      <div className="flex items-center text-sm text-white/60 mb-4">
+        In this article
+      </div>
+      <ul className="flex flex-col" ref={sectionsContainer}>
+        {sections.map((section) => {
+          const isActive = activeSection === section.toLowerCase();
+          return (
+            <li key={section}>
+              <a
+                href={`#${section.toLowerCase()}`}
+                onClick={(e) => handleScroll(e, section.toLowerCase())}
+                className={`flex items-center group px-4 py-2 border-s transition-colors duration-300 ${
+                  isActive
+                    ? "text-white border-white/60"
+                    : "text-white/60 border-white/10"
                 }`}
               >
-                {section}
-              </p>
-            </a>
-          </li>
-        ))}
+                <p className="block text-sm group-hover:underline">{section}</p>
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </>
   );

@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import ChevronRight from "@mui/icons-material/ChevronRight";
 import myFont from "../font/font";
-import Tools from "../(projects)/work/[projectSlug]/components/Tools";
+import Tools from "../(projects)/projects/[projectSlug]/components/Tools";
 
 interface ProjectProps {
   date: string;

@@ -48,7 +48,7 @@ export default function Home() {
                     Projects
                   </h1>
                   <Link
-                    href="/work"
+                    href="/projects"
                     className="flex text-primary hover:underline"
                   >
                     View all

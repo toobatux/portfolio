@@ -125,7 +125,11 @@ ul li::marker {
 }
 
 .article h6 {
-  @apply text-white/60;
+  @apply text-white/60 mb-6;
+}
+
+.article h6 + h1 {
+  @apply -mt-4;
 }
 
 .article p {
@@ -133,11 +137,19 @@ ul li::marker {
 }
 
 .article strong {
-  @apply text-white font-medium;
+  @apply text-primary font-medium;
 }
 
 .article a {
   @apply text-white hover:underline;
+}
+
+.article ul {
+  @apply list-disc ms-4 mb-4;
+}
+
+.article p + ul {
+  @apply -mt-4;
 }
 
 .links a {

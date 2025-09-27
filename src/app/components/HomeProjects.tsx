@@ -12,9 +12,9 @@ export default function HomeProjects() {
         {/* <hr className="my-4 border-white/10" /> */}
         <Project
           date="2024"
-          link="/work/studypal"
+          link="/projects/studypal"
           alt="StudyPal"
-          title="StudyPal Educational Platform"
+          title="StudyPal Flashcards"
           description="Create or discover flashcard sets and study guides to ace your next exam"
           tools={["React", "TypeScript", "Tailwind", "Next.js"]}
           isDisabled={false}
@@ -22,7 +22,7 @@ export default function HomeProjects() {
         />
         <Project
           date="2023-2024"
-          link="/work/backblog"
+          link="/projects/backblog"
           alt="BackBlog"
           title="BackBlog Movie Tracker"
           description="Track which movies have been watched and easily pick what comes next."
@@ -32,7 +32,7 @@ export default function HomeProjects() {
         />
         <Project
           date="2024"
-          link="/work/goyangi"
+          link="/projects/goyangi"
           alt="Goyangi"
           title="Goyangi Social Network"
           description="Post photos of your cats, make new friends, and interact with their posts."

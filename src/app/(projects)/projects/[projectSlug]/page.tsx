@@ -2,14 +2,14 @@ import { promises as fs } from "fs";
 import path from "path";
 import { compileMDX } from "next-mdx-remote/rsc";
 
-import Links from "@/app/(projects)/work/[projectSlug]/components/backblog/Links";
-import Tools from "@/app/(projects)/work/[projectSlug]/components/Tools";
-import ImageCap from "@/app/(projects)/work/[projectSlug]/components/ImageCap";
+import Links from "@/app/(projects)/projects/[projectSlug]/components/backblog/Links";
+import Tools from "@/app/(projects)/projects/[projectSlug]/components/Tools";
+import ImageCap from "@/app/(projects)/projects/[projectSlug]/components/ImageCap";
 import GoyangiLinks from "./components/goyangi/GoyangiLinks";
 import WTLinks from "./components/watchtower/WTLinks";
-import SectionSidebar from "@/app/(projects)/work/[projectSlug]/components/SectionSidebar";
+import SectionSidebar from "@/app/(projects)/projects/[projectSlug]/components/SectionSidebar";
 import ScrollTop from "@/app/components/ScrollTop";
-import ProjectSidebar from "@/app/(projects)/work/[projectSlug]/components/ProjectSidebar";
+import ProjectSidebar from "@/app/(projects)/projects/[projectSlug]/components/ProjectSidebar";
 import Goyangi from "@/../public/goyangi.jpg";
 import WatchTower from "@/../public/watchtower.jpg";
 
@@ -18,13 +18,13 @@ const projects = [
     img: Goyangi,
     title: "Goyangi",
     tagLine: "A social network for cat photos",
-    link: "/work/goyangi",
+    link: "/projects/goyangi",
   },
   {
     img: WatchTower,
     title: "WatchTower",
     tagLine: "A security camera livestream",
-    link: "/work/watchtower",
+    link: "/projects/watchtower",
   },
 ];
 

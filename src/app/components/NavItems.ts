@@ -9,7 +9,7 @@ export const NavItems = () => {
 
   return [
     { name: "Home", href: "/", active: pathName === "/" },
-    { name: "Projects", href: "/work", active: isNavItemActive(pathName, "work") },
+    { name: "Projects", href: "/projects", active: isNavItemActive(pathName, "projects") },
     { name: "Notes", href: "/notes", active: isNavItemActive(pathName, "notes") },
   ];
 };

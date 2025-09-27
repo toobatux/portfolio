@@ -24,6 +24,7 @@ export default async function Projects() {
         src: string;
         bgColor: string;
         tools: string[];
+        isArticle: boolean;
       }>({
         source: content,
         options: {
