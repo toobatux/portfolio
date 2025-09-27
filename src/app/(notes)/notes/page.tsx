@@ -7,37 +7,37 @@ import Construction from "@/../public/construction.svg";
 import Image from "next/image";
 
 export default async function NotesPage() {
-  const filenames = await fs.readdir(
-    path.join(process.cwd(), "src/content/notes")
-  );
+  // const filenames = await fs.readdir(
+  //   path.join(process.cwd(), "src/content/notes")
+  // );
 
-  const notes = await Promise.all(
-    filenames.map(async (filename) => {
-      const content = await fs.readFile(
-        path.join(process.cwd(), "src/content/notes/", filename),
-        "utf-8"
-      );
-      const { frontmatter } = await compileMDX<{
-        title: string;
-        description: string;
-        date: string;
-        src: string;
-        bgColor: string;
-        isArticle: boolean;
-      }>({
-        source: content,
-        options: {
-          parseFrontmatter: true,
-        },
-      });
+  // const notes = await Promise.all(
+  //   filenames.map(async (filename) => {
+  //     const content = await fs.readFile(
+  //       path.join(process.cwd(), "src/content/notes/", filename),
+  //       "utf-8"
+  //     );
+  //     const { frontmatter } = await compileMDX<{
+  //       title: string;
+  //       description: string;
+  //       date: string;
+  //       src: string;
+  //       bgColor: string;
+  //       isArticle: boolean;
+  //     }>({
+  //       source: content,
+  //       options: {
+  //         parseFrontmatter: true,
+  //       },
+  //     });
 
-      return {
-        filename,
-        slug: filename.replace(".mdx", ""),
-        ...frontmatter,
-      };
-    })
-  );
+  //     return {
+  //       filename,
+  //       slug: filename.replace(".mdx", ""),
+  //       ...frontmatter,
+  //     };
+  //   })
+  // );
 
   return (
     <>
