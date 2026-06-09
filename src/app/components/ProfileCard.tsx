@@ -76,7 +76,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
         duration: 1,
         filter: "blur(0px)",
       },
-      "-=0.5"
+      "-=0.7"
     );
     tl.to(
       occup.current,
@@ -86,7 +86,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
         duration: 1,
         filter: "blur(0px)",
       },
-      "-=0.5"
+      "-=0.7"
     );
     tl.to(
       bio.current,
@@ -96,7 +96,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
         duration: 1,
         filter: "blur(0px)",
       },
-      "-=0.5"
+      "-=0.7"
     );
     tl.to(
       contact.current,
@@ -106,7 +106,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
         duration: 1,
         filter: "blur(0px)",
       },
-      "-=0.5"
+      "-=0.7"
     );
     // tl.to(
     //   arrow.current,
@@ -174,50 +174,47 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
           //   OPEN TO WORK
           // </p>
         )}
-        <p className="text-primary text-lg mb-6">{`Hi, I'm`}</p>
+        {/* <p className="text-primary text-lg mb-6">{`Hi, I'm`}</p> */}
         <div className="flex w-full flex-col lg:flex-row lg:justify-between mb-8">
-          <div className="flex w-full lg:w-1/2">
+          <div className="flex flex-col w-full lg:w-1/2">
             {/* text-[#CDC9B9] */}
             <div
               ref={first}
               className="flex flex-col w-full text-5xl md:text-7xl text-white"
             >
-              <h1 className="font-semibold">Tom</h1>
+              <h1>Tom</h1>
               <h1>Krusinski</h1>
-              {/* <h1 ref={last}>Krusinski</h1> */}
             </div>
-            {/* <div className="flex items-center">
-              <p
-                className="text-xl md:text-3xl text-white/65 font-semibold"
-                ref={occup}
-              >
-                Software Engineer
+            <div ref={occup} className="flex flex-col gap-1 text-white/65 mt-10">
+              <p>
+                Software engineer. BSc information systems.
               </p>
-            </div> */}
-            {/* <p className="text-white/55 mt-2">- Pittsburgh, PA</p> */}
+              <p className="">
+                I work with TypeScript, React, Next.JS, Python, C++,
+                and more.
+              </p>
+            </div>
           </div>
-          <div
+          {/* <div
             ref={occup}
             className="flex w-full lg:w-1/2 min-h-full items-end pt-14"
           >
             <div className="flex flex-col gap-6 text-white/65 lg:ms-14">
               <p>
-                Software engineer, UX designer. BSc information systems.
-                Currently building <span className="text-primary">stryve</span>,
-                a platform for learning.
+                Software engineer. BSc information systems.
               </p>
               <p className="hidden lg:flex">
                 I work with JavaScript, TypeScript, React, Next.JS, Python, C++,
                 and more.
               </p>
             </div>
-          </div>
+          </div> */}
           {/* <p className=" text-white/65 profile font-medium mt-10" ref={bio}>
             Software Engineer. BSc in Information Systems. Working in the JS
             ecosystem.
           </p> */}
         </div>
-        <div ref={contact} className="flex mt-12 w-full">
+        <div ref={contact} className="flex w-full mt-4">
           <Contact />
         </div>
       </section>
