@@ -1,8 +1,4 @@
 import React from "react";
-import { promises as fs } from "fs";
-import path from "path";
-import { compileMDX } from "next-mdx-remote/rsc";
-import WorkProject from "@/app/components/WorkProject";
 import Construction from "@/../public/construction.svg";
 import Image from "next/image";
 
