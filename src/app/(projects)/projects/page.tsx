@@ -1,10 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { compileMDX } from "next-mdx-remote/rsc";
-import Image from "next/image";
-import Link from "next/link";
 import WorkProject from "@/app/components/WorkProject";
-import Footer from "@/app/components/Footer";
 
 export default async function Projects() {
   const filenames = await fs.readdir(
