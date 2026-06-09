@@ -1,6 +1,5 @@
 import SectionSidebar from "@/app/(projects)/projects/[projectSlug]/components/SectionSidebar";
 import ScrollTop from "@/app/components/ScrollTop";
-import { compileMDX } from "next-mdx-remote/rsc";
 import { promises as fs } from "fs";
 import path from "path";
 
@@ -13,23 +12,23 @@ export default async function NotePage(props: {
     "utf-8"
   );
 
-  const data = await compileMDX<{
-    title: string;
-    description: string;
-    headings: [];
-  }>({
-    source: content,
-    options: {
-      parseFrontmatter: true,
-    },
-    // components: {
-    //   Links,
-    //   GoyangiLinks,
-    //   WTLinks,
-    //   Tools,
-    //   ImageCap,
-    // },
-  });
+  // const data = await compileMDX<{
+  //   title: string;
+  //   description: string;
+  //   headings: [];
+  // }>({
+  //   source: content,
+  //   options: {
+  //     parseFrontmatter: true,
+  //   },
+  //   // components: {
+  //   //   Links,
+  //   //   GoyangiLinks,
+  //   //   WTLinks,
+  //   //   Tools,
+  //   //   ImageCap,
+  //   // },
+  // });
 
   return (
     <>

@@ -1,13 +1,5 @@
-import { promises as fs } from "fs";
 import path from "path";
-import { compileMDX } from "next-mdx-remote/rsc";
 import dynamic from "next/dynamic";
-
-import Links from "@/app/(projects)/projects/[projectSlug]/components/backblog/Links";
-import Tools from "@/app/(projects)/projects/[projectSlug]/components/Tools";
-import ImageCap from "@/app/(projects)/projects/[projectSlug]/components/ImageCap";
-import GoyangiLinks from "./components/goyangi/GoyangiLinks";
-import WTLinks from "./components/watchtower/WTLinks";
 import SectionSidebar from "@/app/(projects)/projects/[projectSlug]/components/SectionSidebar";
 import ScrollTop from "@/app/components/ScrollTop";
 import ProjectSidebar from "@/app/(projects)/projects/[projectSlug]/components/ProjectSidebar";
