@@ -1,5 +1,4 @@
 import { IBM_Plex_Mono } from "next/font/google";
-import React from "react";
 
 interface ToolsProps {
   tools: string[];

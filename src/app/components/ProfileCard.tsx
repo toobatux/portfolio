@@ -4,9 +4,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
 import Contact from "./Contact";
-import { ExpandMore } from "@mui/icons-material";
 import { ScrollTrigger } from "gsap/all";
-import Link from "next/link";
 
 gsap.registerPlugin(useGSAP, TextPlugin, ScrollTrigger);
 
@@ -167,17 +165,9 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
               <div className="text-white/65 me-1">Available for projects</div>
             </div>
           </div>
-          // <p
-          //   className="inline-block text-white/55 border border-white/55 px-2 py-1 rounded"
-          //   ref={work}
-          // >
-          //   OPEN TO WORK
-          // </p>
         )}
-        {/* <p className="text-primary text-lg mb-6">{`Hi, I'm`}</p> */}
         <div className="flex w-full flex-col lg:flex-row lg:justify-between mb-8">
           <div className="flex flex-col w-full lg:w-1/2">
-            {/* text-[#CDC9B9] */}
             <div
               ref={first}
               className="flex flex-col w-full text-5xl md:text-7xl text-white"
@@ -195,24 +185,6 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
               </p>
             </div>
           </div>
-          {/* <div
-            ref={occup}
-            className="flex w-full lg:w-1/2 min-h-full items-end pt-14"
-          >
-            <div className="flex flex-col gap-6 text-white/65 lg:ms-14">
-              <p>
-                Software engineer. BSc information systems.
-              </p>
-              <p className="hidden lg:flex">
-                I work with JavaScript, TypeScript, React, Next.JS, Python, C++,
-                and more.
-              </p>
-            </div>
-          </div> */}
-          {/* <p className=" text-white/65 profile font-medium mt-10" ref={bio}>
-            Software Engineer. BSc in Information Systems. Working in the JS
-            ecosystem.
-          </p> */}
         </div>
         <div ref={contact} className="flex w-full mt-4">
           <Contact />

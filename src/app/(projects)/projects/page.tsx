@@ -11,34 +11,31 @@ export default async function Projects() {
     path.join(process.cwd(), "src/content/projects")
   );
 
+  // Filter out any non-mdx files just in case
+  const mdxFiles = filenames.filter((file) => file.endsWith(".mdx"));
+
+  // Map through and dynamically import the frontmatter from each file
   const projects = await Promise.all(
-    filenames.map(async (filename) => {
-      const content = await fs.readFile(
-        path.join(process.cwd(), "src/content/projects/", filename),
-        "utf-8"
-      );
-      const { frontmatter } = await compileMDX<{
-        title: string;
-        description: string;
-        date: string;
-        src: string;
-        bgColor: string;
-        tools: string[];
-        isArticle: boolean;
-      }>({
-        source: content,
-        options: {
-          parseFrontmatter: true,
-        },
-      });
+    mdxFiles.map(async (filename) => {
+      const slug = filename.replace(".mdx", "");
+      
+      // Dynamically import the mdx module to get its named export 'frontmatter'
+      const { frontmatter } = await import(`@/content/projects/${filename}`);
 
       return {
         filename,
-        slug: filename.replace(".mdx", ""),
-        ...frontmatter,
+        slug,
+        title: frontmatter?.title || "",
+        description: frontmatter?.description || "",
+        date: frontmatter?.date || "",
+        src: frontmatter?.src || "",
+        bgColor: frontmatter?.bgColor || "",
+        tools: frontmatter?.tools || [],
+        isArticle: frontmatter?.isArticle || false,
       };
     })
   );
+
   return (
     <>
       <div className="absolute top-0 z-[-2] h-full w-full bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>

@@ -1,19 +1,5 @@
 import ProfileCard from "./components/ProfileCard";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import ProjectSection from "./components/ProjectSection";
-import InfoBento from "./components/InfoBento";
-import { ArrowDownward, ArrowForward, ArrowOutward } from "@mui/icons-material";
 import Link from "next/link";
-import Test from "./components/Test";
-import Navbar from "./components/Navbar";
-import Image from "next/image";
-import BackBlog from "./components/BackBlog";
-import Book from "./components/Book";
-import SongSection from "./components/SongSection";
-import TechStack from "./components/TechStack";
-import Gradient from "../../public/gradient.jpg";
-import Expand from "./components/Expand";
 import HomeProjects from "./components/HomeProjects";
 
 export default function Home() {
@@ -22,8 +8,6 @@ export default function Home() {
       {/* <div className="absolute inset-0 z-0 bg-grad h-160 opacity-80"></div> */}
       {/* <div className="fixed top-0 z-0 h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
       <div className="h-full w-full">
-        {/* <Test /> */}
-        {/* <Navbar /> */}
         <main className="">
           {/* <div className="fixed top-0 z-[-2] h-screen w-screen bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
 
