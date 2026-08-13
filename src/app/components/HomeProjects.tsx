@@ -11,10 +11,30 @@ export default function HomeProjects() {
         </div> */}
         {/* <hr className="my-4 border-white/10" /> */}
         <Project
+          date="2026"
+          link="/projects/showme"
+          alt="showMe"
+          title="Client Proofing and Photographer Portfolio"
+          description="Create or discover flashcard sets and study guides to ace your next exam"
+          tools={["Django", "Python", "React/Vite", "Tailwind CSS", "PostgreSQL", "S3", "Docker"]}
+          isDisabled={false}
+          background="bg-[#171717]"
+        />
+        <Project
+          date="2026"
+          link="/projects/maison-bleu"
+          alt="maison-bleu"
+          title="Clothing Storefront and Admin Dashboard"
+          description="Create or discover flashcard sets and study guides to ace your next exam"
+          tools={["Next.js", "JavaScript", "React", "Tailwind CSS", "PostgreSQL", "S3", "Docker"]}
+          isDisabled={false}
+          background="bg-[#171717]"
+        />
+        <Project
           date="2024"
           link="/projects/studypal"
           alt="StudyPal"
-          title="StudyPal Flashcards"
+          title="Flashcard and Studying Platform"
           description="Create or discover flashcard sets and study guides to ace your next exam"
           tools={["React", "TypeScript", "Tailwind", "Next.js"]}
           isDisabled={false}
@@ -24,13 +44,13 @@ export default function HomeProjects() {
           date="2023-2024"
           link="/projects/backblog"
           alt="BackBlog"
-          title="BackBlog Movie Tracker"
+          title="Cross-platform Movie Watchlist App"
           description="Track which movies have been watched and easily pick what comes next."
           tools={["Kotlin", "Jetpack Compose", "Swift", "SwiftUI"]}
           isDisabled={false}
           background="bg-[#3B414C]"
         />
-        <Project
+        {/* <Project
           date="2024"
           link="/projects/goyangi"
           alt="Goyangi"
@@ -39,7 +59,7 @@ export default function HomeProjects() {
           tools={["Django", "Python", "Bootstrap", "SQLite"]}
           isDisabled={false}
           background="bg-[#101010]"
-        />
+        /> */}
         {/* <Project
           date="2023-2024"
           link="/work/watchtower"
