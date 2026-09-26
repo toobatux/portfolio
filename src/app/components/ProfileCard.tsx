@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
 import Contact from "./Contact";
 import { ScrollTrigger } from "gsap/all";
+import name from "../font/nameFont";
 
 gsap.registerPlugin(useGSAP, TextPlugin, ScrollTrigger);
 
@@ -22,31 +23,6 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
   const arrow = useRef(null);
 
   useGSAP(() => {
-    // gsap.from(work.current, {
-    //   duration: 0.75,
-    //   text: "${work}",
-    //   ease: "none",
-    // });
-    // gsap.from(first.current, {
-    //   duration: 0.5,
-    //   text: "_d#",
-    //   ease: "none",
-    // });
-    // gsap.from(last.current, {
-    //   duration: 1,
-    //   text: "${last}",
-    //   ease: "none",
-    // });
-    // gsap.from(occup.current, {
-    //   duration: 0.75,
-    //   text: "${occupation}",
-    //   ease: "none",
-    // });
-    // gsap.from(bio.current, {
-    //   duration: 1,
-    //   text: "_-9FkDS7ke3_Df*de#MDm)3d7H#SA#3jdfns3_E#dnAW#BS38DSAD3_*",
-    //   ease: "none",
-    // });
     const tl = gsap.timeline();
 
     tl.timeScale(3.5);
@@ -62,7 +38,6 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
       {
         y: 100,
         opacity: 0,
-        filter: "blur(20px)",
       }
     );
 
@@ -72,9 +47,8 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
         y: 0,
         opacity: 1,
         duration: 1,
-        filter: "blur(0px)",
       },
-      "-=0.7"
+      "-=0.9"
     );
     tl.to(
       occup.current,
@@ -82,9 +56,8 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
         y: 0,
         opacity: 1,
         duration: 1,
-        filter: "blur(0px)",
       },
-      "-=0.7"
+      "-=0.9"
     );
     tl.to(
       bio.current,
@@ -92,9 +65,8 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
         y: 0,
         opacity: 1,
         duration: 1,
-        filter: "blur(0px)",
       },
-      "-=0.7"
+      "-=0.9"
     );
     tl.to(
       contact.current,
@@ -102,9 +74,8 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
         y: 0,
         opacity: 1,
         duration: 1,
-        filter: "blur(0px)",
       },
-      "-=0.7"
+      "-=0.9"
     );
     // tl.to(
     //   arrow.current,
@@ -112,7 +83,6 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
     //     y: 0,
     //     opacity: 1,
     //     duration: 1,
-    //     filter: "blur(0px)",
     //   },
     //   "-=0.5"
     // );
@@ -122,17 +92,17 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
       opacity: 1,
     });
 
-    gsap.to(section.current, {
-      y: 0,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: section.current,
-        start: "top 5%",
-        end: "top -30%",
-        scrub: true,
-        toggleActions: "play reverse play reverse",
-      },
-    });
+    // gsap.to(section.current, {
+    //   y: 0,
+    //   opacity: 0,
+    //   scrollTrigger: {
+    //     trigger: section.current,
+    //     start: "top 5%",
+    //     end: "top -30%",
+    //     scrub: true,
+    //     toggleActions: "play reverse play reverse",
+    //   },
+    // });
 
     // gsap.set(arrow.current, {
     //   opacity: 1,
@@ -157,36 +127,35 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
       <section className="flex flex-col w-full" ref={section}>
         {isOpenToWork && (
           <div className="w-fit inline-block mb-12">
-            <div className="flex items-center border border-white/10 bg-linear-to-br from-white/5 to-transparent rounded-full py-1.5 px-3 gap-2 text-sm">
+            <div className="flex items-center border border-foreground/10 bg-linear-to-br from-foreground/5 to-transparent rounded-full py-1.5 px-3 gap-2 text-sm">
               <div className="relative">
                 <span className="absolute w-3 h-3 rounded-full bg-primary opacity-75 animate-ping"></span>
                 <div className="w-3 h-3 bg-primary rounded-full"></div>
               </div>
-              <div className="text-white/65 me-1">Available for projects</div>
+              <div className="text-foreground/65 me-1">Available for projects</div>
             </div>
           </div>
         )}
-        <div className="flex w-full flex-col lg:flex-row lg:justify-between mb-8">
-          <div className="flex flex-col w-full lg:w-1/2">
+        <div className="mb-10 flex w-full flex-col lg:flex-row lg:justify-between">
+          <div className="flex w-full flex-col text-center">
             <div
               ref={first}
-              className="flex flex-col w-full text-5xl md:text-7xl text-white"
+              className="flex w-full flex-col gap-8 text-foreground"
             >
-              <h1>Tom</h1>
-              <h1>Krusinski</h1>
-            </div>
-            <div ref={occup} className="flex flex-col gap-1 text-white/65 mt-10">
-              <p>
-                Software engineer. BSc information systems.
-              </p>
-              <p className="">
-                I work with TypeScript, React, Next.JS, Python, C++,
-                and more.
-              </p>
+              <h1 className={`text-4xl md:text-5xl ${name.className}`}>Tom Krusinski</h1>
+              <div
+                ref={occup}
+                className="flex flex-col gap-4 text-foreground/65"
+              >
+                <p>Full-Stack Developer</p>
+                <p>
+                  TypeScript, React, Next.JS, Python, Java, and more.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div ref={contact} className="flex w-full mt-4">
+        <div ref={contact} className="mt-4 flex w-full justify-center">
           <Contact />
         </div>
       </section>

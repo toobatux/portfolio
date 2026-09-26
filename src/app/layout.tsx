@@ -42,12 +42,11 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
         {/* <script src="https://unpkg.com/react-scan/dist/auto.global.js"></script> */}
-        <meta name="theme-color" content="#000000" />
+        {/* <meta name="theme-color" content="#000000" /> */}
       </head>
-      <body className={`${myFont.className} app-bg text-white`}>
-        <script>0</script>
+      <body className={`${myFont.className} bg-background text-foreground flex min-h-screen flex-col`}>
         <Navbar />
-        <div className="min-w-full">{children}</div>
+        <main className="min-w-full flex-1">{children}</main>
         <Footer />
       </body>
     </html>

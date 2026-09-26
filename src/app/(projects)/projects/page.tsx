@@ -40,9 +40,10 @@ export default async function Projects() {
 
   return (
     <>
-      <div className="absolute top-0 z-[-2] h-full w-full bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      {/* <div className="absolute top-0 z-[-2] h-full w-full bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
+      <div className="fixed inset-0 background"></div>
 
-      <div className="flex flex-col w-full max-w-7xl min-h-[68vh] justify-center mx-auto px-8 lg:px-12 transition-all">
+      <div className="flex flex-col w-full max-w-4xl min-h-[68vh] justify-center mx-auto px-8  transition-all">
         <div className="relative w-full">
           <div className="flex flex-col justify-between items-center">
             <WorkProject title="Projects" projects={projects} />

@@ -27,22 +27,22 @@ export default function Project({
 }: ProjectProps) {
   const projectContent = (
     <div
-      className={`flex rounded-2xl border border-white/5 p-6 bg-white/5 hover:bg-white/10 ${
+      className={`flex border border-foreground/10 p-6 hover:bg-foreground/5 ${
         isDisabled ? "pointer-events-none" : ""
       } transition-all duration-200`}
     >
       {/* Title and Subtitle */}
       <div className="flex flex-col h-[inherit] w-full justify-between">
         <div className="flex flex-col grow">
-          {/* <p className="text-white/60 mb-2">{date}</p> */}
+          {/* <p className="text-foreground/60 mb-2">{date}</p> */}
           <div className="space-y-1 mb-6">
             <p
-              className={`inline-block text-white font-medium article-title line-clamp-2 text-ellipsis ${myFont.className}`}
+              className={`inline-block text-foreground font-medium article-title line-clamp-2 text-ellipsis ${myFont.className}`}
             >
               {title}
             </p>
             <p
-              className={`block text-white/60 text-sm profile ${myFont.className}`}
+              className={`block text-foreground/60 text-sm profile ${myFont.className}`}
             >
               {description}
             </p>
@@ -66,18 +66,18 @@ export default function Project({
           className="object-contain transition-all"
         />
       </div> */}
-      {/* <hr className="md:hidden border border-white/10 mb-6" /> */}
+      {/* <hr className="md:hidden border border-foreground/10 mb-6" /> */}
     </div>
   );
 
   return (
     <>
-      {/* <hr className="w-full border border-white/10" /> */}
+      {/* <hr className="w-full border border-foreground/10" /> */}
       {isDisabled ? (
         <div className="pointer-events-none">{projectContent}</div>
       ) : (
         <Link href={link} prefetch={false} className="group">
-          {/* <div className="flex flex-col md:flex-row md:gap-8 items-center group border-t border-t-white/10 transition-colors duration-200 backdrop-blur-lg py-8 px-0 md:px-0"> */}
+          {/* <div className="flex flex-col md:flex-row md:gap-8 items-center group border-t border-t-foreground/10 transition-colors duration-200 backdrop-blur-lg py-8 px-0 md:px-0"> */}
           {projectContent}
         </Link>
       )}

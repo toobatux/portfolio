@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Tools from "../(projects)/projects/[projectSlug]/components/Tools";
+import name from "../font/nameFont";
 
 gsap.registerPlugin(useGSAP, TextPlugin);
 
@@ -79,14 +80,13 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
   );
   return (
     <div className="z-10 w-full text-sm h-full">
-      <div className="text-2xl text-white font-semibold mb-2">{title}</div>
-      <div className="text-primary mb-8">{`Some things I've been working on`}</div>
-      <ul className="text-white" ref={projectsContainer}>
+      <div className={`text-2xl mb-8 ${name.className}`}>{title}</div>
+      <ul className="text-foreground" ref={projectsContainer}>
         {projects.map((project, index) => {
           const isLast = index === projects.length - 1;
           return (
             <li key={project.filename} className="group">
-              <hr className="w-full border-t border-white/10 z-10" />
+              <hr className="w-full border-t border-foreground/10 z-10" />
               <Link
                 href={`${
                   project.isArticle
@@ -94,15 +94,15 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
                     : `/projects/${project.slug}`
                 }`}
               >
-                <div className="flex flex-row justify-between gap-2 hover:bg-white/5 transition-all rounded py-6 px-4">
+                <div className="flex flex-row justify-between gap-2 hover:bg-foreground/5 transition-all rounded py-6 px-4">
                   <div className="flex flex-col justify-center gap-4 w-1/4 md:w-1/2">
-                    <p className={`inline-block text-white font-medium`}>
+                    <p className={`inline-block text-foreground font-medium`}>
                       {project.title}
                     </p>
                   </div>
                   <div className="flex w-1/2 items-center gap-4">
                     <div className="flex w-3/4 md:w-1/2">
-                      <p className={`block text-white/60`}>
+                      <p className={`block text-foreground/60`}>
                         {project.description}
                       </p>
                     </div>
@@ -113,7 +113,7 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
                 </div>
               </Link>
               {isLast && (
-                <hr className="w-full border-t border-white/10 z-10" />
+                <hr className="w-full border-t border-foreground/10 z-10" />
               )}
             </li>
           );

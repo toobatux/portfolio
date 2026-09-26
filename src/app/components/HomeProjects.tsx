@@ -5,7 +5,7 @@ import Project from "./Project";
 export default function HomeProjects() {
   return (
     <>
-      <div className="w-full grid md:grid-cols-2 gap-4">
+      <div className="w-full grid md:grid-cols-1 gap-4">
         {/* <div className="relative rounded-full bg-blue-600 bg-opacity-40 mb-4 p-1.5 text-neutral-200 font-semibold flex items-center">
           <Info className="me-2" /> This section is in development
         </div> */}

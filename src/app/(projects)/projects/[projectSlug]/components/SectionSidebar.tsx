@@ -95,7 +95,7 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
 
   return (
     <>
-      <div className="flex items-center text-sm text-white/60 mb-4">
+      <div className="flex items-center text-sm text-foreground/60 mb-4">
         In this article
       </div>
       <ul className="flex flex-col" ref={sectionsContainer}>
@@ -108,8 +108,8 @@ export default function SectionSidebar({ sections }: SectionSidebarProps) {
                 onClick={(e) => handleScroll(e, section.toLowerCase())}
                 className={`flex items-center group px-4 py-2 border-s transition-colors duration-300 ${
                   isActive
-                    ? "text-white border-white/60"
-                    : "text-white/60 border-white/10"
+                    ? "text-foreground border-foreground/60"
+                    : "text-foreground/60 border-foreground/10"
                 }`}
               >
                 <p className="block text-sm group-hover:underline">{section}</p>

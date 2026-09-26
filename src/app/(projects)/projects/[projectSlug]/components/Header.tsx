@@ -12,15 +12,15 @@ const Header = ({ title, year, image, tools, background }: HeaderProps) => {
   return (
     <>
       <div className="space-y-4 md:space-y-6 mb-10">
-        <div className="dark:text-white/60">{year}</div>
-        <h1 className="dark:text-white text-2xl md:text-4xl font-semibold transition-transform">
+        <div className="dark:text-foreground/60">{year}</div>
+        <h1 className="dark:text-foreground text-2xl md:text-4xl font-semibold transition-transform">
           {title}
         </h1>
         <div className="flex items-center flex-wrap gap-y-2">
           {tools.map((tool, index) => (
             <div
               key={index}
-              className="bg-white/5 rounded-lg px-3 py-1 text-white/45 text-xs me-1.5"
+              className="bg-foreground/5 rounded-lg px-3 py-1 text-foreground/45 text-xs me-1.5"
             >
               {tool}
             </div>

@@ -42,7 +42,7 @@ export default async function NotesPage() {
       {/* <div className="z-10 w-full max-w-7xl justify-between text-sm h-full my-16 px-6">
             <div className="text-4xl dark:text-white font-bold mb-10">Blog</div>
           </div> */}
-      <div className="flex flex-col w-full max-w-7xl min-h-[68vh] justify-center mx-auto px-8 lg:px-12 transition-all">
+      <div className="flex flex-col w-full max-w-7xl min-h-[68vh] justify-center mx-auto px-8  transition-all">
         <div className="flex flex-col z-10 w-full items-center text-sm h-full px-6 gap-6">
           <div className="flex p-4 items-center justify-center h-24 w-24 backdrop-blur-lg bg-white/10 rounded-xl border border-white/5">
             <Image
@@ -63,7 +63,7 @@ export default async function NotesPage() {
         </div>
       </div>
 
-      {/* <div className="flex flex-col w-full max-w-7xl min-h-[68vh] justify-center mx-auto px-8 lg:px-12 transition-all">
+      {/* <div className="flex flex-col w-full max-w-7xl min-h-[68vh] justify-center mx-auto px-8  transition-all">
         <div className="relative w-full">
           <div className="flex flex-col justify-between items-center">
             <WorkProject title="Notes" projects={notes} />
