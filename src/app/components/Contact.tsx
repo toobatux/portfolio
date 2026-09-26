@@ -77,7 +77,7 @@ const Contact = () => {
             <Link
               href={contact.link}
               target="_blank"
-              className="flex h-full group items-center backdrop-blur bg-background text-foreground shadow border border-foreground/5 hover:text-foreground hover:bg-background transition-colors px-2.5 md:px-4 py-1.5 md:py-2"
+              className="flex h-full group items-center backdrop-blur text-foreground shadow border border-foreground/5 hover:text-foreground hover:bg-background transition-colors px-2.5 md:px-4 py-1.5 md:py-2"
             >
               <div className="px-2 me-1">{contact.name}</div>
               <div className="flex h-full items-center">
