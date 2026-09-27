@@ -8,6 +8,8 @@ import Link from "next/link";
 import React from "react";
 import Tools from "../(projects)/projects/[projectSlug]/components/Tools";
 import name from "../font/nameFont";
+import Project from "./Project";
+import { projectTraceSource } from "next/dist/build/swc/generated-native";
 
 gsap.registerPlugin(useGSAP, TextPlugin);
 
@@ -81,7 +83,7 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
   return (
     <div className="z-10 w-full text-sm h-full">
       <div className={`text-2xl mb-8 ${name.className}`}>{title}</div>
-      <ul className="text-foreground" ref={projectsContainer}>
+      <ul className="flex flex-col text-foreground" ref={projectsContainer}>
         {projects.map((project, index) => {
           const isLast = index === projects.length - 1;
           return (
@@ -95,18 +97,18 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
                 }`}
               >
                 <div className="flex flex-row justify-between gap-2 hover:bg-foreground/5 transition-all rounded py-6 px-4">
-                  <div className="flex flex-col justify-center gap-4 w-1/4 md:w-1/2">
+                  <div className="flex flex-col justify-center gap-4 w-1/2 md:w-1/2">
                     <p className={`inline-block text-foreground font-medium`}>
                       {project.title}
                     </p>
                   </div>
                   <div className="flex w-1/2 items-center gap-4">
-                    <div className="flex w-3/4 md:w-1/2">
+                    <div className="hidden md:flex md:w-3/4">
                       <p className={`block text-foreground/60`}>
                         {project.description}
                       </p>
                     </div>
-                    <div className="flex w-1/2 justify-end">
+                    <div className="flex w-full md:w-1/2 justify-end">
                       <p>{project.date}</p>
                     </div>
                   </div>
@@ -115,6 +117,7 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
               {isLast && (
                 <hr className="w-full border-t border-foreground/10 z-10" />
               )}
+              {/* <Project date={project.date} description={project.description} title={project.title} tools={project.tools} link={project.slug}/> */}
             </li>
           );
         })}
