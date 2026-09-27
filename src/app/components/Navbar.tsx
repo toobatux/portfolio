@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 z-40 w-full backdrop-blur-lg flex transition-all duration-300 border-b border-foreground/10 ${
+      className={`fixed top-0 z-40 w-full backdrop-blur-lg flex transition-all duration-300 border-b border-foreground/5 ${
         showNav ? "translate-y-0" : "-translate-y-full"
       }`}
     >

@@ -4,7 +4,7 @@ import name from "../font/nameFont";
 
 const Footer = () => {
   return (
-    <div className="w-full backdrop-blur border-t border-foreground/10">
+    <div className="w-full backdrop-blur border-t border-foreground/5">
       {/* <hr className="border-foreground/10" /> */}
       <div className="flex w-full justify-center items-center">
         <div className="flex-col w-full max-w-4xl items-center py-12 px-8  transition-all">
