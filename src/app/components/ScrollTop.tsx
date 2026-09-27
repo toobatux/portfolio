@@ -27,9 +27,9 @@ const ScrollTop = () => {
     isVisible && (
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="flex items-center text-foreground/75 text-sm cursor-pointer transition-colors backdrop-blur-lg"
+        className="flex items-center group text-foreground/75 text-sm cursor-pointer transition-colors backdrop-blur-lg"
       >
-        <span className="text-xs"> Scroll to top </span>
+        <span className="text-xs group-hover:underline"> Scroll to top </span>
         <ArrowUpward fontSize="small" className="mx-4" />
       </button>
     )
