@@ -82,7 +82,7 @@ export default async function Page(props: {
           </div>
         </aside>
       </div> */}
-      <div className="mx-auto flex w-full max-w-4xl z-10 backdrop-blur md:border-x border-foreground/10">
+      <div className="mx-auto flex w-full max-w-4xl z-10 backdrop-blur">
         <div className="flex-1 w-full px-8 lg:pe-14 my-8 transition-all mb-20">
           <div className="article"><MDXContent/></div>
           <div className="mt-40">
