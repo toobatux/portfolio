@@ -20,7 +20,7 @@ const Header = ({ title, year, image, tools, background }: HeaderProps) => {
           {tools.map((tool, index) => (
             <div
               key={index}
-              className="bg-foreground/5 rounded-lg px-3 py-1 text-foreground/45 text-xs me-1.5"
+              className="bg-foreground/5 px-3 py-1 text-foreground/45 text-xs me-1.5"
             >
               {tool}
             </div>

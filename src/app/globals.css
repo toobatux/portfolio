@@ -182,7 +182,7 @@ ul li::marker {
 }
 
 .article img {
-  @apply rounded-2xl h-auto max-h-[400px] md:h-[400px];
+  @apply h-auto max-h-[400px] md:h-[400px];
 }
 
 .app-bg {
