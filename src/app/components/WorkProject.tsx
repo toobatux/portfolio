@@ -31,12 +31,12 @@ interface WorkProjectProps {
 }
 
 const WorkProject = ({ title, projects }: WorkProjectProps) => {
-  const header = useRef(null);
+  const header = useRef<HTMLDivElement>(null);
   const projectsContainer = useRef<HTMLUListElement>(null);
   useGSAP(
     () => {
       const tl = gsap.timeline();
-      tl.timeScale(3.5);
+      tl.timeScale(6);
 
       if (!projectsContainer.current) return;
 
@@ -47,13 +47,11 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
       gsap.set(header.current, {
         y: 20,
         opacity: 0,
-        filter: "blur(2px)",
       });
 
       gsap.set(projectItems, {
         y: 10,
         opacity: 0,
-        filter: "blur(2px)",
       });
 
       tl.to(
@@ -62,9 +60,8 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
           y: 0,
           opacity: 1,
           duration: 1,
-          filter: "blur(0px)",
         },
-        "-=0.5"
+        "-=0.3"
       );
 
       tl.to(
@@ -72,17 +69,18 @@ const WorkProject = ({ title, projects }: WorkProjectProps) => {
         {
           y: 0,
           opacity: 1,
-          filter: "blur(0px)",
-          stagger: 0.5,
+          stagger: 0.3,
         },
-        "-=0.5"
+        "-=0.3"
       );
     },
     { scope: projectsContainer, dependencies: [projects] }
   );
   return (
     <div className="z-10 w-full text-sm h-full">
-      <div className={`text-2xl mb-8 ${name.className}`}>{title}</div>
+      <div ref={header} className={`text-2xl mb-8 ${name.className}`}>
+        {title}
+      </div>
       <ul className="flex flex-col text-foreground" ref={projectsContainer}>
         {projects.map((project, index) => {
           const isLast = index === projects.length - 1;

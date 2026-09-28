@@ -31,9 +31,7 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
       [
         first.current,
         occup.current,
-        bio.current,
         contact.current,
-        arrow.current,
       ],
       {
         y: 100,
@@ -52,15 +50,6 @@ const ProfileCard = ({ isOpenToWork }: ProfileProps) => {
     );
     tl.to(
       occup.current,
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-      },
-      "-=0.9"
-    );
-    tl.to(
-      bio.current,
       {
         y: 0,
         opacity: 1,
