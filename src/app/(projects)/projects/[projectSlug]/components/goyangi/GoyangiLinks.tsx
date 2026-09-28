@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function GoyangiLinks() {
   return (
-    <section className="h-full">
+    <section className="h-full links">
       <Link
         href="https://github.com/toobatux/Photo-App"
         target="_blank"

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ShowMeLink() {
   return (
-    <section className="h-full">
+    <section className="h-full links">
       <Link
         href="https://photo-app-delta-ashen.vercel.app/profile/toobatux"
         target="_blank"

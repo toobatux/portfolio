@@ -177,6 +177,10 @@ ul li::marker {
   @apply -mt-4;
 }
 
+.article .links a {
+  @apply no-underline;
+}
+
 .links a {
   @apply no-underline;
 }

@@ -63,7 +63,7 @@ export default async function Page(props: {
       <div className="fixed inset-0 bg-background background"></div>
       {/* <div className="flex z-10 w-full max-w-4xl">
         <div className="flex-1 w-full px-8  my-4 transition-all mb-20">
-          <div className="article"><MDXContent/></div>
+          <div className="article project-article"><MDXContent/></div>
           <div className="mt-40">
             <ProjectSidebar projects={projects} />
           </div>

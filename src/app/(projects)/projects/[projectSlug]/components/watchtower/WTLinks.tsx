@@ -59,7 +59,7 @@ const WTLinks = () => {
     //   </div>
     // </div>
 
-    <section className="h-full">
+    <section className="h-full links">
       <div className="relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 mb-4">
           <Link
@@ -98,7 +98,7 @@ const WTLinks = () => {
             target="_blank"
             prefetch={false}
           >
-            <div className="bg-foreground/5 border border-foreground/10 backdrop-blur-lg rounded-2xl shadow-lg p-2 hover:bg-foreground/10 transition-colors">
+            <div className="border border-foreground/10 backdrop-blur-lg shadow-lg p-2 hover:bg-foreground/5 transition-colors">
               <div className="flex p-3">
                 <div className="flex flex-col gap-1">
                   <div className="text-foreground/55 text-xs">PiCamera2</div>
