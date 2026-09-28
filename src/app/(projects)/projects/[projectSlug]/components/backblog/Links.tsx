@@ -39,7 +39,7 @@ const Links = () => {
             target="_blank"
             prefetch={false}
           >
-            <div className="bg-foreground/5 border border-foreground/10 backdrop-blur-lg p-2 hover:bg-foreground/10 transition-colors">
+            <div className="border border-foreground/10 backdrop-blur-lg p-2 hover:bg-foreground/10 transition-colors">
               <div className="flex p-3">
                 <div className="flex flex-col gap-1">
                   <div className="text-foreground/55 text-xs">iOS</div>
